@@ -1,0 +1,27 @@
+# dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# production build
+dist/
+
+# env files — never commit these
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# logs
+*.log
+npm-debug.log*
