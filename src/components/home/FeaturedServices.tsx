@@ -60,7 +60,7 @@ export function FeaturedServices() {
               <Link
                 href={`/services/${service.slug}`}
                 className="inline-flex items-center text-blue-600 font-medium hover:gap-2 transition-all">
-                Learn more
+                Learn more about {service.title}
                 <ArrowRightIcon className="ml-1 w-4 h-4" />
               </Link>
             </motion.div>

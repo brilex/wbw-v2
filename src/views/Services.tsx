@@ -54,7 +54,7 @@ export function Services() {
                       {service.description}
                     </p>
                     <span className="inline-flex items-center text-blue-600 font-medium group-hover:gap-2 transition-all">
-                      Learn more
+                      Learn more about {service.title}
                       <ArrowRightIcon className="ml-1 w-4 h-4" />
                     </span>
                   </Link>
