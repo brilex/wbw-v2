@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { MailIcon, PhoneIcon, MapPinIcon, TwitterIcon, LinkedinIcon, GithubIcon } from 'lucide-react';
+import { MailIcon, PhoneIcon, TwitterIcon, LinkedinIcon, GithubIcon } from 'lucide-react';
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -131,19 +131,6 @@ export function Contact() {
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <MapPinIcon className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-zinc-950 mb-1">Office</h3>
-                    <p className="text-zinc-600">
-                      123 Innovation Street
-                      <br />
-                      San Francisco, CA 94102
-                    </p>
-                  </div>
-                </div>
               </div>
 
               <div>
@@ -316,23 +303,6 @@ export function Contact() {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="bg-zinc-100 rounded-2xl overflow-hidden h-96 flex items-center justify-center">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0197436025947!2d-122.41941548468194!3d37.77492977975903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Office location map"
-            />
-          </div>
-        </div>
-      </section>
     </main>
   );
 }
