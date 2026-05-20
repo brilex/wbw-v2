@@ -260,6 +260,7 @@ export function Contact() {
                       <option value="ui-ux-design">UI/UX Design</option>
                       <option value="ecommerce">E-commerce</option>
                       <option value="wordpress">WordPress</option>
+                      <option value="csr-to-ssr-migration">CSR to SSR / SSG Migration</option>
                       <option value="other">Other</option>
                     </select>
                   </div>
