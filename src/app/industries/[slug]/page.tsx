@@ -15,9 +15,16 @@ export async function generateMetadata({
   const { slug } = await params;
   const industry = getIndustryBySlug(slug);
   if (!industry) return {};
+  const url = `https://www.webuildsites.net/industries/${slug}`;
   return {
     title: industry.title,
     description: industry.description,
+    alternates: { canonical: url },
+    openGraph: {
+      title: `${industry.title} | WBW`,
+      description: industry.description,
+      url,
+    },
   };
 }
 

@@ -15,9 +15,16 @@ export async function generateMetadata({
   const { slug } = await params;
   const service = getServiceBySlug(slug);
   if (!service) return {};
+  const url = `https://www.webuildsites.net/services/${slug}`;
   return {
     title: service.title,
     description: service.description,
+    alternates: { canonical: url },
+    openGraph: {
+      title: `${service.title} | WBW`,
+      description: service.description,
+      url,
+    },
   };
 }
 

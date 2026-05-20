@@ -124,9 +124,9 @@ export function Contact() {
                   <div>
                     <h3 className="font-semibold text-zinc-950 mb-1">Phone</h3>
                     <a
-                      href="tel:+15551234567"
+                      href="tel:+38762827306"
                       className="text-zinc-600 hover:text-blue-600 transition-colors">
-                      +1 (555) 123-4567
+                      +387 62 827 306
                     </a>
                   </div>
                 </div>
