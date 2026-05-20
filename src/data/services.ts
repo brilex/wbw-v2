@@ -5,6 +5,7 @@ import {
   SearchIcon,
   SettingsIcon,
   LayersIcon,
+  ZapIcon,
   type LucideIcon } from
 'lucide-react';
 
@@ -372,7 +373,79 @@ export const services: ServiceData[] = [
     'Yes — all maintenance plans are month-to-month with no long-term commitment.'
   }]
 
-}];
+},
+{
+  slug: 'csr-to-ssr-migration',
+  icon: ZapIcon,
+  title: 'CSR to SSR / SSG Migration',
+  tagline: 'Faster, SEO-ready React apps',
+  description:
+    'Convert your slow, invisible Vite or Create React App site into a fully server-rendered or statically generated Next.js app — without rebuilding from scratch.',
+  longDescription:
+    'Most React apps built with Vite or Create React App are Client-Side Rendered (CSR). That means the browser downloads a blank HTML file, then waits for JavaScript to load before showing any content. Search engines struggle to index them, users on slow connections see nothing for seconds, and Lighthouse scores suffer. We migrate your existing CSR project to Next.js with SSR or SSG — preserving all your components, logic, and design while unlocking the performance and SEO your site deserves.',
+  features: [
+    {
+      title: 'The problem with CSR',
+      description:
+        'With CSR, Google and other crawlers often see an empty page. Your content lives inside JavaScript bundles that load after the initial request — making it invisible to search engines and slow for real users.',
+    },
+    {
+      title: 'SSG: best for most sites',
+      description:
+        'Static Site Generation pre-renders every page at build time. Pages are served as pure HTML — instant load, fully indexable, and cacheable on a global CDN. Perfect for marketing sites, portfolios, and content-heavy pages.',
+    },
+    {
+      title: 'SSR: best for dynamic content',
+      description:
+        'Server-Side Rendering generates pages on the server for every request. Ideal for dashboards, user-specific content, or data that changes frequently — while still delivering fully rendered HTML to crawlers.',
+    },
+    {
+      title: 'Hybrid: best of both worlds',
+      description:
+        'Next.js lets you mix SSG and SSR on a per-page basis. Static where it makes sense, dynamic where it has to be — without any compromise.',
+    },
+  ],
+  deliverables: [
+    'Full Next.js App Router migration',
+    'SSG / SSR strategy per route',
+    'SEO metadata & canonical tags',
+    'Sitemap & robots.txt',
+    'Core Web Vitals optimisation',
+    'Vercel deployment setup',
+    'Before/after Lighthouse report',
+  ],
+  technologies: [
+    'Next.js',
+    'React',
+    'TypeScript',
+    'Tailwind CSS',
+    'Vercel',
+    'Lighthouse',
+  ],
+  faqs: [
+    {
+      question: 'Will my existing components still work?',
+      answer:
+        'In most cases yes. React components migrate cleanly to Next.js. Interactive components simply get a "use client" directive — no rewrite needed.',
+    },
+    {
+      question: 'How long does a migration take?',
+      answer:
+        'A typical Vite or CRA site with 5–15 routes takes 1–2 weeks. Larger apps with complex state management or routing take 3–4 weeks.',
+    },
+    {
+      question: 'What performance gains can I expect?',
+      answer:
+        'Most sites see Lighthouse scores jump from 40–60 to 95–100 after migration. Time to First Byte drops dramatically and Google can finally index your content.',
+    },
+    {
+      question: 'Do you handle deployment as well?',
+      answer:
+        'Yes — we set up your Vercel project, configure environment variables, and make sure CI/CD is running before we hand over.',
+    },
+  ],
+},
+];
 
 
 export function getServiceBySlug(slug: string): ServiceData | undefined {
