@@ -79,7 +79,7 @@ export function Footer() {
             </h3>
             <ul className="space-y-3 mb-6">
               <li className="text-sm text-zinc-600">info@webuildsites.net</li>
-              <li className="text-sm text-zinc-600">+1 (555) 123-4567</li>
+              <li className="text-sm text-zinc-600">+387 62 827 306</li>
             </ul>
             <div className="flex space-x-4">
               <a
