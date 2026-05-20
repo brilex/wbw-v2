@@ -4,7 +4,7 @@ import { Navbar } from '@/src/components/Navbar';
 import { Footer } from '@/src/components/Footer';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://webuildsites.net'),
+  metadataBase: new URL('https://www.webuildsites.net'),
   title: {
     default: 'WBW — Premium Web Development Agency',
     template: '%s | WBW',

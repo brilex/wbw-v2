@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://webuildsites.net/sitemap.xml
+Sitemap: https://www.webuildsites.net/sitemap.xml

@@ -3,7 +3,7 @@ import { services } from '@/src/data/services';
 import { industries } from '@/src/data/industries';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = 'https://webuildsites.net';
+  const base = 'https://www.webuildsites.net';
 
   const staticRoutes = [
     { url: base, priority: 1.0 },
