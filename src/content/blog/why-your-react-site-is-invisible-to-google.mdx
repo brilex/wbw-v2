@@ -1,0 +1,73 @@
+---
+title: "Why Your React Site Is Invisible to Google (And How to Fix It)"
+date: "2026-04-22"
+description: "Built your website in React but it's not showing up on Google? Client-side rendering is almost certainly the cause. Here's a clear explanation of the problem and the solution."
+author: "WBW Team"
+tags: ["SEO", "React", "Next.js", "CSR"]
+---
+
+You launched your React website. It looks great. But weeks later, you're still nowhere on Google.
+
+You check Google Search Console and find that most of your pages aren't indexed. Or worse — they're indexed but showing almost no content in the preview.
+
+This is one of the most common problems we see, and the cause is almost always the same: **client-side rendering**.
+
+## What Google Actually Sees
+
+When Googlebot crawls a client-side rendered React app, here's what it typically receives:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="/assets/index-abc123.js"></script>
+  </body>
+</html>
+```
+
+That's it. Your homepage headline, your service descriptions, your about page — all of it is inside that JavaScript bundle. Googlebot has to execute the JavaScript to see any of it.
+
+Google does process JavaScript, but it's resource-intensive and deprioritised. Pages often get crawled in a "second wave" that can take days or weeks. And if your JavaScript has any errors or loads too slowly, the content may never be indexed at all.
+
+## The Fix: Serve Real HTML
+
+The solution is to make sure your server sends actual content in the initial HTML response — not a blank page with a script tag.
+
+There are two main approaches:
+
+### Static Site Generation (SSG)
+Your pages are pre-rendered at build time and served as static HTML from a CDN. When Googlebot visits, it gets your full content immediately.
+
+This is the right choice for most marketing sites, blogs, and portfolios.
+
+### Server-Side Rendering (SSR)
+Pages are rendered on the server for each request. The browser (and Googlebot) receives complete HTML every time.
+
+This is better for pages with dynamic, user-specific content.
+
+## Migrating Without Rebuilding
+
+If your site is built with Vite or Create React App, you don't need to rebuild it from scratch. Next.js uses React — your components transfer over almost unchanged.
+
+The main things that change are:
+- **Routing**: from `react-router-dom` to Next.js file-based routing
+- **Data fetching**: from `useEffect` to `async` server components or `generateStaticParams`
+- **Images**: from `<img>` to `<Image>` for automatic optimisation
+
+A typical 10–15 page site takes us 1–2 weeks to migrate. The before and after on Lighthouse scores is usually dramatic.
+
+## Is This Your Problem?
+
+Here's a quick test. Go to Google and search:
+
+```
+site:yourdomain.com
+```
+
+If fewer pages show up than you have on your site, or if the snippets look empty or generic, your content isn't being indexed properly.
+
+[Get in touch](/contact) — we run a free crawl audit as part of every project conversation. We'll tell you exactly what Google sees when it visits your site.

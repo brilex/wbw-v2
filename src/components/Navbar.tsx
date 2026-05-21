@@ -19,6 +19,7 @@ export function Navbar() {
   const trailingLinks = [
     { name: 'Work', path: '/work' },
     { name: 'Process', path: '/process' },
+    { name: 'Blog', path: '/blog' },
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' },
   ];

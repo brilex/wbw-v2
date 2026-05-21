@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import { services } from '@/src/data/services';
 import { industries } from '@/src/data/industries';
+import { getAllPosts } from '@/src/lib/blog';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://www.webuildsites.net';
@@ -8,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
     { url: base, priority: 1.0 },
     { url: `${base}/services`, priority: 0.9 },
+    { url: `${base}/blog`, priority: 0.9 },
     { url: `${base}/industries`, priority: 0.9 },
     { url: `${base}/work`, priority: 0.8 },
     { url: `${base}/about`, priority: 0.8 },
@@ -34,5 +36,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticRoutes, ...serviceRoutes, ...industryRoutes];
+  const blogRoutes = getAllPosts().map((p) => ({
+    url: `${base}/blog/${p.slug}`,
+    lastModified: new Date(p.date),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }));
+
+  return [...staticRoutes, ...serviceRoutes, ...industryRoutes, ...blogRoutes];
 }

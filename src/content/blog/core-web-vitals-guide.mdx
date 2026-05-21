@@ -1,0 +1,77 @@
+---
+title: "Core Web Vitals in 2026: What They Are and Why They Still Matter"
+date: "2026-05-05"
+description: "Google's Core Web Vitals are a set of real-world performance metrics that directly affect your search rankings. Here's what each one means and how to fix them."
+author: "WBW Team"
+tags: ["SEO", "Performance", "Core Web Vitals"]
+---
+
+Google uses Core Web Vitals as a ranking signal. That means a slow website doesn't just frustrate users — it actively hurts your position in search results.
+
+Here's what each metric means and what you can do about it.
+
+## LCP — Largest Contentful Paint
+
+**What it measures:** How long it takes for the largest visible element (usually a hero image or heading) to load.
+
+**Good score:** Under 2.5 seconds.
+
+**Common causes of poor LCP:**
+- Large, unoptimised hero images
+- Slow server response times
+- Render-blocking JavaScript
+
+**How to fix it:**
+- Use `next/image` for automatic image optimisation and lazy loading
+- Serve images in WebP or AVIF format
+- Use SSG or SSR so the browser gets real HTML immediately
+
+---
+
+## CLS — Cumulative Layout Shift
+
+**What it measures:** How much the page layout shifts unexpectedly while loading. Ever clicked a button just as an ad loaded above it and accidentally clicked the ad? That's CLS.
+
+**Good score:** Under 0.1.
+
+**Common causes:**
+- Images without explicit width and height
+- Fonts that swap in late (FOUT)
+- Dynamically injected content above the fold
+
+**How to fix it:**
+- Always set width and height on images
+- Use `font-display: optional` or preload your fonts
+- Reserve space for dynamic content with CSS
+
+---
+
+## INP — Interaction to Next Paint
+
+**What it measures:** How quickly your page responds to user interactions (clicks, taps, keyboard input). INP replaced FID in 2024.
+
+**Good score:** Under 200ms.
+
+**Common causes:**
+- Heavy JavaScript executing on the main thread
+- Unoptimised event handlers
+- Large React re-renders
+
+**How to fix it:**
+- Code-split large JavaScript bundles
+- Use `useMemo` and `useCallback` to prevent unnecessary re-renders
+- Defer non-critical scripts
+
+---
+
+## How to Check Your Scores
+
+1. Run a [PageSpeed Insights](https://pagespeed.web.dev) report on your URL
+2. Check the **Field Data** section (real user data) — not just Lab Data
+3. Use Google Search Console → Core Web Vitals report for site-wide trends
+
+## The Honest Reality
+
+Most sites we audit fail on LCP. The fix is almost always the same: move from client-side rendering to SSG/SSR, optimise images, and remove render-blocking scripts.
+
+If your scores are in the red, [we can help](/contact). We run a free performance audit as part of every project scoping call.

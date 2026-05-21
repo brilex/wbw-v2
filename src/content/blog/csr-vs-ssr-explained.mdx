@@ -1,0 +1,62 @@
+---
+title: "CSR vs SSR vs SSG: Which Rendering Strategy Does Your Website Actually Need?"
+date: "2026-05-15"
+description: "Most React apps are built with client-side rendering by default — but that's rarely the best choice. Here's a plain-English breakdown of the three main rendering strategies and when to use each."
+author: "WBW Team"
+tags: ["Next.js", "Performance", "SEO", "React"]
+---
+
+If you've built a website with Vite or Create React App, your site is almost certainly **Client-Side Rendered (CSR)**. That means when a user visits your site, their browser downloads a blank HTML file and a large JavaScript bundle, then runs the JavaScript to build the page.
+
+It works — but it comes with real costs.
+
+## The Problem with CSR
+
+Search engines like Google need to crawl your page to index it. With CSR, the crawler often sees nothing but an empty `<div id="root"></div>`. Your content lives inside JavaScript that may or may not be executed by the crawler.
+
+The result: **poor SEO** and **slow perceived load times**, especially on low-end devices or slow connections.
+
+## Option 1: Server-Side Rendering (SSR)
+
+With SSR, the server generates a complete HTML page for every request. The browser receives real content immediately — no waiting for JavaScript.
+
+**Best for:**
+- Dashboards with user-specific data
+- Pages that change frequently (news feeds, stock prices)
+- Any page where content depends on who is logged in
+
+**Trade-off:** Every request hits your server, which adds latency and cost at scale.
+
+## Option 2: Static Site Generation (SSG)
+
+With SSG, pages are pre-rendered at **build time**. The output is pure HTML that gets served instantly from a CDN — no server involved at runtime.
+
+**Best for:**
+- Marketing sites and landing pages
+- Blogs and documentation
+- Portfolios and agency websites
+
+**Trade-off:** Content is only as fresh as your last build. For data that changes hourly, SSG alone isn't enough.
+
+## Option 3: Hybrid (the Next.js sweet spot)
+
+Next.js lets you mix strategies **per page**. Your homepage? SSG. Your user dashboard? SSR. Your blog? SSG with on-demand revalidation.
+
+This is the approach we use for almost every project — and it's why we migrate CSR apps to Next.js rather than rebuilding them from scratch.
+
+## How to Know Which One You Need
+
+| Your site has... | Use |
+|---|---|
+| Mostly static content | SSG |
+| User-specific data | SSR |
+| A mix of both | Hybrid (Next.js) |
+| Heavy interactivity | CSR for that component only |
+
+## The Migration Path
+
+If your site is currently on Vite or CRA, migrating to Next.js is usually **less work than you'd expect**. React components transfer almost verbatim — the main changes are routing and data fetching patterns.
+
+Most migrations we handle take 1–2 weeks and result in Lighthouse scores jumping from 40–60 to 95–100.
+
+If your site is invisible to Google or loading slowly, the rendering strategy is almost always the root cause. [Get in touch](/contact) and we'll diagnose it for free.

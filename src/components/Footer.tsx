@@ -14,6 +14,7 @@ export function Footer() {
     { name: 'About', path: '/about' },
     { name: 'Work', path: '/work' },
     { name: 'Process', path: '/process' },
+    { name: 'Blog', path: '/blog' },
     { name: 'Testimonials', path: '/testimonials' },
     { name: 'Contact', path: '/contact' },
   ];
