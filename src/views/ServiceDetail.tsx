@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Script from 'next/script';
 import { motion } from 'framer-motion';
 import { ArrowRightIcon, ArrowLeftIcon, CheckIcon } from 'lucide-react';
 import { getServiceBySlug, services } from '../data/services';
@@ -15,8 +16,26 @@ export function ServiceDetail({ slug }: Props) {
   const related = services.filter((s) => s.slug !== service.slug).slice(0, 3);
   const Icon = service.icon;
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: service.faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     <main className="min-h-screen">
+      <Script
+        id={`faq-schema-${slug}`}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* Hero */}
       <section className="relative pt-32 pb-20 bg-white overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#e5e7eb_1px,transparent_1px),linear-gradient(to_bottom,#e5e7eb_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_40%_at_50%_0%,#000_70%,transparent_110%)] opacity-20" />
