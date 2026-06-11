@@ -13,10 +13,25 @@ interface CaseStudy {
   results: { metric: string; value: string }[];
   color: string;
   tags: string[];
+  href?: string;
 }
 
 export function CaseStudies() {
   const caseStudies: CaseStudy[] = [
+    {
+      title: 'ConvertToNext',
+      client: 'In-house Product',
+      category: 'Developer Tool · SaaS',
+      description: 'Built an automated conversion engine that transforms Vite + React projects (Bolt.new, Lovable, v0 exports) into production-ready Next.js 15 App Router apps — solving the SEO invisibility problem of AI-generated websites in under 60 seconds.',
+      results: [
+        { metric: 'Conversion time', value: '< 60s' },
+        { metric: 'Transform types', value: '8' },
+        { metric: 'Cost to users', value: 'Free' },
+      ],
+      color: 'from-emerald-500 to-emerald-700',
+      tags: ['Next.js 15', 'TypeScript', 'Turborepo', 'Vercel', 'Supabase'],
+      href: '/work/converttonext',
+    },
     {
       title: 'FinTech Dashboard Transformation',
       client: 'Quantum Finance',
@@ -144,10 +159,17 @@ export function CaseStudies() {
                     ))}
                   </div>
 
-                  <button className="inline-flex items-center text-blue-600 font-semibold hover:gap-2 transition-all w-fit">
-                    View case study
-                    <ArrowUpRightIcon className="ml-1 w-5 h-5" />
-                  </button>
+                  {study.href ? (
+                    <Link href={study.href} className="inline-flex items-center text-blue-600 font-semibold hover:gap-2 transition-all w-fit">
+                      View case study
+                      <ArrowUpRightIcon className="ml-1 w-5 h-5" />
+                    </Link>
+                  ) : (
+                    <button className="inline-flex items-center text-blue-600 font-semibold hover:gap-2 transition-all w-fit">
+                      View case study
+                      <ArrowUpRightIcon className="ml-1 w-5 h-5" />
+                    </button>
+                  )}
                 </div>
               </div>
             </motion.article>
