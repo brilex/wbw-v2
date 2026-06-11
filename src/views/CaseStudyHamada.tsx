@@ -102,7 +102,7 @@ export function CaseStudyHamada() {
               src="/hamada-co.webp"
               alt="Hamada & Co. website"
               fill
-              className="object-cover"
+              className="object-cover object-top"
               priority
             />
           </motion.div>
