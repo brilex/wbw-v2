@@ -36,6 +36,21 @@ export function CaseStudies() {
       image: '/ConverttoNext.webp',
     },
     {
+      title: 'Hamada & Co.',
+      client: 'PVC & Aluminium Joinery',
+      category: 'Web Design · SEO',
+      description: 'Complete website overhaul for a joinery company in Bosnia & Herzegovina — modern design, full SEO optimisation, and conversion-focused forms that landed the first paying customer within a week of launch.',
+      results: [
+        { metric: 'Desktop Lighthouse', value: '100' },
+        { metric: 'Mobile Lighthouse', value: '95' },
+        { metric: 'First customer', value: 'Week 1' },
+      ],
+      color: 'from-blue-500 to-blue-700',
+      tags: ['Next.js 15', 'SEO', 'Tailwind CSS', 'Vercel'],
+      href: '/work/hamada-co',
+      image: '/hamada&co.webp',
+    },
+    {
       title: 'FinTech Dashboard Transformation',
       client: 'Quantum Finance',
       category: 'Web Application',
