@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ArrowRightIcon, ArrowUpRightIcon } from 'lucide-react';
 
@@ -14,6 +15,7 @@ interface CaseStudy {
   color: string;
   tags: string[];
   href?: string;
+  image?: string;
 }
 
 export function CaseStudies() {
@@ -31,6 +33,7 @@ export function CaseStudies() {
       color: 'from-emerald-500 to-emerald-700',
       tags: ['Next.js 15', 'TypeScript', 'Turborepo', 'Vercel', 'Supabase'],
       href: '/work/converttonext',
+      image: '/ConverttoNext.webp',
     },
     {
       title: 'FinTech Dashboard Transformation',
@@ -123,8 +126,21 @@ export function CaseStudies() {
               <div className={`grid lg:grid-cols-2 gap-0 ${index % 2 === 1 ? 'lg:[&>*:first-child]:order-last' : ''}`}>
                 {/* Visual */}
                 <div className="relative aspect-[4/3] lg:aspect-auto overflow-hidden">
-                  <div className={`absolute inset-0 bg-gradient-to-br ${study.color} group-hover:scale-105 transition-transform duration-700`} />
-                  <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff10_1px,transparent_1px),linear-gradient(to_bottom,#ffffff10_1px,transparent_1px)] bg-[size:2rem_2rem]" />
+                  {study.image ? (
+                    <Link href={study.href ?? '#'} className="block w-full h-full">
+                      <Image
+                        src={study.image}
+                        alt={study.title}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-700"
+                      />
+                    </Link>
+                  ) : (
+                    <>
+                      <div className={`absolute inset-0 bg-gradient-to-br ${study.color} group-hover:scale-105 transition-transform duration-700`} />
+                      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff10_1px,transparent_1px),linear-gradient(to_bottom,#ffffff10_1px,transparent_1px)] bg-[size:2rem_2rem]" />
+                    </>
+                  )}
                   <div className="absolute top-6 left-6">
                     <span className="px-3 py-1 bg-white/20 backdrop-blur-md text-white text-xs font-semibold rounded-full">
                       {study.category}
@@ -135,9 +151,17 @@ export function CaseStudies() {
                 {/* Content */}
                 <div className="p-8 lg:p-12 flex flex-col justify-center">
                   <p className="text-sm font-semibold text-blue-600 mb-2">{study.client}</p>
-                  <h2 className="text-3xl font-bold text-zinc-950 mb-4 group-hover:text-blue-600 transition-colors">
-                    {study.title}
-                  </h2>
+                  {study.href ? (
+                    <Link href={study.href}>
+                      <h2 className="text-3xl font-bold text-zinc-950 mb-4 group-hover:text-blue-600 transition-colors hover:text-blue-600">
+                        {study.title}
+                      </h2>
+                    </Link>
+                  ) : (
+                    <h2 className="text-3xl font-bold text-zinc-950 mb-4 group-hover:text-blue-600 transition-colors">
+                      {study.title}
+                    </h2>
+                  )}
                   <p className="text-zinc-600 leading-relaxed mb-6">{study.description}</p>
 
                   {/* Results */}
