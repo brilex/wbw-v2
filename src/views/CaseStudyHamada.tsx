@@ -34,11 +34,8 @@ const SOLUTIONS = [
 ];
 
 const TECH = [
-  { name: 'Next.js 15', desc: 'SSG — pages pre-rendered at build time' },
-  { name: 'TypeScript', desc: 'Type-safe codebase' },
-  { name: 'Tailwind CSS', desc: 'Consistent, responsive design system' },
-  { name: 'Vercel', desc: 'Global CDN deployment' },
-  { name: 'Resend', desc: 'Contact and quote form delivery' },
+  { name: 'WordPress', desc: 'CMS powering the full site' },
+  { name: 'Bricks Builder', desc: 'Visual page builder for custom layouts' },
   { name: 'Schema.org', desc: 'Structured data for Google' },
 ];
 

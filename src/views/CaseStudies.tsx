@@ -46,7 +46,7 @@ export function CaseStudies() {
         { metric: 'First customer', value: 'Week 1' },
       ],
       color: 'from-blue-500 to-blue-700',
-      tags: ['Next.js 15', 'SEO', 'Tailwind CSS', 'Vercel'],
+      tags: ['WordPress', 'Bricks Builder', 'SEO'],
       href: '/work/hamada-co',
       image: '/hamada&co.webp',
     },
