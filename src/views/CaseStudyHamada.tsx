@@ -99,10 +99,10 @@ export function CaseStudyHamada() {
             transition={{ delay: 0.1 }}
             className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-zinc-200 shadow-lg">
             <Image
-              src="/hamada-co.webp"
+              src="/hamada&co.webp"
               alt="Hamada & Co. website"
               fill
-              className="object-cover object-top"
+              className="object-contain"
               priority
             />
           </motion.div>

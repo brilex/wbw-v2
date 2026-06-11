@@ -48,7 +48,7 @@ export function CaseStudies() {
       color: 'from-blue-500 to-blue-700',
       tags: ['WordPress', 'Bricks Builder', 'SEO'],
       href: '/work/hamada-co',
-      image: '/hamada-co.webp',
+      image: '/hamada&co.webp',
     },
     {
       title: 'FinTech Dashboard Transformation',
@@ -147,7 +147,7 @@ export function CaseStudies() {
                         src={study.image}
                         alt={study.title}
                         fill
-                        className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                        className="object-contain group-hover:scale-105 transition-transform duration-700"
                       />
                     </Link>
                   ) : (
