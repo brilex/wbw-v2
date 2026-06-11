@@ -9,7 +9,7 @@ import { ArrowRightIcon } from 'lucide-react';
 export function Projects() {
   const projects = [
     { title: 'ConvertToNext', category: 'Developer Tool · SaaS', color: 'from-emerald-500 to-emerald-600', image: '/ConverttoNext.webp', href: '/work/converttonext' },
-    { title: 'Hamada & Co.', category: 'Web Design · SEO', color: 'from-blue-500 to-blue-600', image: '/hamada&co.webp', href: '/work/hamada-co' },
+    { title: 'Hamada & Co.', category: 'Web Design · SEO', color: 'from-blue-500 to-blue-600', image: '/hamada-co.webp', href: '/work/hamada-co' },
     { title: 'E-commerce Platform', category: 'E-commerce', color: 'from-purple-500 to-purple-600' },
     { title: 'SaaS Marketing Site', category: 'Marketing', color: 'from-emerald-500 to-emerald-600' },
   ];

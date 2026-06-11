@@ -48,7 +48,7 @@ export function CaseStudies() {
       color: 'from-blue-500 to-blue-700',
       tags: ['WordPress', 'Bricks Builder', 'SEO'],
       href: '/work/hamada-co',
-      image: '/hamada&co.webp',
+      image: '/hamada-co.webp',
     },
     {
       title: 'FinTech Dashboard Transformation',
