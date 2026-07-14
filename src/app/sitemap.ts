@@ -43,5 +43,44 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...serviceRoutes, ...industryRoutes, ...blogRoutes];
+  const bsStaticRoutes = [
+    { url: `${base}/bs`, priority: 0.9 },
+    { url: `${base}/bs/usluge`, priority: 0.9 },
+    { url: `${base}/bs/industrije`, priority: 0.9 },
+    { url: `${base}/bs/rad`, priority: 0.8 },
+    { url: `${base}/bs/o-nama`, priority: 0.8 },
+    { url: `${base}/bs/proces`, priority: 0.7 },
+    { url: `${base}/bs/recenzije`, priority: 0.7 },
+    { url: `${base}/bs/kontakt`, priority: 0.8 },
+    { url: `${base}/bs/rad/hamada-co`, priority: 0.8 },
+    { url: `${base}/bs/rad/converttonext`, priority: 0.8 },
+  ].map((route) => ({
+    ...route,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+  }));
+
+  const bsServiceRoutes = services.map((s) => ({
+    url: `${base}/bs/usluge/${s.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }));
+
+  const bsIndustryRoutes = industries.map((i) => ({
+    url: `${base}/bs/industrije/${i.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }));
+
+  return [
+    ...staticRoutes,
+    ...serviceRoutes,
+    ...industryRoutes,
+    ...blogRoutes,
+    ...bsStaticRoutes,
+    ...bsServiceRoutes,
+    ...bsIndustryRoutes,
+  ];
 }

@@ -2,8 +2,6 @@ import type { Metadata } from 'next';
 import Script from 'next/script';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import './globals.css';
-import { Navbar } from '@/src/components/Navbar';
-import { Footer } from '@/src/components/Footer';
 
 const organizationSchema = {
   '@context': 'https://schema.org',
@@ -67,9 +65,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
-        <Navbar />
         {children}
-        <Footer />
       </body>
       <GoogleAnalytics gaId="G-SB5KG2CPDT" />
     </html>
