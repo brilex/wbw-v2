@@ -112,9 +112,9 @@ export const industries: IndustryData[] = [
   }],
 
   stats: [
-  { value: '50k+', label: 'Vehicles served' },
   { value: '+185%', label: 'Lead form fills' },
-  { value: '<1s', label: 'Page load time' }]
+  { value: '<1s', label: 'Page load time' },
+  { value: '10+', label: 'Dealer sites built' }]
 
 },
 {
@@ -328,7 +328,7 @@ export const industries: IndustryData[] = [
 
   stats: [
   { value: '+58%', label: 'Application starts' },
-  { value: '500+', label: 'Programs cataloged' },
+  { value: '97/100', label: 'Avg. Lighthouse score' },
   { value: 'AA', label: 'WCAG compliance' }]
 
 },
@@ -456,9 +456,9 @@ export const industries: IndustryData[] = [
   }],
 
   stats: [
-  { value: '12k/mo', label: 'Appointments booked' },
+  { value: '+124%', label: 'Online bookings' },
   { value: 'HIPAA', label: 'Compliant' },
-  { value: '4.8/5', label: 'Patient satisfaction' }]
+  { value: '4.9★', label: 'Client satisfaction' }]
 
 },
 {
@@ -501,7 +501,7 @@ export const industries: IndustryData[] = [
   stats: [
   { value: '+275%', label: 'Consultation requests' },
   { value: 'Top 3', label: 'Avg. SEO ranking' },
-  { value: '60+', label: 'Practice areas' }]
+  { value: '15+', label: 'Law firm clients' }]
 
 },
 {
@@ -543,8 +543,8 @@ export const industries: IndustryData[] = [
 
   stats: [
   { value: '+210%', label: 'RFQ submissions' },
-  { value: '5k+', label: 'SKUs cataloged' },
-  { value: '85%', label: 'Distributor adoption' }]
+  { value: '98/100', label: 'Avg. Lighthouse score' },
+  { value: '5k+', label: 'SKUs cataloged' }]
 
 },
 {

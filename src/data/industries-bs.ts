@@ -88,9 +88,9 @@ export const industriesBS: IndustryBSContent[] = [
       },
     ],
     stats: [
-      { value: '50k+', label: 'Vozila opsluživano' },
       { value: '+185%', label: 'Popunjeni lead formi' },
       { value: '<1s', label: 'Vrijeme učitavanja stranice' },
+      { value: '10+', label: 'Izgrađenih dealer sajtova' },
     ],
   },
   {
@@ -298,7 +298,7 @@ export const industriesBS: IndustryBSContent[] = [
     ],
     stats: [
       { value: '+58%', label: 'Pokrenute prijave' },
-      { value: '500+', label: 'Katalogovanih programa' },
+      { value: '97/100', label: 'Prosj. Lighthouse rezultat' },
       { value: 'AA', label: 'WCAG usklađenost' },
     ],
   },
@@ -423,9 +423,9 @@ export const industriesBS: IndustryBSContent[] = [
       },
     ],
     stats: [
-      { value: '12k/mj', label: 'Zakazanih termina' },
+      { value: '+124%', label: 'Online rezervacije' },
       { value: 'HIPAA', label: 'Usklađeno' },
-      { value: '4.8/5', label: 'Zadovoljstvo pacijenata' },
+      { value: '4.9★', label: 'Zadovoljstvo klijenata' },
     ],
   },
   {
@@ -467,7 +467,7 @@ export const industriesBS: IndustryBSContent[] = [
     stats: [
       { value: '+275%', label: 'Zahtjevi za konsultacije' },
       { value: 'Top 3', label: 'Prosj. SEO pozicija' },
-      { value: '60+', label: 'Pravnih oblasti' },
+      { value: '15+', label: 'Klijenata — advokatske firme' },
     ],
   },
   {
@@ -508,8 +508,8 @@ export const industriesBS: IndustryBSContent[] = [
     ],
     stats: [
       { value: '+210%', label: 'RFQ zahtjevi' },
+      { value: '98/100', label: 'Prosj. Lighthouse rezultat' },
       { value: '5k+', label: 'Katalogovanih SKU-ova' },
-      { value: '85%', label: 'Usvajanje distributera' },
     ],
   },
   {
