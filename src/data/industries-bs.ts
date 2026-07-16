@@ -28,12 +28,12 @@ export const industriesBS: IndustryBSContent[] = [
       {
         title: 'Revizija i strategija',
         description:
-          'Heuristički pregled, analiza analitike i intervjui s dionicima za utemeljenje redizajna u stvarnim podacima.',
+          'Heuristički pregled, analiza analitike i intervjui sa zainteresovanim stranama za utemeljenje redizajna u stvarnim podacima.',
       },
       {
         title: 'Moderni vizualni identitet',
         description:
-          'Osvježavanje dizajna koje izgleda suvremeno bez gubitka kapitala vašeg postojećeg brenda.',
+          'Osvježavanje dizajna koje izgleda savremeno bez gubitka kapitala vašeg postojećeg brenda.',
       },
       {
         title: 'Optimizacija konverzije',
@@ -41,7 +41,7 @@ export const industriesBS: IndustryBSContent[] = [
           'Restrukturirani korisnički tokovi i CTA-ovi koji pretvaraju više posjetitelja u kupce.',
       },
       {
-        title: 'Besprijekornom migracijom',
+        title: 'Besprijekorna migracija',
         description:
           'Strategija sadržaja, SEO-a i preusmjeravanja koja štiti postojeće pozicije tokom tranzicije.',
       },
@@ -59,7 +59,7 @@ export const industriesBS: IndustryBSContent[] = [
     description:
       'Visoko-performantne web stranice za auto saloni, prijevoznička preduzeća i fleet operatere.',
     longDescription:
-      'Od inventara auto salona do logističkih platformi, gradimo sajtove koji upravljaju složenim podacima, integriraju se s industrijskim alatima i konvertuju posjetitelje u kupce.',
+      'Od inventara auto salona do logističkih platformi, gradimo sajtove koji upravljaju složenim podacima, integriraju se s industrijskim alatima i konvertuju posjetioce u kupce.',
     challenges: [
       'Live feedovi inventara i stranice detalja po vozilu',
       'Multi-lokacijske dealer mreže s konzistentnim brendingom',
@@ -182,7 +182,7 @@ export const industriesBS: IndustryBSContent[] = [
     title: 'Potrošačka roba i Proizvodi',
     tagline: 'Gdje se proizvodi pretvaraju u brendove',
     description:
-      'Web stranice za CPG brendove koje pretvaraju karakteristike proizvoda u priče i posjetitelje u lojalne kupce.',
+      'Web stranice za CPG brendove koje pretvaraju karakteristike proizvoda u priče i posjetioce u lojalne kupce.',
     longDescription:
       'Sajtovi potrošačke robe trebaju raditi više od prodaje — trebaju graditi afinitet prema brendu. Kreiramo imerzivna iskustva proizvoda koja maloprodavači poštuju, a kupci vole.',
     challenges: [
@@ -226,7 +226,7 @@ export const industriesBS: IndustryBSContent[] = [
     description:
       'Visoko-performantni e-commerce sajtovi na Shopifyu, Hydrogenu i headless platformama.',
     longDescription:
-      'Gradimo online prodavnice koje se brzo učitavaju, prekrasno izgledaju i konvertuju posjetitelje u kupce po stopama koje vode industriju. Od butik brendova do prodavnica s visokim obimom — naš e-commerce rad pomiče iglu.',
+      'Gradimo online prodavnice koje se brzo učitavaju, prekrasno izgledaju i konvertuju posjetioce u kupce po stopama koje vode industriju. Od butik brendova do prodavnica s visokim obimom — naš e-commerce rad pomiče iglu.',
     challenges: [
       'Prilagođena iskustva naplate koja maksimiziraju konverziju',
       'Konfiguratori proizvoda i alati za prilagodbu',
@@ -309,7 +309,7 @@ export const industriesBS: IndustryBSContent[] = [
     description:
       'Web stranice za energetske kompanije, obnovljive izvore i clean tech inovatore.',
     longDescription:
-      'Od komunalnih preduzeća koja služe milionima do clean tech startupa koji mijenjaju svijet, gradimo sajtove koji objašnjavaju složene ponude, podržavaju klijente i prikazuju utjecaj.',
+      'Od komunalnih preduzeća koja služe milionima do clean tech startupa koji mijenjaju svijet, gradimo sajtove koji objašnjavaju složene ponude, podržavaju klijente i prikazuju uticaj.',
     challenges: [
       'Portali za samouslugu klijenata (naplata, karte kvarova)',
       'Izvještavanje o održivosti i ESG pripovijedanje',
@@ -325,12 +325,12 @@ export const industriesBS: IndustryBSContent[] = [
       {
         title: 'Pripovijedanje o održivosti',
         description:
-          'Vizualni, podacima vođeni sadržaj koji komunicira ESG utjecaj i napredak.',
+          'Vizualni, podacima vođeni sadržaj koji komunicira ESG uticaj i napredak.',
       },
       {
         title: 'Stranice programa i popusta',
         description:
-          'Jasna objašnjenja tarifa, poticaja i klijentskih programa.',
+          'Jasna objašnjenja tarifa, podsticaja i klijentskih programa.',
       },
       {
         title: 'Infrastruktura visoke dostupnosti',
@@ -372,7 +372,7 @@ export const industriesBS: IndustryBSContent[] = [
       {
         title: 'Kalkulatori i alati',
         description:
-          'Kalkulatori za hipoteke, penzije i finansijsko planiranje koji angažuju posjetitelje.',
+          'Kalkulatori za hipoteke, penzije i finansijsko planiranje koji angažuju posjetioce.',
       },
       {
         title: 'Enterprise sigurnost',
@@ -435,7 +435,7 @@ export const industriesBS: IndustryBSContent[] = [
     description:
       'Sofisticirani sajtovi za advokatske kancelarije i pravne usluge koji privlače kvalificirane klijente.',
     longDescription:
-      'Potencijalni klijenti procjenjuju advokatske firme za sekunde. Gradimo sajtove koji prenose stručnost i povjerenje na prvi pogled, a zatim konvertuju posjetitelje u kvalificirane konsultacije.',
+      'Potencijalni klijenti procjenjuju advokatske firme za sekunde. Gradimo sajtove koji prenose stručnost i povjerenje na prvi pogled, a zatim konvertuju posjetioce u kvalificirane konsultacije.',
     challenges: [
       'Komuniciranje stručnosti u raznim pravnim oblastima',
       'SEO konkurencija za visoko-vrijedne pravne ključne riječi',
@@ -645,7 +645,7 @@ export const industriesBS: IndustryBSContent[] = [
     description:
       'Sajtovi za timove, ligve, mjesta, festivale i zabavne brendove.',
     longDescription:
-      'Navijači sporta i zabave dolaze u valovima i očekuju sadržaj u trenutku kad se pojavi. Gradimo sajtove koji podnose skokove prometa, lijepo isporučuju medije i pretvaraju slučajne posjetitelje u superfanove.',
+      'Navijači sporta i zabave dolaze u valovima i očekuju sadržaj u trenutku kad se pojavi. Gradimo sajtove koji podnose skokove prometa, lijepo isporučuju medije i pretvaraju slučajne posjetioce u superfanove.',
     challenges: [
       'Masovni skokovi prometa oko utakmica, objava i događaja',
       'Živi rezultati, rasporedi i ažuriranja sadržaja u realnom vremenu',

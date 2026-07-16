@@ -32,7 +32,7 @@ export const servicesBS: ServiceBSContent[] = [
       {
         title: 'Pristupačnost ugrađena',
         description:
-          'WCAG 2.1 AA usklađenost po defaultu. Svaka stranica navigabilna tipkovnicom i screen readerima.',
+          'WCAG 2.1 AA usklađenost po defaultu. Svaka stranica navigabilna tastaturom i screen readerima.',
       },
       {
         title: 'API integracije',
@@ -159,7 +159,7 @@ export const servicesBS: ServiceBSContent[] = [
       {
         question: 'Koliko revizija je uključeno?',
         answer:
-          'Radimo u iterativnim ciklusima s do tri runde revizija po fazi, uz kontinuiranu asinhrohu povratnu informaciju.',
+          'Radimo u iterativnim ciklusima s do tri runde revizija po fazi, uz kontinuiranu asinhronom povratnu informaciju.',
       },
     ],
   },
@@ -305,9 +305,9 @@ export const servicesBS: ServiceBSContent[] = [
     ],
     faqs: [
       {
-        question: 'Što ako imam hitno pitanje izvan radnog vremena?',
+        question: 'Šta ako imam hitno pitanje izvan radnog vremena?',
         answer:
-          'Planovi održavanja uključuju hitni odgovor. Kritični problemi dobivaju pažnju 24/7 s ciljevima rješavanja isti dan.',
+          'Planovi održavanja uključuju hitni odgovor. Kritični problemi dobijaju pažnju 24/7 s ciljevima rješavanja isti dan.',
       },
       {
         question: 'Mogu li otkazati u bilo koje vrijeme?',
@@ -359,7 +359,7 @@ export const servicesBS: ServiceBSContent[] = [
       {
         question: 'Hoće li moje postojeće komponente još uvijek raditi?',
         answer:
-          'U većini slučajeva da. React komponente se čisto migriraju na Next.js. Interaktivne komponente jednostavno dobivaju "use client" direktivu — nije potrebna ponovna izgradnja.',
+          'U većini slučajeva da. React komponente se čisto migriraju na Next.js. Interaktivne komponente jednostavno dobijaju "use client" direktivu — nije potrebna ponovna izgradnja.',
       },
       {
         question: 'Koliko dugo traje migracija?',
