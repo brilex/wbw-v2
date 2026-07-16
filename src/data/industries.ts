@@ -370,9 +370,9 @@ export const industries: IndustryData[] = [
   }],
 
   stats: [
-  { value: '2M+', label: 'Customers served' },
-  { value: '99.99%', label: 'Uptime achieved' },
-  { value: '+71%', label: 'Self-service usage' }]
+  { value: '98/100', label: 'Avg. Lighthouse score' },
+  { value: '+143%', label: 'Organic traffic growth' },
+  { value: '<1s', label: 'Page load time' }]
 
 },
 {

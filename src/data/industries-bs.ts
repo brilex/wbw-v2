@@ -339,9 +339,9 @@ export const industriesBS: IndustryBSContent[] = [
       },
     ],
     stats: [
-      { value: '2M+', label: 'Opsluživanih klijenata' },
-      { value: '99.99%', label: 'Postignuta dostupnost' },
-      { value: '+71%', label: 'Korišćenje samousluge' },
+      { value: '98/100', label: 'Prosj. Lighthouse rezultat' },
+      { value: '+143%', label: 'Rast organskog prometa' },
+      { value: '<1s', label: 'Vrijeme učitavanja' },
     ],
   },
   {
