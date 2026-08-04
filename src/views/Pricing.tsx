@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { CheckIcon, ArrowRightIcon, StarIcon, ZapIcon } from 'lucide-react';
+import { CheckIcon, ArrowRightIcon, StarIcon } from 'lucide-react';
 
 const packages = [
   {
@@ -12,7 +12,6 @@ const packages = [
     tagline: '5-Page Website',
     price: '$400',
     description: 'A complete, professional website — built fast, built right. Perfect for small businesses ready to establish a credible online presence.',
-    bonus: { months: 6, label: '6 months firme.ba Premium — free' },
     features: [
       'Full website build in WordPress / Bricks Builder',
       'Pages: Home, About, Services, Portfolio, Contact',
@@ -31,7 +30,6 @@ const packages = [
     tagline: 'Website + SEO Foundation',
     price: '$700',
     description: 'Everything in Starter, plus a complete SEO strategy built into the site from day one — so Google can actually find you.',
-    bonus: { months: 12, label: '12 months firme.ba Premium — free' },
     features: [
       'Everything in Starter',
       'Keyword research (Semrush + Google Keyword Planner)',
@@ -50,7 +48,6 @@ const packages = [
     tagline: 'Website + SEO + 6 Months Management',
     price: '$1,200',
     description: 'Everything in Growth, plus 6 months of active management. We run the site like it\'s our own — you focus on the business.',
-    bonus: { months: 18, label: '18 months firme.ba Premium — free' },
     features: [
       'Everything in Growth',
       'Monthly SEO monitoring (Search Console + GA4)',
@@ -66,10 +63,6 @@ const packages = [
 ];
 
 const faqs = [
-  {
-    q: 'What is firme.ba?',
-    a: 'firme.ba is our business directory portal for Bosnia and Herzegovina. A Premium listing gives your business increased visibility, featured placement, and enhanced profile options.',
-  },
   {
     q: 'Do I need to pay for hosting?',
     a: 'Yes — hosting and domain are managed on your end. We recommend and help configure managed WordPress hosting, but the ongoing cost is yours. We handle everything else.',
@@ -140,19 +133,6 @@ export function Pricing() {
                   <p className={`text-sm mt-2 leading-relaxed ${pkg.highlight ? 'text-zinc-400' : 'text-zinc-500'}`}>
                     {pkg.description}
                   </p>
-                </div>
-
-                {/* firme.ba bonus */}
-                <div className={`flex items-start gap-3 rounded-xl p-4 ${pkg.highlight ? 'bg-blue-600/20 border border-blue-500/30' : 'bg-blue-50 border border-blue-200'}`}>
-                  <ZapIcon className={`w-4 h-4 shrink-0 mt-0.5 ${pkg.highlight ? 'text-blue-400' : 'text-blue-600'}`} />
-                  <div>
-                    <p className={`text-xs font-bold uppercase tracking-wider mb-0.5 ${pkg.highlight ? 'text-blue-400' : 'text-blue-600'}`}>
-                      Included bonus
-                    </p>
-                    <p className={`text-sm font-semibold ${pkg.highlight ? 'text-white' : 'text-zinc-950'}`}>
-                      {pkg.bonus.label}
-                    </p>
-                  </div>
                 </div>
 
                 <ul className="space-y-3 flex-1">

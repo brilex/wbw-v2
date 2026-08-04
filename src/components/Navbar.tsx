@@ -20,6 +20,7 @@ export function Navbar() {
     { name: 'Work', path: '/work' },
     { name: 'Process', path: '/process' },
     { name: 'Blog', path: '/blog' },
+    { name: 'Pricing', path: '/pricing' },
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' },
   ];

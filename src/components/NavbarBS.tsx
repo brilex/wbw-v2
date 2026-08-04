@@ -22,6 +22,7 @@ export function NavbarBS() {
     { name: 'Rad', path: '/bs/rad' },
     { name: 'Proces', path: '/bs/proces' },
     { name: 'Blog', path: '/blog' },
+    { name: 'Cijene', path: '/bs/cijene' },
     { name: 'O nama', path: '/bs/o-nama' },
     { name: 'Kontakt', path: '/bs/kontakt' },
   ];
