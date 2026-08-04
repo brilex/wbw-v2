@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/process`, priority: 0.7 },
     { url: `${base}/testimonials`, priority: 0.7 },
     { url: `${base}/contact`, priority: 0.8 },
+    { url: `${base}/pricing`, priority: 0.9 },
   ].map((route) => ({
     ...route,
     lastModified: new Date(),
@@ -52,6 +53,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/bs/proces`, priority: 0.7 },
     { url: `${base}/bs/recenzije`, priority: 0.7 },
     { url: `${base}/bs/kontakt`, priority: 0.8 },
+    { url: `${base}/bs/cijene`, priority: 0.9 },
     { url: `${base}/bs/rad/hamada-co`, priority: 0.8 },
     { url: `${base}/bs/rad/converttonext`, priority: 0.8 },
   ].map((route) => ({
