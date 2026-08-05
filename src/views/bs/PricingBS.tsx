@@ -102,6 +102,13 @@ export function PricingBS() {
               Svaki paket uključuje copywriting, podešavanje performansi i osnovni SEO.
               Odaberite koliko duboko želite ići.
             </p>
+            <p className="mt-5 text-base font-semibold text-zinc-800">
+              Svaki sajt je{' '}
+              <span className="underline decoration-blue-600 decoration-2 underline-offset-4">
+                ručno izrađen od nule
+              </span>{' '}
+              — bez AI-generisanih templeta, bez page buildera koji ćete prerasti.
+            </p>
           </motion.div>
         </div>
       </section>

@@ -95,6 +95,13 @@ export function Pricing() {
               Every package includes copywriting, performance setup, and basic SEO out of the box.
               Choose how deep you want to go.
             </p>
+            <p className="mt-5 text-base font-semibold text-zinc-800">
+              Every site is{' '}
+              <span className="underline decoration-blue-600 decoration-2 underline-offset-4">
+                hand-built from scratch
+              </span>{' '}
+              — no AI-generated templates, no page builders you'll outgrow.
+            </p>
           </motion.div>
         </div>
       </section>
