@@ -10,10 +10,18 @@ interface CaseStudy {
   title: string; client: string; category: string; description: string;
   results: { metric: string; value: string }[];
   color: string; tags: string[]; href?: string; image?: string;
+  ctaLabel?: string; external?: boolean;
 }
 
 export function CaseStudiesBS() {
   const caseStudies: CaseStudy[] = [
+    {
+      title: 'firme.ba', client: 'Interni proizvod', category: 'Poslovni direktorij · Platforma',
+      description: 'Poslovni direktorij za cijelu Bosnu i Hercegovinu. Firme dobijaju profil s logom, lokacijom, kategorijom i opisom, a posjetioci ih pronalaze po nazivu, djelatnosti ili gradu — kroz kategorije od građevinarstva i auto industrije, preko IT-a, nekretnina i zdravstva, do ljepote i poslovnih usluga.',
+      results: [{ metric: 'Pokrivenost', value: 'Cijela BiH' }, { metric: 'Kategorija', value: '9+' }, { metric: 'Vrste oglasa', value: 'Besplatni + Premium' }],
+      color: 'from-red-500 to-red-700', tags: ['Poslovni direktorij', 'Pretraga i filteri', 'Profili firmi', 'Korisnički nalozi', 'SEO'],
+      href: '/bs/rad/firme-ba', image: '/firme-ba.webp',
+    },
     {
       title: 'ConvertToNext', client: 'Interni proizvod', category: 'Developer alat · SaaS',
       description: 'Izgradili smo automatizovani konverzijski engine koji transformiše Vite + React projekte (Bolt.new, Lovable, v0 exportovi) u produkcijski-spreman Next.js 15 App Router — rješavajući problem SEO nevidljivosti AI-generiranih sajtova za manje od 60 sekundi.',
@@ -77,7 +85,10 @@ export function CaseStudiesBS() {
               <div className={`grid lg:grid-cols-2 gap-0 ${index % 2 === 1 ? 'lg:[&>*:first-child]:order-last' : ''}`}>
                 <div className="relative aspect-[4/3] lg:aspect-auto overflow-hidden">
                   {study.image ? (
-                    <Link href={study.href ?? '#'} className="block w-full h-full">
+                    <Link
+                      href={study.href ?? '#'}
+                      {...(study.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                      className="block w-full h-full">
                       <Image src={study.image} alt={study.title} fill
                         className="object-contain group-hover:scale-105 transition-transform duration-700" />
                     </Link>
@@ -117,8 +128,11 @@ export function CaseStudiesBS() {
                     ))}
                   </div>
                   {study.href ? (
-                    <Link href={study.href} className="inline-flex items-center text-blue-600 font-semibold hover:gap-2 transition-all w-fit">
-                      Pogledajte studiju slučaja
+                    <Link
+                      href={study.href}
+                      {...(study.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                      className="inline-flex items-center text-blue-600 font-semibold hover:gap-2 transition-all w-fit">
+                      {study.ctaLabel ?? 'Pogledajte studiju slučaja'}
                       <ArrowUpRightIcon className="ml-1 w-5 h-5" />
                     </Link>
                   ) : (

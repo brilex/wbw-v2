@@ -16,10 +16,28 @@ interface CaseStudy {
   tags: string[];
   href?: string;
   image?: string;
+  ctaLabel?: string;
+  external?: boolean;
 }
 
 export function CaseStudies() {
   const caseStudies: CaseStudy[] = [
+    {
+      title: 'firme.ba',
+      client: 'In-house Product',
+      category: 'Business Directory · Platform',
+      description:
+        'A nationwide business directory for Bosnia & Herzegovina. Companies get a searchable profile with logo, location, category and description; visitors find them by company name, activity or city across categories spanning construction, automotive, IT, real estate, healthcare, beauty and business services.',
+      results: [
+        { metric: 'Coverage', value: 'BiH-wide' },
+        { metric: 'Categories', value: '9+' },
+        { metric: 'Listing tiers', value: 'Free + Premium' },
+      ],
+      color: 'from-red-500 to-red-700',
+      tags: ['Business Directory', 'Search & Filtering', 'Company Profiles', 'User Accounts', 'SEO'],
+      href: '/work/firme-ba',
+      image: '/firme-ba.webp',
+    },
     {
       title: 'ConvertToNext',
       client: 'In-house Product',
@@ -142,7 +160,10 @@ export function CaseStudies() {
                 {/* Visual */}
                 <div className="relative aspect-[4/3] lg:aspect-auto overflow-hidden">
                   {study.image ? (
-                    <Link href={study.href ?? '#'} className="block w-full h-full">
+                    <Link
+                      href={study.href ?? '#'}
+                      {...(study.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                      className="block w-full h-full">
                       <Image
                         src={study.image}
                         alt={study.title}
@@ -199,8 +220,11 @@ export function CaseStudies() {
                   </div>
 
                   {study.href ? (
-                    <Link href={study.href} className="inline-flex items-center text-blue-600 font-semibold hover:gap-2 transition-all w-fit">
-                      View case study
+                    <Link
+                      href={study.href}
+                      {...(study.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                      className="inline-flex items-center text-blue-600 font-semibold hover:gap-2 transition-all w-fit">
+                      {study.ctaLabel ?? 'View case study'}
                       <ArrowUpRightIcon className="ml-1 w-5 h-5" />
                     </Link>
                   ) : (
