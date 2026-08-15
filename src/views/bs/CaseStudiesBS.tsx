@@ -32,7 +32,7 @@ export function CaseStudiesBS() {
     {
       title: 'Hamada & Co.', client: 'PVC & Aluminijska stolarija', category: 'Web dizajn · SEO',
       description: 'Kompletna rekonstrukcija web stranice za firmu za stolariju u Bosni i Hercegovini — moderan dizajn, potpuna SEO optimizacija i konverzijski fokusirane forme koje su donijele prvog platećeg kupca u prvoj sedmici od lansiranja.',
-      results: [{ metric: 'Desktop Lighthouse', value: '100' }, { metric: 'Mobilni Lighthouse', value: '95' }, { metric: 'Prvi kupac', value: 'Sedmica 1' }],
+      results: [{ metric: 'Pojavljivanja u pretrazi', value: '+968%' }, { metric: 'Klikovi s Googlea', value: '+395%' }, { metric: 'Prvi kupac', value: 'Sedmica 1' }],
       color: 'from-blue-500 to-blue-700', tags: ['WordPress', 'Bricks Builder', 'SEO'],
       href: '/bs/rad/hamada-co', image: '/hamada&co.webp',
     },
