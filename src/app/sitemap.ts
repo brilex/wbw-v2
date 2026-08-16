@@ -20,6 +20,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/work/firme-ba`, priority: 0.8 },
     { url: `${base}/work/converttonext`, priority: 0.8 },
     { url: `${base}/work/hamada-co`, priority: 0.8 },
+    { url: `${base}/work/neimax`, priority: 0.8 },
+    { url: `${base}/work/multilab`, priority: 0.8 },
   ].map((route) => ({
     ...route,
     lastModified: new Date(),
@@ -60,6 +62,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/bs/rad/hamada-co`, priority: 0.8 },
     { url: `${base}/bs/rad/converttonext`, priority: 0.8 },
     { url: `${base}/bs/rad/firme-ba`, priority: 0.8 },
+    { url: `${base}/bs/rad/neimax`, priority: 0.8 },
+    { url: `${base}/bs/rad/multilab`, priority: 0.8 },
   ].map((route) => ({
     ...route,
     lastModified: new Date(),

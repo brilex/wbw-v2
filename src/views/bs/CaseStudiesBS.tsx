@@ -37,28 +37,18 @@ export function CaseStudiesBS() {
       href: '/bs/rad/hamada-co', image: '/hamada&co.webp',
     },
     {
-      title: 'FinTech Dashboard Transformacija', client: 'Quantum Finance', category: 'Web aplikacija',
-      description: 'Redizajnirali i izgradili smo složeni finansijski dashboard, smanjujući vremena učitavanja i dramatično poboljšavajući angažovanje korisnika.',
-      results: [{ metric: 'Brže učitavanje', value: '3.2x' }, { metric: 'Angažovanje korisnika', value: '+148%' }, { metric: 'Support ticketi', value: '-62%' }],
-      color: 'from-blue-500 to-blue-700', tags: ['React', 'TypeScript', 'D3.js'],
+      title: 'Neimax d.o.o.', client: 'Valoviti karton i ambalaža', category: 'Custom WordPress · Proizvodnja',
+      description: 'Custom WordPress tema za jednog od vodećih proizvođača ambalaže u BiH — trojezična (BA/EN/DE), Figma-to-code, sa katalogom proizvoda i galerijom fabrike.',
+      results: [{ metric: 'Jezika', value: '3' }, { metric: 'Tip teme', value: 'Custom' }, { metric: 'Izvor dizajna', value: 'Figma' }],
+      color: 'from-amber-500 to-amber-700', tags: ['WordPress', 'PHP', 'WPML', 'Figma'],
+      href: '/bs/rad/neimax', image: '/Neimax.webp',
     },
     {
-      title: 'Rekonstrukcija E-commerce Platforme', client: 'Nexus Apparel', category: 'E-commerce',
-      description: 'Izgradili smo prilagođeni Shopify Hydrogen storefront s besprijekornim konfiguratorima proizvoda koji su utrostručili online stope konverzije.',
-      results: [{ metric: 'Stopa konverzije', value: '+312%' }, { metric: 'Prosj. vrijednost narudžbe', value: '+47%' }, { metric: 'Brzina stranice', value: '98/100' }],
-      color: 'from-purple-500 to-purple-700', tags: ['Shopify', 'Hydrogen', 'Tailwind'],
-    },
-    {
-      title: 'Osvježavanje SaaS Marketing Sajta', client: 'TechFlow', category: 'Marketing',
-      description: 'Kompletno osvježavanje brenda i sajta za B2B SaaS kompaniju, s fokusom na optimizaciju konverzije i SEO.',
-      results: [{ metric: 'Organski promet', value: '+220%' }, { metric: 'Stopa prijave', value: '+85%' }, { metric: 'Bounce rate', value: '-41%' }],
-      color: 'from-emerald-500 to-emerald-700', tags: ['Next.js', 'Sanity CMS', 'SEO'],
-    },
-    {
-      title: 'Zdravstveni Patient Portal', client: 'MediCare Plus', category: 'Web aplikacija',
-      description: 'HIPAA-usklađeni patient portal koji povezuje pacijente s pružaocima, s sigurnim porukama i zakazivanjem termina.',
-      results: [{ metric: 'Zakazani termini', value: '12k/mj' }, { metric: 'Zadovoljstvo korisnika', value: '4.8/5' }, { metric: 'Smanjeni telefonski pozivi', value: '-58%' }],
-      color: 'from-orange-500 to-orange-700', tags: ['React', 'Node.js', 'HIPAA'],
+      title: 'Multilab d.o.o.', client: 'Laboratorijske i sigurnosne usluge', category: 'Custom WordPress · Zdravstvo',
+      description: 'Custom WordPress tema za ISO-akreditovani laboratorij u Tuzli — pokrivajući laboratorijske analize, DDD usluge, zaštitu na radu i protupožarnu zaštitu kroz četiri poslovna sektora.',
+      results: [{ metric: 'Sektora', value: '4' }, { metric: 'Tip teme', value: 'Custom' }, { metric: 'Akreditovan', value: 'ISO' }],
+      color: 'from-teal-500 to-teal-700', tags: ['WordPress', 'PHP', 'Vanilla JS'],
+      href: '/bs/rad/multilab', image: '/multilab.webp',
     },
   ];
 

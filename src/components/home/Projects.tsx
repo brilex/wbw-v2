@@ -8,10 +8,10 @@ import { ArrowRightIcon } from 'lucide-react';
 
 export function Projects() {
   const projects = [
-    { title: 'ConvertToNext', category: 'Developer Tool · SaaS', color: 'from-emerald-500 to-emerald-600', image: '/ConverttoNext.webp', href: '/work/converttonext' },
-    { title: 'Hamada & Co.', category: 'Web Design · SEO', color: 'from-blue-500 to-blue-600', image: '/hamada&co.webp', href: '/work/hamada-co' },
-    { title: 'E-commerce Platform', category: 'E-commerce', color: 'from-purple-500 to-purple-600' },
-    { title: 'SaaS Marketing Site', category: 'Marketing', color: 'from-emerald-500 to-emerald-600' },
+    { title: 'firme.ba', category: 'Business Directory · Platform', image: '/firme-ba.webp', href: '/work/firme-ba' },
+    { title: 'Hamada & Co.', category: 'Web Design · SEO', image: '/hamada&co.webp', href: '/work/hamada-co' },
+    { title: 'Neimax d.o.o.', category: 'Custom WordPress · Manufacturing', image: '/Neimax.webp', href: '/work/neimax' },
+    { title: 'Multilab d.o.o.', category: 'Custom WordPress · Healthcare', image: '/multilab.webp', href: '/work/multilab' },
   ];
 
   return (
@@ -46,35 +46,22 @@ export function Projects() {
               transition={{ delay: index * 0.1 }}
               className="group cursor-pointer">
               <div className="relative overflow-hidden rounded-2xl mb-4 aspect-[4/3]">
-                {project.image && project.href ? (
-                  <Link href={project.href} className="block w-full h-full">
-                    <Image
-                      src={project.image}
-                      alt={project.title}
-                      fill
-                      className="object-contain group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </Link>
-                ) : (
-                  <>
-                    <div className={`absolute inset-0 bg-gradient-to-br ${project.color} group-hover:scale-105 transition-transform duration-500`} />
-                    <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff10_1px,transparent_1px),linear-gradient(to_bottom,#ffffff10_1px,transparent_1px)] bg-[size:2rem_2rem]" />
-                  </>
-                )}
+                <Link href={project.href} className="block w-full h-full">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  />
+                </Link>
               </div>
               <div className="flex items-start justify-between">
                 <div>
-                  {project.href ? (
-                    <Link href={project.href}>
-                      <h3 className="text-xl font-semibold text-zinc-950 mb-1 group-hover:text-blue-600 transition-colors hover:text-blue-600">
-                        {project.title}
-                      </h3>
-                    </Link>
-                  ) : (
-                    <h3 className="text-xl font-semibold text-zinc-950 mb-1 group-hover:text-blue-600 transition-colors">
+                  <Link href={project.href}>
+                    <h3 className="text-xl font-semibold text-zinc-950 mb-1 group-hover:text-blue-600 transition-colors hover:text-blue-600">
                       {project.title}
                     </h3>
-                  )}
+                  </Link>
                   <p className="text-zinc-600">{project.category}</p>
                 </div>
                 <ArrowRightIcon className="w-5 h-5 text-zinc-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all" />

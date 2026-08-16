@@ -152,8 +152,10 @@ export function HomeBS() {
           </motion.div>
           <div className="grid md:grid-cols-2 gap-8">
             {[
-              { title: 'ConvertToNext', category: 'Developer alat · SaaS', image: '/ConverttoNext.webp', href: '/bs/rad/converttonext' },
+              { title: 'firme.ba', category: 'Poslovni direktorij · Platforma', image: '/firme-ba.webp', href: '/bs/rad/firme-ba' },
               { title: 'Hamada & Co.', category: 'Web dizajn · SEO', image: '/hamada&co.webp', href: '/bs/rad/hamada-co' },
+              { title: 'Neimax d.o.o.', category: 'Custom WordPress · Proizvodnja', image: '/Neimax.webp', href: '/bs/rad/neimax' },
+              { title: 'Multilab d.o.o.', category: 'Custom WordPress · Zdravstvo', image: '/multilab.webp', href: '/bs/rad/multilab' },
             ].map((project, index) => (
               <motion.div key={project.title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }} transition={{ delay: index * 0.1 }} className="group cursor-pointer">
