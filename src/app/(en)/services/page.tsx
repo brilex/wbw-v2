@@ -2,14 +2,14 @@ import type { Metadata } from 'next';
 import { Services } from '@/src/views/Services';
 
 export const metadata: Metadata = {
-  title: 'Services',
+  title: 'Web Development Services — Packages from $400',
   description:
-    'Comprehensive digital solutions: web development, UI/UX design, e-commerce, SEO, WordPress, and Next.js migrations.',
+    'Custom web development, UI/UX design, e-commerce, SEO, WordPress, and CSR-to-SSR migrations. Fixed-price packages, no surprises.',
   alternates: { canonical: 'https://www.webuildsites.net/services' },
   openGraph: {
-    title: 'Services | WBW',
+    title: 'Web Development Services — Packages from $400 | WBW',
     description:
-      'Comprehensive digital solutions: web development, UI/UX design, e-commerce, SEO, WordPress, and Next.js migrations.',
+      'Custom web development, UI/UX design, e-commerce, SEO, WordPress, and CSR-to-SSR migrations. Fixed-price packages, no surprises.',
     url: 'https://www.webuildsites.net/services',
   },
 };

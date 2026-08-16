@@ -3,14 +3,14 @@ import { getAllPosts } from '@/src/lib/blog';
 import { Blog } from '@/src/views/Blog';
 
 export const metadata: Metadata = {
-  title: 'Blog',
+  title: 'Blog — SEO, Core Web Vitals & Web Dev Guides',
   description:
-    'Insights on web development, performance, SEO, and building better digital products.',
+    'Practical guides on fixing React SEO problems, Core Web Vitals, CSR vs SSR, and building websites that Google actually indexes.',
   alternates: { canonical: 'https://www.webuildsites.net/blog' },
   openGraph: {
-    title: 'Blog | WBW',
+    title: 'Blog — SEO, Core Web Vitals & Web Dev Guides | WBW',
     description:
-      'Insights on web development, performance, SEO, and building better digital products.',
+      'Practical guides on fixing React SEO problems, Core Web Vitals, CSR vs SSR, and building websites that Google actually indexes.',
     url: 'https://www.webuildsites.net/blog',
   },
 };

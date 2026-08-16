@@ -221,10 +221,10 @@ export const industriesBS: IndustryBSContent[] = [
   },
   {
     slug: 'ecommerce',
-    title: 'E-commerce web dizajn',
+    title: 'E-commerce Web Dizajn — Izrada Online Prodavnica',
     tagline: 'Online prodavnice inžinjerisane za konverziju',
     description:
-      'Visoko-performantni e-commerce sajtovi na Shopifyu, Hydrogenu i headless platformama.',
+      'Izrada e-commerce web stranica koje konvertuju — WooCommerce, Shopify i custom rješenja. Paketi od 750 KM, besplatna konsultacija.',
     longDescription:
       'Gradimo online prodavnice koje se brzo učitavaju, prekrasno izgledaju i konvertuju posjetioce u kupce po stopama koje vode industriju. Od butik brendova do prodavnica s visokim obimom — naš e-commerce rad pomiče iglu.',
     challenges: [

@@ -2,14 +2,14 @@ import type { Metadata } from 'next';
 import { ContactBS } from '@/src/views/bs/ContactBS';
 
 export const metadata: Metadata = {
-  title: 'Kontakt | WBW Web Agencija',
+  title: 'Besplatna Konsultacija — Pokrenite Projekt | WBW',
   description:
-    'Pokrenite vaš projekt danas. Kontaktirajte WBW tim za besplatnu konsultaciju o izradi web stranice, dizajnu ili SEO-u.',
+    'Javite nam se i dobijte besplatnu konsultaciju u roku 24 sata. Izrada web stranica od 750 KM — WordPress, e-commerce, SEO.',
   alternates: { canonical: 'https://www.webuildsites.net/bs/kontakt' },
   openGraph: {
-    title: 'Kontakt | WBW Web Agencija',
+    title: 'Besplatna Konsultacija — Pokrenite Projekt | WBW',
     description:
-      'Pokrenite vaš projekt danas. Kontaktirajte WBW tim za besplatnu konsultaciju o izradi web stranice, dizajnu ili SEO-u.',
+      'Javite nam se i dobijte besplatnu konsultaciju u roku 24 sata. Izrada web stranica od 750 KM — WordPress, e-commerce, SEO.',
     url: 'https://www.webuildsites.net/bs/kontakt',
   },
 };

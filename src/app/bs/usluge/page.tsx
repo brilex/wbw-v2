@@ -2,14 +2,14 @@ import type { Metadata } from 'next';
 import { ServicesBS } from '@/src/views/bs/ServicesBS';
 
 export const metadata: Metadata = {
-  title: 'Usluge Web Razvoja | WBW Agencija',
+  title: 'Izrada Web Stranica — Paketi od 750 KM | WBW Agencija',
   description:
-    'Od web razvoja do SEO-a i e-commerce-a — pružamo sveobuhvatna digitalna rješenja prilagođena vašim poslovnim potrebama.',
+    'WordPress, e-commerce, UI/UX dizajn, SEO optimizacija i migracije na Next.js. Fiksne cijene, bez iznenađenja. Besplatna konsultacija.',
   alternates: { canonical: 'https://www.webuildsites.net/bs/usluge' },
   openGraph: {
-    title: 'Usluge Web Razvoja | WBW Agencija',
+    title: 'Izrada Web Stranica — Paketi od 750 KM | WBW Agencija',
     description:
-      'Od web razvoja do SEO-a i e-commerce-a — pružamo sveobuhvatna digitalna rješenja prilagođena vašim poslovnim potrebama.',
+      'WordPress, e-commerce, UI/UX dizajn, SEO optimizacija i migracije na Next.js. Fiksne cijene, bez iznenađenja.',
     url: 'https://www.webuildsites.net/bs/usluge',
   },
 };

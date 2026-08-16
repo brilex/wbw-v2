@@ -2,14 +2,14 @@ import type { Metadata } from 'next';
 import { HomeBS } from '@/src/views/bs/HomeBS';
 
 export const metadata: Metadata = {
-  title: 'WBW — Web Agencija | Izrada Web Stranica BiH',
+  title: 'WBW — Izrada Web Stranica | Web Agencija BiH',
   description:
-    'Gradimo web stranice koje konvertuju. Prilagođeni web razvoj, UI/UX dizajn, e-commerce i SEO za ambiciozne brendove u BiH.',
+    'Ručno izrađene web stranice sa SEO-om od prvog dana. WordPress, e-commerce, Next.js — paketi od 750 KM. +968% rast pretrage za našeg klijenta. Besplatna konsultacija.',
   alternates: { canonical: 'https://www.webuildsites.net/bs' },
   openGraph: {
-    title: 'WBW — Web Agencija | Izrada Web Stranica BiH',
+    title: 'WBW — Izrada Web Stranica | Web Agencija BiH',
     description:
-      'Gradimo web stranice koje konvertuju. Prilagođeni web razvoj, UI/UX dizajn, e-commerce i SEO za ambiciozne brendove u BiH.',
+      'Ručno izrađene web stranice sa SEO-om od prvog dana. WordPress, e-commerce, Next.js — paketi od 750 KM. Besplatna konsultacija.',
     url: 'https://www.webuildsites.net/bs',
   },
 };

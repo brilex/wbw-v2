@@ -2,14 +2,14 @@ import type { Metadata } from 'next';
 import { IndustriesBS } from '@/src/views/bs/IndustriesBS';
 
 export const metadata: Metadata = {
-  title: 'Industrije | WBW Web Agencija',
+  title: 'Web Dizajn po Industrijama — Zdravstvo, E-commerce, Nekretnine | WBW',
   description:
-    'Duboka stručnost u svakoj industriji. Prilagođavamo naš pristup kako bismo isporučili iznimne rezultate u vašem sektoru.',
+    'Sajtovi prilagođeni vašoj industriji. Radimo za zdravstvo, e-commerce, građevinu, advokate, restorane i 10+ drugih sektora u BiH.',
   alternates: { canonical: 'https://www.webuildsites.net/bs/industrije' },
   openGraph: {
-    title: 'Industrije | WBW Web Agencija',
+    title: 'Web Dizajn po Industrijama — Zdravstvo, E-commerce, Nekretnine | WBW',
     description:
-      'Duboka stručnost u svakoj industriji. Prilagođavamo naš pristup kako bismo isporučili iznimne rezultate u vašem sektoru.',
+      'Sajtovi prilagođeni vašoj industriji. Radimo za zdravstvo, e-commerce, građevinu, advokate, restorane i 10+ drugih sektora u BiH.',
     url: 'https://www.webuildsites.net/bs/industrije',
   },
 };

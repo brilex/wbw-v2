@@ -2,14 +2,14 @@ import type { Metadata } from 'next';
 import { AboutBS } from '@/src/views/bs/AboutBS';
 
 export const metadata: Metadata = {
-  title: 'O Nama | WBW Web Agencija',
+  title: 'O Nama — Web Agencija iz Bosne i Hercegovine | WBW',
   description:
-    'Upoznajte tim iza WBW-a. Radimo s ambicioznim brendovima kako bismo izgradili web stranice koje donose stvarne poslovne rezultate.',
+    'WBW je web agencija iz BiH. Gradimo ručno kodirane sajtove koji se rangiraju na Googleu i pretvaraju posjetioce u kupce. Pogledajte naš proces i rezultate.',
   alternates: { canonical: 'https://www.webuildsites.net/bs/o-nama' },
   openGraph: {
-    title: 'O Nama | WBW Web Agencija',
+    title: 'O Nama — Web Agencija iz Bosne i Hercegovine | WBW',
     description:
-      'Upoznajte tim iza WBW-a. Radimo s ambicioznim brendovima kako bismo izgradili web stranice koje donose stvarne poslovne rezultate.',
+      'WBW je web agencija iz BiH. Gradimo ručno kodirane sajtove koji se rangiraju na Googleu i pretvaraju posjetioce u kupce.',
     url: 'https://www.webuildsites.net/bs/o-nama',
   },
 };

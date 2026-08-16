@@ -2,14 +2,14 @@ import type { Metadata } from 'next';
 import { CaseStudiesBS } from '@/src/views/bs/CaseStudiesBS';
 
 export const metadata: Metadata = {
-  title: 'Naš Rad | WBW Web Agencija',
+  title: 'Studije Slučaja — Stvarni Projekti, Dokazani Rezultati | WBW',
   description:
-    'Stvarni projekti, stvarni rezultati. Istražite studije slučaja i pogledajte kako smo pomogli brendovima da transformišu svoju digitalnu prisutnost.',
+    'Pogledajte šta smo izgradili i kakve je rezultate donijelo — sa dokazima iz Google Search Console. +968% pojavljivanja, +395% klikova za klijenta iz BiH.',
   alternates: { canonical: 'https://www.webuildsites.net/bs/rad' },
   openGraph: {
-    title: 'Naš Rad | WBW Web Agencija',
+    title: 'Studije Slučaja — Stvarni Projekti, Dokazani Rezultati | WBW',
     description:
-      'Stvarni projekti, stvarni rezultati. Istražite studije slučaja i pogledajte kako smo pomogli brendovima da transformišu svoju digitalnu prisutnost.',
+      'Pogledajte šta smo izgradili i kakve je rezultate donijelo — sa dokazima iz Google Search Console. +968% pojavljivanja, +395% klikova.',
     url: 'https://www.webuildsites.net/bs/rad',
   },
 };

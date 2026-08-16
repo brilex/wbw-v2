@@ -2,14 +2,14 @@ import type { Metadata } from 'next';
 import { Industries } from '@/src/views/Industries';
 
 export const metadata: Metadata = {
-  title: 'Industries',
+  title: 'Web Design by Industry — Healthcare, E-commerce, Real Estate & More',
   description:
-    'Tailored web expertise across 16+ industry verticals. We understand your sector and build for it.',
+    'Industry-specific websites that convert. We design for healthcare, e-commerce, construction, law firms, restaurants, and 10+ other sectors.',
   alternates: { canonical: 'https://www.webuildsites.net/industries' },
   openGraph: {
-    title: 'Industries | WBW',
+    title: 'Web Design by Industry | WBW',
     description:
-      'Tailored web expertise across 16+ industry verticals. We understand your sector and build for it.',
+      'Industry-specific websites that convert. We design for healthcare, e-commerce, construction, law firms, restaurants, and 10+ other sectors.',
     url: 'https://www.webuildsites.net/industries',
   },
 };

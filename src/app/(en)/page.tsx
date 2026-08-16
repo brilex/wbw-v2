@@ -2,14 +2,14 @@ import type { Metadata } from 'next';
 import { Home } from '@/src/views/Home';
 
 export const metadata: Metadata = {
-  title: 'WBW — Premium Web Development Agency',
+  title: 'WBW — Web Development Agency | Sites That Rank & Convert',
   description:
-    'We build websites that convert. Custom web development, UI/UX design, e-commerce, and SEO for ambitious brands.',
+    'Hand-built websites with SEO from day one. WordPress, Next.js, e-commerce — packages from $400. +968% search growth for our last client. Free consultation.',
   alternates: { canonical: 'https://www.webuildsites.net' },
   openGraph: {
-    title: 'WBW — Premium Web Development Agency',
+    title: 'WBW — Web Development Agency | Sites That Rank & Convert',
     description:
-      'We build websites that convert. Custom web development, UI/UX design, e-commerce, and SEO for ambitious brands.',
+      'Hand-built websites with SEO from day one. WordPress, Next.js, e-commerce — packages from $400. +968% search growth for our last client.',
     url: 'https://www.webuildsites.net',
   },
 };

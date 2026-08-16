@@ -2,14 +2,14 @@ import type { Metadata } from 'next';
 import { Contact } from '@/src/views/Contact';
 
 export const metadata: Metadata = {
-  title: 'Contact',
+  title: 'Free Consultation — Start Your Web Project',
   description:
-    "Have a project in mind? Get in touch and let's discuss how we can help bring your vision to life.",
+    'Tell us about your project and get a free, no-obligation consultation within 24 hours. Web development packages from $400.',
   alternates: { canonical: 'https://www.webuildsites.net/contact' },
   openGraph: {
-    title: 'Contact | WBW',
+    title: 'Free Consultation — Start Your Web Project | WBW',
     description:
-      "Have a project in mind? Get in touch and let's discuss how we can help bring your vision to life.",
+      'Tell us about your project and get a free, no-obligation consultation within 24 hours. Web development packages from $400.',
     url: 'https://www.webuildsites.net/contact',
   },
 };

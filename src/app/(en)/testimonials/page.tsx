@@ -2,14 +2,14 @@ import type { Metadata } from 'next';
 import { Testimonials } from '@/src/views/Testimonials';
 
 export const metadata: Metadata = {
-  title: 'Testimonials',
+  title: 'Client Reviews & Results',
   description:
-    'What our clients say about working with WBW — real results from real projects.',
+    'See what clients say about working with WBW. Real projects, real feedback — from PVC joinery in Bosnia to developer tools used worldwide.',
   alternates: { canonical: 'https://www.webuildsites.net/testimonials' },
   openGraph: {
-    title: 'Testimonials | WBW',
+    title: 'Client Reviews & Results | WBW',
     description:
-      'What our clients say about working with WBW — real results from real projects.',
+      'See what clients say about working with WBW. Real projects, real feedback — from PVC joinery in Bosnia to developer tools used worldwide.',
     url: 'https://www.webuildsites.net/testimonials',
   },
 };
