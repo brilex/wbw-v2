@@ -80,6 +80,17 @@ export function CaseStudies() {
       image: '/Neimax.webp',
     },
     {
+      title: 'WLDM',
+      client: 'Backlinks & AI Citation Agency',
+      category: 'WordPress + Bricks · SEO Agency',
+      description: 'A premium agency website for a backlinks and AI citation engineering company — with interactive SEO audit tools, 3D data visualisations, and a conversion-focused strategy session booking flow.',
+      results: [{ metric: 'Built-in tools', value: '2' }, { metric: 'Visual style', value: '3D Data' }, { metric: 'Conversion goal', value: 'Bookings' }],
+      color: 'from-lime-500 to-lime-700',
+      tags: ['WordPress', 'Bricks Builder', 'JavaScript'],
+      href: '/work/wldm',
+      image: '/wldm.webp',
+    },
+    {
       title: 'Multilab d.o.o.',
       client: 'Laboratory & Safety Services',
       category: 'Custom WordPress · Healthcare',

@@ -8,10 +8,10 @@ import { ArrowRightIcon } from 'lucide-react';
 
 export function Projects() {
   const projects = [
-    { title: 'firme.ba', category: 'Business Directory · Platform', image: '/firme-ba.webp', href: '/work/firme-ba' },
+    { title: 'WLDM', category: 'WordPress + Bricks · SEO Agency', image: '/wldm.webp', href: '/work/wldm' },
     { title: 'Hamada & Co.', category: 'Web Design · SEO', image: '/hamada&co.webp', href: '/work/hamada-co' },
     { title: 'Neimax d.o.o.', category: 'Custom WordPress · Manufacturing', image: '/Neimax.webp', href: '/work/neimax' },
-    { title: 'Multilab d.o.o.', category: 'Custom WordPress · Healthcare', image: '/multilab.webp', href: '/work/multilab' },
+    { title: 'firme.ba', category: 'Business Directory · Platform', image: '/firme-ba.webp', href: '/work/firme-ba' },
   ];
 
   return (

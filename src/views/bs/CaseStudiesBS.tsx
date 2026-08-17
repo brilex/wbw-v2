@@ -44,6 +44,13 @@ export function CaseStudiesBS() {
       href: '/bs/rad/neimax', image: '/Neimax.webp',
     },
     {
+      title: 'WLDM', client: 'Backlinks i AI Citation agencija', category: 'WordPress + Bricks · SEO Agencija',
+      description: 'Premium agencijski sajt za kompaniju za backlinks i AI citation engineering — sa interaktivnim SEO audit alatima, 3D vizualizacijama podataka i tokom zakazivanja strategijskih sesija.',
+      results: [{ metric: 'Ugrađenih alata', value: '2' }, { metric: 'Vizualni stil', value: '3D Podaci' }, { metric: 'Cilj konverzije', value: 'Zakazivanja' }],
+      color: 'from-lime-500 to-lime-700', tags: ['WordPress', 'Bricks Builder', 'JavaScript'],
+      href: '/bs/rad/wldm', image: '/wldm.webp',
+    },
+    {
       title: 'Multilab d.o.o.', client: 'Laboratorijske i sigurnosne usluge', category: 'Custom WordPress · Zdravstvo',
       description: 'Custom WordPress tema za ISO-akreditovani laboratorij u Tuzli — pokrivajući laboratorijske analize, DDD usluge, zaštitu na radu i protupožarnu zaštitu kroz četiri poslovna sektora.',
       results: [{ metric: 'Sektora', value: '4' }, { metric: 'Tip teme', value: 'Custom' }, { metric: 'Akreditovan', value: 'ISO' }],
