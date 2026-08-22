@@ -163,10 +163,10 @@ export const industries: IndustryData[] = [
 {
   slug: 'construction',
   icon: HardHatIcon,
-  title: 'Construction Web Design',
+  title: 'General Contractor Website Design',
   tagline: 'Build trust before you break ground',
   description:
-  'Project-driven websites for general contractors, subs, and construction firms that win more bids.',
+  'General contractor website design for subs and construction firms that win more bids — project-driven sites built to convert inquiries into RFPs.',
   longDescription:
   'Your portfolio is your proof. We build construction sites that showcase past work powerfully, simplify project inquiries, and help you win the kind of work you actually want.',
   challenges: [
@@ -249,12 +249,12 @@ export const industries: IndustryData[] = [
 {
   slug: 'ecommerce',
   icon: ShoppingCartIcon,
-  title: 'eCommerce Website Design Services',
+  title: 'eCommerce Website Design & UX Agency',
   tagline: 'Storefronts engineered to convert',
   description:
-  'High-performance eCommerce sites on Shopify, Hydrogen, and headless platforms.',
+  'High-performance eCommerce sites on Shopify, Hydrogen, and headless platforms — built with the UX discipline that turns browsers into buyers.',
   longDescription:
-  'We build online stores that load fast, look stunning, and convert visitors at industry-leading rates. From boutique brands to high-volume retailers, our eCommerce work moves the needle.',
+  'As an eCommerce UX agency, we build online stores that load fast, look stunning, and convert visitors at industry-leading rates. From boutique brands to high-volume retailers, our eCommerce work moves the needle.',
   challenges: [
   'Custom checkout experiences that maximize conversion',
   'Product configurators and customization tools',
@@ -512,7 +512,7 @@ export const industries: IndustryData[] = [
   description:
   'A manufacturing website design agency for manufacturers, OEMs, and industrial suppliers that need sites built to generate qualified leads, not just look good.',
   longDescription:
-  'Manufacturing buyers are technical, deliberate, and high-value. As a manufacturing website design agency, we build sites that speak their language — with detailed product data, capability content, and clear paths to engagement. We built a trilingual (Bosnian/English/German) site for Neimax, a corrugated cardboard manufacturer, handling everything from Figma design to a custom WordPress theme.',
+  'Manufacturing buyers are technical, deliberate, and high-value. As a manufacturing website design agency handling industrial website development, we build sites that speak their language — with detailed product data, capability content, and clear paths to engagement. We built a trilingual (Bosnian/English/German) site for Neimax, a corrugated cardboard manufacturer, handling everything from Figma design to a custom WordPress theme.',
   challenges: [
   'Detailed product catalogs with specs, drawings, and CAD files',
   'Capability content for buyers, engineers, and procurement',
@@ -550,7 +550,7 @@ export const industries: IndustryData[] = [
 {
   slug: 'restaurant',
   icon: UtensilsIcon,
-  title: 'Restaurant Website Design',
+  title: 'Restaurant Website Design Agency',
   tagline: 'Sites that fill seats',
   description:
   'Mouth-watering websites for restaurants, hospitality groups, and food brands.',
@@ -593,12 +593,12 @@ export const industries: IndustryData[] = [
 {
   slug: 'real-estate',
   icon: HomeIcon,
-  title: 'Real Estate Website Design',
+  title: 'Responsive Real Estate Websites',
   tagline: 'Listings that move properties',
   description:
-  'Websites for brokerages, agents, developers, and property management companies.',
+  'Responsive real estate websites for brokerages, agents, developers, and property management companies — built to perform on every device buyers browse from.',
   longDescription:
-  'Real estate is a visual, search-heavy, hyper-local business. We build sites with rich listing experiences, IDX/MLS integrations, and lead capture that delivers serious buyers and sellers.',
+  'Real estate is a visual, search-heavy, hyper-local business, and most browsing happens on mobile. We build responsive real estate websites with rich listing experiences, IDX/MLS integrations, and lead capture that delivers serious buyers and sellers.',
   challenges: [
   'IDX/MLS feeds with thousands of constantly-updating listings',
   'Map-based search and neighborhood discovery',

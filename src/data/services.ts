@@ -26,12 +26,12 @@ export const services: ServiceData[] = [
 {
   slug: 'web-development',
   icon: CodeIcon,
-  title: 'Web Development',
-  tagline: 'Custom websites and web applications',
+  title: 'Web Development & High-Performance Website Design',
+  tagline: 'An SEO friendly web design company for custom websites and web applications',
   description:
-  'Custom websites and web applications built with React, TypeScript, and modern frameworks. Optimized for performance, scalability, and user experience.',
+  'Custom websites and web applications built with React, TypeScript, and modern frameworks. As an SEO friendly web design company, we optimize every build for performance, scalability, and user experience from day one.',
   longDescription:
-  'We build production-grade websites and web applications using the latest technologies. From marketing sites to complex SaaS platforms, our development is fast, accessible, and built to scale with your business.',
+  'We build production-grade websites and web applications using the latest technologies — full CMS website development services or custom-coded apps, depending on what you need. From marketing sites to complex SaaS platforms, our high-performance website design is fast, accessible, and built to scale with your business.',
   features: [
   {
     title: 'Modern stack',
@@ -104,9 +104,9 @@ export const services: ServiceData[] = [
     'Bespoke plugins for unique functionality, integrated cleanly with the WordPress ecosystem.'
   },
   {
-    title: 'Headless WordPress',
+    title: 'Headless WordPress website design agency',
     description:
-    'Use WordPress as a CMS with a modern React/Next.js frontend for the best of both worlds.'
+    'Use WordPress as a CMS with a modern React/Next.js frontend for the best of both worlds — the editing experience your team knows, with the speed of a decoupled frontend.'
   },
   {
     title: 'Security hardening',
