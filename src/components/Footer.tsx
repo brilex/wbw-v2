@@ -8,6 +8,7 @@ export function Footer() {
     { name: 'UI/UX Design', path: '/services/ui-ux-design' },
     { name: 'E-commerce', path: '/services/ecommerce-development' },
     { name: 'SEO Optimization', path: '/services/seo-optimization' },
+    { name: 'Web Design Alberta', path: '/web-design-alberta' },
   ];
 
   const company = [
