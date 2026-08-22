@@ -30,6 +30,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/work/united-world`, priority: 0.8 },
     { url: `${base}/work/crypto-news-canada`, priority: 0.8 },
     { url: `${base}/work/cryptoleb`, priority: 0.8 },
+    { url: `${base}/work/superedge`, priority: 0.8 },
+    { url: `${base}/work/one-auto-glass`, priority: 0.8 },
+    { url: `${base}/web-design-calgary`, priority: 0.8 },
+    { url: `${base}/seo-kelowna`, priority: 0.8 },
   ].map((route) => ({
     ...route,
     lastModified: new Date(),

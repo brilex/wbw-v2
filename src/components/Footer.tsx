@@ -9,6 +9,8 @@ export function Footer() {
     { name: 'E-commerce', path: '/services/ecommerce-development' },
     { name: 'SEO Optimization', path: '/services/seo-optimization' },
     { name: 'Web Design Alberta', path: '/web-design-alberta' },
+    { name: 'Website Design Calgary', path: '/web-design-calgary' },
+    { name: 'SEO Kelowna', path: '/seo-kelowna' },
   ];
 
   const company = [

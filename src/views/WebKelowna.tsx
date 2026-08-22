@@ -3,67 +3,56 @@
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ArrowRightIcon, MapPinIcon, ZapIcon, HardHatIcon, BuildingIcon } from 'lucide-react';
+import { ArrowRightIcon, MapPinIcon, ZapIcon, TrendingUpIcon, SearchIcon } from 'lucide-react';
 
 const reasons = [
   {
     icon: ZapIcon,
-    title: 'We work remotely without losing quality',
-    description: 'The entire process — from consultation to launch — runs online. Alberta clients get the same level of attention and communication as if we were down the street.',
+    title: 'Fully remote, fully accountable',
+    description: 'Calls, screen sharing, and regular updates — the entire build and SEO process happens online, with clear communication throughout.',
   },
   {
-    icon: BuildingIcon,
-    title: 'Real experience with Edmonton businesses',
-    description: 'We\'ve built sites for contractors, accounting firms, and a business directory serving Alberta clients — not a generic template pitch.',
+    icon: SearchIcon,
+    title: 'SEO is our specialty, not an add-on',
+    description: 'We don\'t just build sites — we optimize them for search from day one, with keyword research and on-page SEO built into every project.',
   },
   {
-    icon: HardHatIcon,
-    title: 'Built for the industries that hire us most',
-    description: 'General contractors and professional services firms need sites that convert inquiries into leads, not just look good — that\'s what we build.',
+    icon: TrendingUpIcon,
+    title: 'Real, verified results',
+    description: 'One client saw a 968% increase in organic search traffic after we rebuilt their site with SEO foundations done right.',
   },
-];
-
-const clients = [
-  { name: 'Super Edge Contracting', category: 'General Contractor · Edmonton', href: '/work/superedge', external: false },
-  { name: 'Jaberson & Associates', category: 'Tax & Accounting · Edmonton', href: '/work/jaberson', external: false },
-  { name: 'United First', category: 'Business Directory · Canada', href: '/work/united-first', external: false },
 ];
 
 const faqs = [
   {
-    q: 'Do you need to be based in Alberta to work with local businesses?',
-    a: 'No. We run the entire process remotely — calls, screen sharing, and regular updates by email. We\'ve delivered projects for contractors and professional service firms in the Edmonton area entirely online.',
+    q: 'Do you need to be based in Kelowna to work with us?',
+    a: 'No. We work remotely with clients across Canada — calls, screen sharing, and regular updates handle everything an in-person meeting would.',
   },
   {
-    q: 'Do you have experience with general contractor websites?',
-    a: 'Yes — we built the site for Super Edge Contracting, an Edmonton-based renovation and construction company. See our general contractor website design page for what that typically includes.',
+    q: 'How much does SEO cost in Kelowna?',
+    a: 'SEO is included in our Growth and Full Partnership packages, covering keyword research, on-page optimization, and technical audits. See our pricing page for exact tiers.',
   },
   {
-    q: 'What industries in Alberta have you worked with?',
-    a: 'Construction and general contracting, tax and accounting firms, and a Canada-wide business directory platform. If your industry isn\'t listed, get in touch — we can still help.',
-  },
-  {
-    q: 'Do you work with businesses in St. Albert and Sherwood Park?',
-    a: 'Yes — we serve the entire Edmonton metro area, including St. Albert, Sherwood Park, and surrounding communities, the same way we serve Edmonton itself.',
+    q: 'How long until SEO results show up?',
+    a: 'Technical fixes can show results within weeks. Sustainable ranking growth typically takes 3-6 months of consistent work — we\'re upfront about that timeline from the start.',
   },
 ];
 
-export function WebAlberta() {
+export function WebKelowna() {
   return (
     <main className="min-h-screen">
       <section className="pt-32 pb-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl">
             <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-3 flex items-center gap-2">
-              <MapPinIcon className="w-4 h-4" /> Alberta, Canada
+              <MapPinIcon className="w-4 h-4" /> Kelowna, BC
             </p>
             <h1 className="text-5xl lg:text-6xl font-bold tracking-tight text-zinc-950 mb-6">
-              Web Design for Alberta &amp; Edmonton Businesses
+              Web Design &amp; SEO for Kelowna Businesses
             </h1>
             <p className="text-xl text-zinc-600 leading-relaxed">
-              Custom-built websites with SEO built in from day one. We work remotely with
-              contractors, accounting firms, and service businesses across Alberta — Edmonton,
-              St. Albert, Sherwood Park, and beyond.
+              Custom-built websites and SEO strategy that actually gets you found.
+              We work remotely with Kelowna businesses that want more than a template.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-10">
               <Link href="/contact"
@@ -84,10 +73,10 @@ export function WebAlberta() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
             className="text-4xl font-bold text-zinc-950 mb-4 text-center">
-            Why Alberta businesses work with us
+            Why Kelowna businesses work with us
           </motion.h2>
           <p className="text-xl text-zinc-600 text-center max-w-2xl mx-auto mb-16">
-            We're not a local agency pretending to be everywhere — we're a remote team with a track record in your market.
+            SEO-first web design, delivered remotely with real accountability.
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             {reasons.map((reason, index) => (
@@ -106,40 +95,17 @@ export function WebAlberta() {
       </section>
 
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-            className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-zinc-950 mb-3">Recent Alberta &amp; Canada projects</h2>
-            <p className="text-zinc-600">A sample of the businesses we've built for.</p>
-          </motion.div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {clients.map((client) => (
-              <Link key={client.name} href={client.href} {...(client.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                className="group bg-zinc-50 border border-zinc-200 rounded-2xl p-8 hover:border-blue-600 hover:shadow-lg transition-all">
-                <h3 className="text-xl font-semibold text-zinc-950 mb-1 group-hover:text-blue-600 transition-colors">
-                  {client.name}
-                </h3>
-                <p className="text-zinc-600 mb-4">{client.category}</p>
-                <span className="inline-flex items-center text-blue-600 text-sm font-medium">
-                  {client.external ? 'Visit site' : 'View case study'} <ArrowRightIcon className="ml-1 w-4 h-4" />
-                </span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
             className="bg-gradient-to-br from-blue-50 to-white border border-blue-100 rounded-2xl p-10 text-center">
             <p className="text-zinc-700 leading-relaxed">
               We're also active in{' '}
-              <Link href="/web-design-calgary" className="text-blue-600 font-medium hover:underline">Calgary</Link>
+              <Link href="/web-design-alberta" className="text-blue-600 font-medium hover:underline">Edmonton &amp; Alberta</Link>
               {' '}and{' '}
-              <Link href="/seo-kelowna" className="text-blue-600 font-medium hover:underline">Kelowna, BC</Link>.
-              Need local SEO help too? See our{' '}
-              <Link href="/services/seo-optimization" className="text-blue-600 font-medium hover:underline">SEO service page</Link>.
+              <Link href="/web-design-calgary" className="text-blue-600 font-medium hover:underline">Calgary</Link>.
+              See our{' '}
+              <Link href="/services/seo-optimization" className="text-blue-600 font-medium hover:underline">SEO service page</Link>
+              {' '}for exactly what's included.
             </p>
           </motion.div>
         </div>
@@ -168,7 +134,7 @@ export function WebAlberta() {
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-              Ready for a website built for your business?
+              Ready to get found by the right people?
             </h2>
             <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
               Tell us about your project and we'll recommend the right package.

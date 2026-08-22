@@ -309,6 +309,11 @@ export const services: ServiceData[] = [
 
   faqs: [
   {
+    question: 'Do you offer local SEO services?',
+    answer:
+    "Yes — local SEO is often the fastest win for service businesses. We optimize your Google Business Profile, build location-specific content, and fix the technical issues that keep you out of local map results."
+  },
+  {
     question: 'How long until I see results?',
     answer:
     'Technical wins can show in weeks. Sustainable ranking growth typically takes 3–6 months of consistent work.'
