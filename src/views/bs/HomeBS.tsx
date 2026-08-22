@@ -27,9 +27,16 @@ export function HomeBS() {
                 Gradimo web stranice koje konvertuju.
               </motion.h1>
               <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}
-                className="text-xl text-zinc-600 mb-10 leading-relaxed max-w-xl">
+                className="text-xl text-zinc-600 mb-4 leading-relaxed max-w-xl">
                 Transformišite svoju digitalnu prisutnost s prilagođenim web rješenjima koja donose rezultate.
                 Kreiramo iznimna iskustva za ambiciozna preduzeća.
+              </motion.p>
+              <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.35 }}
+                className="text-sm text-zinc-500 mb-10">
+                Izrada web stranica za firme u{' '}
+                <Link href="/bs/izrada-web-stranica-tuzla" className="text-blue-600 hover:underline">Tuzli</Link>,{' '}
+                <Link href="/bs/izrada-web-stranica-sarajevo" className="text-blue-600 hover:underline">Sarajevu</Link>
+                {' '}i širom BiH.
               </motion.p>
               <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}
                 className="flex flex-col sm:flex-row gap-4">
@@ -81,10 +88,10 @@ export function HomeBS() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { value: '120+', label: 'Isporučenih projekata' },
-              { value: '45+', label: 'Zadovoljnih klijenata' },
-              { value: '4.9/5', label: 'Prosječna ocjena' },
-              { value: '8 god', label: 'Iskustva' },
+              { value: '7+', label: 'Godina iskustva' },
+              { value: '8', label: 'Isporučenih web stranica' },
+              { value: '+968%', label: 'Rast pretrage (klijent)' },
+              { value: '1. sedmica', label: 'Prva mušterija za klijenta' },
             ].map((stat) => (
               <div key={stat.label}>
                 <div className="text-3xl font-bold text-zinc-950 mb-1">{stat.value}</div>
@@ -211,38 +218,6 @@ export function HomeBS() {
             <Link href="/bs/proces" className="inline-flex items-center text-blue-600 font-semibold hover:gap-2 transition-all">
               Pogledajte cijeli proces <ArrowRightIcon className="ml-1 w-5 h-5" />
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold tracking-tight text-zinc-950 mb-4">Šta kažu naši klijenti</h2>
-            <p className="text-xl text-zinc-600">Uspjeh naših klijenata je naš uspjeh.</p>
-          </motion.div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { quote: 'WBW je potpuno transformirao naš online prisustvo. Pažnja prema detaljima i tehnička stručnost su nenadmašni. Isporučili su prije roka, a rezultati su premašili naša očekivanja.', author: 'Sarah Chen', role: 'CEO, TechFlow' },
-              { quote: 'Saradnja s WBW-om je bila besprijekorna od početka do kraja. Isporučili su prekrasnu, visoko-performantnu web stranicu koja je dramatično poboljšala naše konverzije.', author: 'Michael Rodriguez', role: 'Marketing Director, Innovate Labs' },
-              { quote: 'WBW tim je oživio našu viziju s nevjerovatnim dizajnom i besprijekornim izvođenjem. Njihov proces je transparentan i saradnički — tačno ono što nam je trebalo.', author: 'Emily Watson', role: 'Osnivač, Nexus Digital' },
-            ].map((t, i) => (
-              <motion.div key={t.author} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }} transition={{ delay: i * 0.1 }}
-                className="bg-zinc-50 p-8 rounded-2xl border border-zinc-200 hover:border-blue-600 hover:shadow-lg transition-all">
-                <div className="flex gap-1 mb-4">
-                  {Array.from({ length: 5 }).map((_, j) => (
-                    <div key={j} className="w-4 h-4 rounded-full bg-blue-600 text-white flex items-center justify-center text-[10px]">★</div>
-                  ))}
-                </div>
-                <p className="text-zinc-700 mb-6 leading-relaxed">"{t.quote}"</p>
-                <div className="pt-4 border-t border-zinc-200">
-                  <p className="font-semibold text-zinc-950">{t.author}</p>
-                  <p className="text-sm text-zinc-500">{t.role}</p>
-                </div>
-              </motion.div>
-            ))}
           </div>
         </div>
       </section>

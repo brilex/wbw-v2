@@ -3,16 +3,42 @@
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { QuoteIcon, StarIcon, ArrowRightIcon } from 'lucide-react';
+import { TrendingUpIcon, GlobeIcon, ArrowRightIcon, SearchIcon, ZapIcon } from 'lucide-react';
 
 export function TestimonialsBS() {
-  const testimonials = [
-    { quote: 'WBW je potpuno transformirao naš online prisustvo. Pažnja prema detaljima i tehnička stručnost su nenadmašni. Isporučili su prije roka, a rezultati su premašili naša očekivanja.', author: 'Sarah Chen', role: 'CEO', company: 'TechFlow', rating: 5 },
-    { quote: 'Saradnja s WBW-om je bila besprijekorna od početka do kraja. Isporučili su prekrasnu, visoko-performantnu web stranicu koja je dramatično poboljšala naše stope konverzije. Toplo preporučujem.', author: 'Michael Rodriguez', role: 'Marketing Director', company: 'Innovate Labs', rating: 5 },
-    { quote: 'WBW tim je oživio našu viziju s nevjerovatnim dizajnom i besprijekornim izvođenjem. Njihov proces je transparentan i saradnički — tačno ono što nam je trebalo.', author: 'Emily Watson', role: 'Osnivač', company: 'Nexus Digital', rating: 5 },
-    { quote: 'Osim što su izgradili web stranicu, WBW je postao strateški partner. Razumjeli su naš biznis i to preveli u digitalno iskustvo koje istinski predstavlja naš brend.', author: 'David Park', role: 'CMO', company: 'Quantum Finance', rating: 5 },
-    { quote: 'Sama poboljšanja performansi su isplatila projekt deset puta. Naš tim i dalje ostaje impresioniran kvalitetom i kontinuiranom podrškom koju primamo.', author: 'Jessica Lee', role: 'VP Engineering', company: 'LearnHub', rating: 5 },
-    { quote: 'Zaista svjetska klasa rada. WBW kombinuje osjećaj za dizajn s tehničkom izvrsnosti na način koji nisam vidio kod drugih agencija. Sada su naš primarni partner.', author: 'Marcus Thompson', role: 'Osnivač', company: 'Zenith Studio', rating: 5 },
+  const results = [
+    {
+      icon: TrendingUpIcon,
+      metric: '+968%',
+      title: 'Rast organske pretrage',
+      description: 'Hamada & Co. je prešao od gotovo nulte vidljivosti do 968% rasta organske pretrage nakon što smo izgradili stranicu s ugrađenim on-page SEO-om od prvog dana.',
+      project: 'Hamada & Co.',
+      href: '/bs/rad/hamada-co',
+    },
+    {
+      icon: ZapIcon,
+      metric: '1. sedmica',
+      title: 'Prva online mušterija',
+      description: 'firme.ba je dobio prvu mušteriju unutar prve sedmice od lansiranja — prije bilo kakvog plaćenog oglašavanja.',
+      project: 'firme.ba',
+      href: '/bs/rad/firme-ba',
+    },
+    {
+      icon: GlobeIcon,
+      metric: '3 jezika',
+      title: 'Trojezični korporativni sajt',
+      description: 'Neimax je trebao profesionalnu prisutnost na bosanskom, engleskom i njemačkom. Isporučili smo custom WordPress temu s bezprijekornim prebacivanjem jezika.',
+      project: 'Neimax d.o.o.',
+      href: '/bs/rad/neimax',
+    },
+    {
+      icon: SearchIcon,
+      metric: 'Stranica 1',
+      title: 'Google pozicije od lansiranja',
+      description: 'WLDM.io je lansiran s SEO-spremnom arhitekturom uključujući interaktivne alate i strukturirane podatke — odmah rankirajući za konkurentne backlink ključne riječi.',
+      project: 'WLDM',
+      href: '/bs/rad/wldm',
+    },
   ];
 
   return (
@@ -21,19 +47,20 @@ export function TestimonialsBS() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl">
             <h1 className="text-5xl lg:text-6xl font-bold tracking-tight text-zinc-950 mb-6">
-              Šta kažu naši klijenti
+              Stvarni rezultati, ne obećanja
             </h1>
             <p className="text-xl text-zinc-600 leading-relaxed">
-              Uspjeh naših klijenata mjerimo kao vlastiti. Evo šta oni kažu o saradnji s nama.
+              Puštamo brojke da govore. Evo mjerljivih rezultata iz nedavnih projekata
+              — bez lažnih citata, bez izmišljenih imena.
             </p>
           </motion.div>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
             className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-12 border-t border-zinc-100">
             {[
-              { value: '4.9/5', label: 'Prosječna ocjena' },
-              { value: '98%', label: 'Zadržavanje klijenata' },
-              { value: '120+', label: 'Isporučenih projekata' },
-              { value: '45+', label: 'Zadovoljnih klijenata' },
+              { value: '7+', label: 'Godina iskustva' },
+              { value: '8', label: 'Isporučenih web stranica' },
+              { value: '+968%', label: 'Rast pretrage (klijent)' },
+              { value: '1. sedmica', label: 'Prva mušterija za klijenta' },
             ].map((stat) => (
               <div key={stat.label}>
                 <div className="text-4xl font-bold text-blue-600 mb-1">{stat.value}</div>
@@ -46,21 +73,27 @@ export function TestimonialsBS() {
 
       <section className="py-20 bg-zinc-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <motion.div key={testimonial.author} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }} transition={{ delay: (index % 3) * 0.1 }}
+          <div className="grid md:grid-cols-2 gap-8">
+            {results.map((result, index) => (
+              <motion.div
+                key={result.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: (index % 2) * 0.1 }}
                 className="bg-white p-8 rounded-2xl border border-zinc-200 hover:border-blue-600 hover:shadow-lg transition-all flex flex-col">
-                <QuoteIcon className="w-10 h-10 text-blue-600 mb-6" />
-                <div className="flex gap-1 mb-4">
-                  {Array.from({ length: testimonial.rating }).map((_, i) => (
-                    <StarIcon key={i} className="w-4 h-4 text-blue-600 fill-blue-600" />
-                  ))}
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center">
+                    <result.icon className="w-6 h-6 text-white" />
+                  </div>
+                  <div className="text-4xl font-bold text-blue-600">{result.metric}</div>
                 </div>
-                <p className="text-zinc-700 mb-6 leading-relaxed flex-1">"{testimonial.quote}"</p>
+                <h3 className="text-xl font-semibold text-zinc-950 mb-3">{result.title}</h3>
+                <p className="text-zinc-600 leading-relaxed mb-6 flex-1">{result.description}</p>
                 <div className="pt-6 border-t border-zinc-100">
-                  <p className="font-semibold text-zinc-950">{testimonial.author}</p>
-                  <p className="text-sm text-zinc-600">{testimonial.role}, {testimonial.company}</p>
+                  <Link href={result.href} className="inline-flex items-center text-blue-600 font-medium hover:gap-2 transition-all">
+                    Pogledajte {result.project} studiju slučaja <ArrowRightIcon className="ml-1 w-4 h-4" />
+                  </Link>
                 </div>
               </motion.div>
             ))}
@@ -72,10 +105,10 @@ export function TestimonialsBS() {
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <h2 className="text-4xl lg:text-5xl font-bold tracking-tight text-white mb-6">
-              Pridružite se našim zadovoljnim klijentima
+              Želite ovakve rezultate?
             </h2>
             <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
-              Kreirajmo nešto iznimno zajedno.
+              Razgovarajmo o tome kako možemo razviti vaše poslovanje online.
             </p>
             <Link href="/bs/kontakt"
               className="group inline-flex items-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-xl hover:bg-blue-50 transition-all hover:shadow-xl">

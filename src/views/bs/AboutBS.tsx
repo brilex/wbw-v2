@@ -7,10 +7,10 @@ import { TargetIcon, HeartIcon, ZapIcon, ArrowRightIcon } from 'lucide-react';
 
 export function AboutBS() {
   const stats = [
-    { value: '120+', label: 'Isporučenih projekata' },
-    { value: '8', label: 'Godina iskustva' },
-    { value: '45+', label: 'Zadovoljnih klijenata' },
-    { value: '12', label: 'Članova tima' },
+    { value: '7+', label: 'Godina iskustva' },
+    { value: '8', label: 'Isporučenih web stranica' },
+    { value: '+968%', label: 'Rast pretrage (klijent)' },
+    { value: '1. sedmica', label: 'Prva mušterija za klijenta' },
   ];
 
   const values = [
@@ -28,13 +28,24 @@ export function AboutBS() {
               Gradimo digitalne izvrsnosti od 2016.
             </h1>
             <p className="text-xl text-zinc-600 leading-relaxed mb-8">
-              WBW je premium agencija za web razvoj posvećena kreiranju iznimnih digitalnih iskustava.
-              Sarađujemo s ambicioznim brendovima kako bismo transformisali njihovu online prisutnost
-              kroz inovativan dizajn i najsuvremeniju tehnologiju.
+              WBW je web development studio osnovan u Bosni i Hercegovini, specijalizovan za
+              custom WordPress i Next.js projekte za firme kojima treba više od šablona.
+              Svaki projekat se vodi lično — od dizajna do deploya do SEO-a.
+            </p>
+            <p className="text-xl text-zinc-600 leading-relaxed mb-8">
+              Pomogli smo firmama u regiji da povećaju organsku pretragu do 968%,
+              dobiju prvu online mušteriju unutar sedmice od lansiranja, i zamijene
+              generičke šablone web stranicama koje zaista pretvaraju posjetioce u upite.
             </p>
             <p className="text-xl text-zinc-600 leading-relaxed">
-              Naš tim dizajnera, developera i stratega radi zajednički kako bi isporučio rješenja
-              koja ne samo da izgledaju lijepo, nego donose stvarne poslovne rezultate.
+              Sjedište imamo u{' '}
+              <Link href="/bs/izrada-web-stranica-tuzla" className="text-blue-600 font-medium hover:underline">
+                Tuzli
+              </Link>, ali radimo daljinski sa klijentima širom Bosne i Hercegovine —
+              uključujući{' '}
+              <Link href="/bs/izrada-web-stranica-sarajevo" className="text-blue-600 font-medium hover:underline">
+                Sarajevo
+              </Link>.
             </p>
           </motion.div>
         </div>

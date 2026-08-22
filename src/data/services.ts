@@ -86,12 +86,12 @@ export const services: ServiceData[] = [
 {
   slug: 'wordpress-development',
   icon: LayersIcon,
-  title: 'Custom WordPress Development',
-  tagline: 'Tailored WordPress solutions',
+  title: 'Custom WordPress Development & Redesign',
+  tagline: 'Tailored WordPress solutions and website redesign services',
   description:
-  'Tailored WordPress solutions with custom themes, plugins, and integrations. Perfect for content-driven sites that need flexibility and ease of management.',
+  'Tailored WordPress solutions with custom themes, plugins, and integrations — plus WordPress website redesign services for sites that have outgrown their template. Perfect for content-driven sites that need flexibility and ease of management.',
   longDescription:
-  'We build custom WordPress experiences from the ground up — no bloated themes, no plugin chaos. Just clean, fast, secure WordPress sites your team will actually love managing.',
+  'We build custom WordPress experiences from the ground up — no bloated themes, no plugin chaos. Just clean, fast, secure WordPress sites your team will actually love managing. As a website redesign expert, we also rebuild existing WordPress sites that have become slow, outdated, or hard to maintain, preserving your content and SEO equity while modernizing everything else.',
   features: [
   {
     title: 'Custom themes',
@@ -131,6 +131,11 @@ export const services: ServiceData[] = [
   'Composer'],
 
   faqs: [
+  {
+    question: 'Do you offer WordPress website redesign services?',
+    answer:
+    "Yes. If your current WordPress site is slow, outdated, or hard to update, we rebuild it with a custom theme while preserving your content, URLs, and search rankings. We audit what's underperforming first, then redesign around it."
+  },
   {
     question: 'Can you migrate my existing WordPress site?',
     answer:

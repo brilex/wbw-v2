@@ -67,6 +67,14 @@ const packages = [
 
 const faqs = [
   {
+    q: 'Kolika je cijena izrade web stranice u BiH?',
+    a: 'Cijena izrade web stranice kod nas kreće od 750 KM za Starter paket od 5 stranica. Za sajt sa punom SEO strategijom cijena je 1.300 KM (Growth), a za sajt s 6 mjeseci upravljanja nakon lansiranja 2.200 KM (Full Partnership). Sve cijene su fiksne — nema skrivenih troškova.',
+  },
+  {
+    q: 'Kolika je cijena web dizajna?',
+    a: 'Web dizajn je uključen u sve naše pakete — ne naplaćujemo ga posebno. Svaka stranica se ručno dizajnira i kodira prema vašem brendu, uz copywriting i optimizaciju performansi u cijeni paketa.',
+  },
+  {
     q: 'Šta je firme.ba?',
     a: 'firme.ba je naš poslovni direktorij portal za Bosnu i Hercegovinu. Premium oglas vam daje veću vidljivost, istaknuto mjesto u pretrazi i napredne opcije profila.',
   },
@@ -99,7 +107,8 @@ export function PricingBS() {
               Jasni paketi.<br />Bez iznenađenja.
             </h1>
             <p className="text-xl text-zinc-600 leading-relaxed">
-              Svaki paket uključuje copywriting, podešavanje performansi i osnovni SEO.
+              Cijena izrade web stranice kod nas je fiksna i jasna od prvog dana. Svaki paket
+              uključuje web dizajn, copywriting, podešavanje performansi i osnovni SEO.
               Odaberite koliko duboko želite ići.
             </p>
             <p className="mt-5 text-base font-semibold text-zinc-800">

@@ -12,12 +12,12 @@ export interface ServiceBSContent {
 export const servicesBS: ServiceBSContent[] = [
   {
     slug: 'web-development',
-    title: 'Razvoj web stranica',
-    tagline: 'Prilagođene web stranice i web aplikacije',
+    title: 'Izrada web stranica',
+    tagline: 'Prilagođena izrada web stranica i web aplikacija',
     description:
-      'Prilagođene web stranice i web aplikacije izrađene u Reactu, TypeScriptu i modernim frameworkima. Optimizirane za performanse, skalabilnost i korisničko iskustvo.',
+      'Profesionalna izrada web stranica i web aplikacija — ručno kodirano u Reactu, TypeScriptu i modernim frameworkima. Optimizirano za performanse, skalabilnost i korisničko iskustvo.',
     longDescription:
-      'Gradimo produkcijske web stranice i web aplikacije koristeći najnovije tehnologije. Od marketing sajtova do složenih SaaS platformi — naš razvoj je brz, pristupačan i spreman za rast vašeg poslovanja.',
+      'Bavimo se izradom web stranica i web aplikacija koristeći najnovije tehnologije. Od marketing sajtova do složenih platformi — naš razvoj web dizajna je brz, pristupačan i spreman za rast vašeg poslovanja.',
     features: [
       {
         title: 'Moderan tech stack',
@@ -49,6 +49,11 @@ export const servicesBS: ServiceBSContent[] = [
       '30 dana podrške nakon lansiranja',
     ],
     faqs: [
+      {
+        question: 'Kolika je cijena izrade web stranice?',
+        answer:
+          'Izrada web stranice kod nas kreće od 750 KM za Starter paket (5 stranica, WordPress/Bricks, SEO temelji). Growth paket sa punom SEO strategijom je 1.300 KM, a Full Partnership sa 6 mjeseci upravljanja je 2.200 KM. Sve cijene su fiksne — pogledajte detalje na stranici cijena.',
+      },
       {
         question: 'Koliko dugo traje tipičan projekt?',
         answer:
@@ -217,9 +222,9 @@ export const servicesBS: ServiceBSContent[] = [
   {
     slug: 'seo-optimization',
     title: 'SEO optimizacija',
-    tagline: 'Budite pronađeni od pravih ljudi',
+    tagline: 'SEO agencija koja vas dovodi pravim ljudima',
     description:
-      'Poboljšajte svoje pozicije u pretraživačima i organski promet. Implementiramo tehnički SEO, optimizaciju sadržaja i poboljšanja performansi za povećanje vidljivosti.',
+      'Kao SEO agencija poboljšavamo vaše pozicije u pretraživačima i organski promet. Implementiramo tehnički SEO, optimizaciju sadržaja i poboljšanja performansi za povećanje vidljivosti.',
     longDescription:
       'SEO je dijelom tehnički, dijelom sadržajni, dijelom strpljenje. Pokrivamo sve tri dimenzije — popravljamo tehničke temelje, optimiziramo vaš sadržaj i dajemo vam mapu puta za održivi organski rast.',
     features: [
@@ -253,6 +258,16 @@ export const servicesBS: ServiceBSContent[] = [
       'Mjesečni izvještaji o performansama',
     ],
     faqs: [
+      {
+        question: 'Šta radi SEO agencija?',
+        answer:
+          'SEO agencija poput nas analizira vaš sajt i konkurenciju, popravlja tehničke probleme koji sprječavaju Google da vas indeksira, istražuje ključne riječi koje vaši kupci zaista traže, i optimizira sadržaj tako da rankirate za te termine. Za razliku od freelancera, agencija nudi kontinuirano praćenje i izvještavanje.',
+      },
+      {
+        question: 'Kolika je cijena SEO optimizacije?',
+        answer:
+          'SEO optimizacija je uključena u Growth paket (1.300 KM) i Full Partnership paket (2.200 KM) — obuhvata istraživanje ključnih riječi, on-page optimizaciju i tehničku SEO reviziju. Full Partnership dodaje 6 mjeseci mjesečnog SEO monitoringa. Pogledajte cijene za detalje.',
+      },
       {
         question: 'Koliko dugo dok ne vidim rezultate?',
         answer:

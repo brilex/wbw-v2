@@ -47,9 +47,9 @@ export const industriesBS: IndustryBSContent[] = [
       },
     ],
     stats: [
-      { value: '+220%', label: 'Prosj. povećanje konverzije' },
-      { value: '3.2x', label: 'Brže učitavanje' },
-      { value: '0', label: 'Izgubljenih SEO pozicija' },
+      { value: '+968%', label: 'Rast organske pretrage za Hamada & Co. nakon redizajna' },
+      { value: 'Puna revizija', label: 'Pozicije i preusmjeravanja mapirani prije rada' },
+      { value: 'Moderan stack', label: 'Izgrađeno da traje nakon lansiranja' },
     ],
   },
   {
@@ -88,9 +88,9 @@ export const industriesBS: IndustryBSContent[] = [
       },
     ],
     stats: [
-      { value: '+185%', label: 'Popunjeni lead formi' },
-      { value: '<1s', label: 'Vrijeme učitavanja stranice' },
-      { value: '10+', label: 'Izgrađenih dealer sajtova' },
+      { value: 'Prilagođeno', label: 'Bez gotovih templata za inventar' },
+      { value: 'Brza isporuka slika', label: 'Optimizirano za velike galerije vozila' },
+      { value: 'Spremno za CRM', label: 'Izgrađeno za integraciju s vašim alatima' },
     ],
   },
   {
@@ -130,9 +130,9 @@ export const industriesBS: IndustryBSContent[] = [
       },
     ],
     stats: [
-      { value: '40+', label: 'Enterprise klijenata' },
-      { value: '15', label: 'Podržanih jezika' },
-      { value: '99.9%', label: 'SLA dostupnost' },
+      { value: 'Vođeno brendom', label: 'Dizajn usklađen s vašim identitetom' },
+      { value: 'Spremno za regije', label: 'CMS izgrađen da raste s vama' },
+      { value: 'Enterprise integracije', label: 'Salesforce, HubSpot i drugi' },
     ],
   },
   {
@@ -172,9 +172,9 @@ export const industriesBS: IndustryBSContent[] = [
       },
     ],
     stats: [
-      { value: '+340%', label: 'Upiti za projekte' },
-      { value: '120+', label: 'Prikazanih projekata' },
-      { value: '4.2x', label: 'Prijava na karijere' },
+      { value: 'Projektni portfoliji', label: 'Filtrirani, sliku-bogati prikazi' },
+      { value: 'Kvalifikacijske forme', label: 'Hvataju obim, budžet i rok' },
+      { value: 'Izgrađeno za ponude', label: 'Izjave sposobnosti koje konvertuju' },
     ],
   },
   {
@@ -214,9 +214,9 @@ export const industriesBS: IndustryBSContent[] = [
       },
     ],
     stats: [
-      { value: '+92%', label: 'Angažovanje s brendom' },
-      { value: '2.4x', label: 'Klikovi na prodajna mjesta' },
-      { value: '50+', label: 'Izgrađenih SKU stranica' },
+      { value: 'Ureditorski kvalitet', label: 'Sadržaj koji gradi afinitet prema brendu' },
+      { value: 'Spremno za prodajna mjesta', label: 'Pronalazač maloprodavača ugrađen' },
+      { value: 'D2C + maloprodaja', label: 'Kanali besprijekorno povezani' },
     ],
   },
   {
@@ -255,9 +255,9 @@ export const industriesBS: IndustryBSContent[] = [
       },
     ],
     stats: [
-      { value: '+312%', label: 'Povećanje konverzije' },
-      { value: '98/100', label: 'PageSpeed rezultat' },
-      { value: '$50M+', label: 'GMV pokrenut' },
+      { value: 'Ručno kodirane teme', label: 'Bez debelih buildera' },
+      { value: 'Performanse na prvom mjestu', label: 'Izgrađeno za brzinu i SEO' },
+      { value: 'Fokus na konverziju', label: 'Svaka stranica izgrađena da prodaje' },
     ],
   },
   {
@@ -297,9 +297,9 @@ export const industriesBS: IndustryBSContent[] = [
       },
     ],
     stats: [
-      { value: '+58%', label: 'Pokrenute prijave' },
-      { value: '97/100', label: 'Prosj. Lighthouse rezultat' },
-      { value: 'AA', label: 'WCAG usklađenost' },
+      { value: 'IA prilagođena publici', label: 'Za kandidate, studente i osoblje' },
+      { value: 'WCAG 2.1 AA', label: 'Pristupačnost ugrađena, ne dodana naknadno' },
+      { value: 'Imenici programa', label: 'Pretraživi, filtrirani katalozi' },
     ],
   },
   {
@@ -339,9 +339,9 @@ export const industriesBS: IndustryBSContent[] = [
       },
     ],
     stats: [
-      { value: '98/100', label: 'Prosj. Lighthouse rezultat' },
-      { value: '+143%', label: 'Rast organskog prometa' },
-      { value: '<1s', label: 'Vrijeme učitavanja' },
+      { value: 'Portali za samouslugu', label: 'Naplata, potrošnja i kvarovi' },
+      { value: 'Visoka dostupnost', label: 'Izgrađeno za skokove prometa' },
+      { value: 'ESG pripovijedanje', label: 'Sadržaj o održivosti vođen podacima' },
     ],
   },
   {
@@ -381,9 +381,9 @@ export const industriesBS: IndustryBSContent[] = [
       },
     ],
     stats: [
-      { value: '+165%', label: 'Otvaranja računa' },
-      { value: 'SOC 2', label: 'Usklađenost' },
-      { value: '12+', label: 'FI klijenata' },
+      { value: 'Spremno za usklađenost', label: 'Izgrađeno za pravne revizije' },
+      { value: 'Sigurno po dizajnu', label: 'Ojačane forme i integracije' },
+      { value: 'Alati za konverziju', label: 'Kalkulatori koji angažuju posjetioce' },
     ],
   },
   {
@@ -423,9 +423,9 @@ export const industriesBS: IndustryBSContent[] = [
       },
     ],
     stats: [
-      { value: '+124%', label: 'Online rezervacije' },
-      { value: 'HIPAA', label: 'Usklađeno' },
-      { value: '4.9★', label: 'Zadovoljstvo klijenata' },
+      { value: 'HIPAA-svjesna arhitektura', label: 'Izgrađena oko zaštite PHI-ja' },
+      { value: 'Pronalazači pružalaca', label: 'Filteri za specijalnost i dostupnost' },
+      { value: 'Sadržaj usmjeren na pacijenta', label: 'Jasne, pristupačne informacije' },
     ],
   },
   {
@@ -465,9 +465,9 @@ export const industriesBS: IndustryBSContent[] = [
       },
     ],
     stats: [
-      { value: '+275%', label: 'Zahtjevi za konsultacije' },
-      { value: 'Top 3', label: 'Prosj. SEO pozicija' },
-      { value: '15+', label: 'Klijenata — advokatske firme' },
+      { value: 'Stranice pravnih oblasti', label: 'Izgrađene da konvertuju i rangiraju' },
+      { value: 'Profili advokata', label: 'Akreditacije koje grade povjerenje' },
+      { value: 'Tokovi konsultacija', label: 'Forme koje kvalificiraju kandidate' },
     ],
   },
   {
@@ -507,9 +507,9 @@ export const industriesBS: IndustryBSContent[] = [
       },
     ],
     stats: [
-      { value: '+210%', label: 'RFQ zahtjevi' },
-      { value: '98/100', label: 'Prosj. Lighthouse rezultat' },
-      { value: '5k+', label: 'Katalogovanih SKU-ova' },
+      { value: '3', label: 'Jezika (BA/EN/DE) za Neimax' },
+      { value: '98/100', label: 'Lighthouse rezultat' },
+      { value: 'Figma → kod', label: 'Proces dizajna' },
     ],
   },
   {
@@ -549,9 +549,9 @@ export const industriesBS: IndustryBSContent[] = [
       },
     ],
     stats: [
-      { value: '+140%', label: 'Rezervacije' },
-      { value: '+88%', label: 'Online narudžbe' },
-      { value: '60+', label: 'Opsluživanih lokacija' },
+      { value: 'Ureditorski dizajn', label: 'Fotografija hrane koja prodaje' },
+      { value: 'Lako ažuriranje menija', label: 'Osoblje uređuje za sekunde' },
+      { value: 'Spremno za rezervacije', label: 'OpenTable, Resy i naručivanje' },
     ],
   },
   {
@@ -591,9 +591,9 @@ export const industriesBS: IndustryBSContent[] = [
       },
     ],
     stats: [
-      { value: '50k+', label: 'Listinga opsluživano' },
-      { value: '+195%', label: 'Lead capture' },
-      { value: '4.9★', label: 'Zadovoljstvo agenata' },
+      { value: 'IDX/MLS integracija', label: 'Live listinzi, bogate stranice detalja' },
+      { value: 'Pretraga na mapi', label: 'Otkrivanje na nivou četvrti' },
+      { value: 'Lead-ovi spremni za CRM', label: 'Rutiraju se u vaše postojeće alate' },
     ],
   },
   {
@@ -633,9 +633,9 @@ export const industriesBS: IndustryBSContent[] = [
       },
     ],
     stats: [
-      { value: '+85%', label: 'Stopa prijava' },
-      { value: '95+', label: 'Lighthouse rezultat' },
-      { value: '40+', label: 'SaaS klijenata' },
+      { value: 'Marketing vođen proizvodom', label: 'Izgrađeno oko dema i probnih perioda' },
+      { value: 'Dokumentacija i integracije', label: 'Prilagođeno developerima' },
+      { value: 'Fokus na konverziju cijena', label: 'Jasni nivoi, manje napuštanja' },
     ],
   },
   {
@@ -675,9 +675,9 @@ export const industriesBS: IndustryBSContent[] = [
       },
     ],
     stats: [
-      { value: '10M+', label: 'Mjesečnih posjeta' },
-      { value: '0', label: 'Zastoja na dan utakmica' },
-      { value: '+92%', label: 'Konverzije karata' },
+      { value: 'Sadržaj u realnom vremenu', label: 'Živi rezultati i rasporedi' },
+      { value: 'Infrastruktura za skokove', label: 'Izgrađena za promet na dan utakmica' },
+      { value: 'Karte i merch', label: 'Ticketmaster i Shopify integracije' },
     ],
   },
 ];

@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next';
 import { services } from '@/src/data/services';
 import { industries } from '@/src/data/industries';
 import { getAllPosts } from '@/src/lib/blog';
+import { getAllPostsBS } from '@/src/lib/blog-bs';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://www.webuildsites.net';
@@ -60,6 +61,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/bs/recenzije`, priority: 0.7 },
     { url: `${base}/bs/kontakt`, priority: 0.8 },
     { url: `${base}/bs/cijene`, priority: 0.9 },
+    { url: `${base}/bs/blog`, priority: 0.9 },
+    { url: `${base}/bs/izrada-web-stranica-sarajevo`, priority: 0.8 },
+    { url: `${base}/bs/izrada-web-stranica-tuzla`, priority: 0.8 },
     { url: `${base}/bs/rad/hamada-co`, priority: 0.8 },
     { url: `${base}/bs/rad/converttonext`, priority: 0.8 },
     { url: `${base}/bs/rad/firme-ba`, priority: 0.8 },
@@ -86,6 +90,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  const bsBlogRoutes = getAllPostsBS().map((p) => ({
+    url: `${base}/bs/blog/${p.slug}`,
+    lastModified: new Date(p.date),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }));
+
   return [
     ...staticRoutes,
     ...serviceRoutes,
@@ -94,5 +105,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...bsStaticRoutes,
     ...bsServiceRoutes,
     ...bsIndustryRoutes,
+    ...bsBlogRoutes,
   ];
 }

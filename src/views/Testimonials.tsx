@@ -3,39 +3,46 @@
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { QuoteIcon, StarIcon, ArrowRightIcon } from 'lucide-react';
+import { TrendingUpIcon, GlobeIcon, ArrowRightIcon, SearchIcon, ZapIcon } from 'lucide-react';
 
 export function Testimonials() {
-  const testimonials = [
+  const results = [
     {
-      quote: 'WBW transformed our online presence completely. The attention to detail and technical expertise is unmatched. They delivered ahead of schedule and the results have exceeded our expectations.',
-      author: 'Sarah Chen', role: 'CEO', company: 'TechFlow', rating: 5,
+      icon: TrendingUpIcon,
+      metric: '+968%',
+      title: 'Search traffic growth',
+      description: 'Hamada & Co. went from near-zero visibility to 968% organic growth after we rebuilt their site with on-page SEO baked in from day one.',
+      project: 'Hamada & Co.',
+      href: '/work/hamada-co',
     },
     {
-      quote: 'Working with WBW was seamless from start to finish. They delivered a beautiful, high-performing website that has dramatically improved our conversion rates. Highly recommended.',
-      author: 'Michael Rodriguez', role: 'Marketing Director', company: 'Innovate Labs', rating: 5,
+      icon: ZapIcon,
+      metric: 'Week 1',
+      title: 'First online customer',
+      description: 'firme.ba received its first paying customer within the first week of launch — before any paid advertising.',
+      project: 'firme.ba',
+      href: '/work/firme-ba',
     },
     {
-      quote: 'The team at WBW brought our vision to life with incredible design and flawless execution. Their process is transparent and collaborative — exactly what we needed.',
-      author: 'Emily Watson', role: 'Founder', company: 'Nexus Digital', rating: 5,
+      icon: GlobeIcon,
+      metric: '3 languages',
+      title: 'Trilingual corporate site',
+      description: 'Neimax needed a professional presence in Bosnian, English, and German. We delivered a custom WordPress theme with seamless language switching.',
+      project: 'Neimax d.o.o.',
+      href: '/work/neimax',
     },
     {
-      quote: 'Beyond just building a website, WBW became a strategic partner. They understood our business and translated that into a digital experience that truly represents our brand.',
-      author: 'David Park', role: 'CMO', company: 'Quantum Finance', rating: 5,
-    },
-    {
-      quote: 'The performance improvements alone paid for the project ten times over. Our team continues to be impressed by the quality and ongoing support we receive.',
-      author: 'Jessica Lee', role: 'VP Engineering', company: 'LearnHub', rating: 5,
-    },
-    {
-      quote: "Truly world-class work. WBW combines design sensibility with technical excellence in a way I haven't seen from other agencies. They're our go-to partner now.",
-      author: 'Marcus Thompson', role: 'Founder', company: 'Zenith Studio', rating: 5,
+      icon: SearchIcon,
+      metric: 'Page 1',
+      title: 'Google rankings from launch',
+      description: 'WLDM.io launched with SEO-ready architecture including interactive tools and structured data — ranking for competitive backlink keywords immediately.',
+      project: 'WLDM',
+      href: '/work/wldm',
     },
   ];
 
   return (
     <main className="min-h-screen">
-      {/* Hero */}
       <section className="pt-32 pb-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
@@ -43,25 +50,24 @@ export function Testimonials() {
             animate={{ opacity: 1, y: 0 }}
             className="max-w-3xl">
             <h1 className="text-5xl lg:text-6xl font-bold tracking-tight text-zinc-950 mb-6">
-              What our clients say
+              Real results, not promises
             </h1>
             <p className="text-xl text-zinc-600 leading-relaxed">
-              We measure our success by the success of our clients. Here's what
-              they have to say about working with us.
+              We let the numbers speak. Here are measurable outcomes from
+              recent projects — no stock quotes, no made-up names.
             </p>
           </motion.div>
 
-          {/* Stats */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
             className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-12 border-t border-zinc-100">
             {[
-              { value: '4.9/5', label: 'Average rating' },
-              { value: '98%', label: 'Client retention' },
-              { value: '120+', label: 'Projects delivered' },
-              { value: '45+', label: 'Happy clients' },
+              { value: '7+', label: 'Years experience' },
+              { value: '8', label: 'Websites delivered' },
+              { value: '+968%', label: 'Search growth (client)' },
+              { value: 'Week 1', label: 'First customer for client' },
             ].map((stat) => (
               <div key={stat.label}>
                 <div className="text-4xl font-bold text-blue-600 mb-1">{stat.value}</div>
@@ -72,34 +78,32 @@ export function Testimonials() {
         </div>
       </section>
 
-      {/* Testimonials Grid */}
       <section className="py-20 bg-zinc-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
+          <div className="grid md:grid-cols-2 gap-8">
+            {results.map((result, index) => (
               <motion.div
-                key={testimonial.author}
+                key={result.title}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: (index % 3) * 0.1 }}
+                transition={{ delay: (index % 2) * 0.1 }}
                 className="bg-white p-8 rounded-2xl border border-zinc-200 hover:border-blue-600 hover:shadow-lg transition-all flex flex-col">
-                <QuoteIcon className="w-10 h-10 text-blue-600 mb-6" />
-
-                <div className="flex gap-1 mb-4">
-                  {Array.from({ length: testimonial.rating }).map((_, i) => (
-                    <StarIcon key={i} className="w-4 h-4 text-blue-600 fill-blue-600" />
-                  ))}
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center">
+                    <result.icon className="w-6 h-6 text-white" />
+                  </div>
+                  <div className="text-4xl font-bold text-blue-600">{result.metric}</div>
                 </div>
 
-                <p className="text-zinc-700 mb-6 leading-relaxed flex-1">
-                  "{testimonial.quote}"
+                <h3 className="text-xl font-semibold text-zinc-950 mb-3">{result.title}</h3>
+                <p className="text-zinc-600 leading-relaxed mb-6 flex-1">
+                  {result.description}
                 </p>
                 <div className="pt-6 border-t border-zinc-100">
-                  <p className="font-semibold text-zinc-950">{testimonial.author}</p>
-                  <p className="text-sm text-zinc-600">
-                    {testimonial.role}, {testimonial.company}
-                  </p>
+                  <Link href={result.href} className="inline-flex items-center text-blue-600 font-medium hover:gap-2 transition-all">
+                    View {result.project} case study <ArrowRightIcon className="ml-1 w-4 h-4" />
+                  </Link>
                 </div>
               </motion.div>
             ))}
@@ -107,7 +111,6 @@ export function Testimonials() {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="py-24 bg-gradient-to-br from-blue-600 to-blue-700">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <motion.div
@@ -115,10 +118,10 @@ export function Testimonials() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}>
             <h2 className="text-4xl lg:text-5xl font-bold tracking-tight text-white mb-6">
-              Join our happy clients
+              Want results like these?
             </h2>
             <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
-              Let's create something exceptional together.
+              Let's discuss how we can grow your business online.
             </p>
             <Link
               href="/contact"

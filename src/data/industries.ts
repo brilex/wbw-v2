@@ -69,9 +69,9 @@ export const industries: IndustryData[] = [
   }],
 
   stats: [
-  { value: '+220%', label: 'Avg. conversion lift' },
-  { value: '3.2x', label: 'Faster load times' },
-  { value: '0', label: 'SEO rankings lost' }]
+  { value: '+968%', label: 'Organic growth for Hamada & Co. after redesign' },
+  { value: 'Full audit', label: 'Rankings & redirects mapped before rebuild' },
+  { value: 'Modern stack', label: 'Built to scale past the relaunch' }]
 
 },
 {
@@ -112,9 +112,9 @@ export const industries: IndustryData[] = [
   }],
 
   stats: [
-  { value: '+185%', label: 'Lead form fills' },
-  { value: '<1s', label: 'Page load time' },
-  { value: '10+', label: 'Dealer sites built' }]
+  { value: 'Custom-built', label: 'No template inventory themes' },
+  { value: 'Fast image delivery', label: 'Optimized for large vehicle galleries' },
+  { value: 'CRM-ready', label: 'Built to integrate with your tools' }]
 
 },
 {
@@ -155,9 +155,9 @@ export const industries: IndustryData[] = [
   }],
 
   stats: [
-  { value: '40+', label: 'Enterprise clients' },
-  { value: '15', label: 'Languages supported' },
-  { value: '99.9%', label: 'Uptime SLA' }]
+  { value: 'Brand-led', label: 'Design aligned to your identity' },
+  { value: 'Multi-region ready', label: 'CMS built to scale with you' },
+  { value: 'Enterprise integrations', label: 'Salesforce, HubSpot & more' }]
 
 },
 {
@@ -198,9 +198,9 @@ export const industries: IndustryData[] = [
   }],
 
   stats: [
-  { value: '+340%', label: 'RFP inquiries' },
-  { value: '120+', label: 'Projects showcased' },
-  { value: '4.2x', label: 'Career applications' }]
+  { value: 'Project portfolios', label: 'Filterable, image-rich showcases' },
+  { value: 'Lead-qualifying forms', label: 'Capture scope, budget & timeline' },
+  { value: 'Built for bids', label: 'Capability statements that convert' }]
 
 },
 {
@@ -241,9 +241,9 @@ export const industries: IndustryData[] = [
   }],
 
   stats: [
-  { value: '+92%', label: 'Brand engagement' },
-  { value: '2.4x', label: 'Where-to-buy clicks' },
-  { value: '50+', label: 'SKU pages built' }]
+  { value: 'Editorial-quality', label: 'Content that builds brand affinity' },
+  { value: 'Where-to-buy ready', label: 'Retailer locator built in' },
+  { value: 'D2C + retail', label: 'Channels connected seamlessly' }]
 
 },
 {
@@ -284,9 +284,9 @@ export const industries: IndustryData[] = [
   }],
 
   stats: [
-  { value: '+312%', label: 'Conversion lift' },
-  { value: '98/100', label: 'PageSpeed score' },
-  { value: '$50M+', label: 'GMV powered' }]
+  { value: 'Hand-coded themes', label: 'No bloated builders' },
+  { value: 'Performance-first', label: 'Built for speed & SEO' },
+  { value: 'Conversion-focused', label: 'Every page built to sell' }]
 
 },
 {
@@ -327,9 +327,9 @@ export const industries: IndustryData[] = [
   }],
 
   stats: [
-  { value: '+58%', label: 'Application starts' },
-  { value: '97/100', label: 'Avg. Lighthouse score' },
-  { value: 'AA', label: 'WCAG compliance' }]
+  { value: 'Audience-first IA', label: 'Built for prospects, students & faculty' },
+  { value: 'WCAG 2.1 AA', label: 'Accessibility built in, not bolted on' },
+  { value: 'Program directories', label: 'Searchable, filterable catalogs' }]
 
 },
 {
@@ -370,9 +370,9 @@ export const industries: IndustryData[] = [
   }],
 
   stats: [
-  { value: '98/100', label: 'Avg. Lighthouse score' },
-  { value: '+143%', label: 'Organic traffic growth' },
-  { value: '<1s', label: 'Page load time' }]
+  { value: 'Self-service portals', label: 'Billing, usage & outage tools' },
+  { value: 'High-availability', label: 'Built for traffic spikes' },
+  { value: 'ESG storytelling', label: 'Data-driven sustainability content' }]
 
 },
 {
@@ -413,9 +413,9 @@ export const industries: IndustryData[] = [
   }],
 
   stats: [
-  { value: '+165%', label: 'Account opens' },
-  { value: 'SOC 2', label: 'Compliance' },
-  { value: '12+', label: 'FI clients' }]
+  { value: 'Compliance-ready', label: 'Built for legal review cycles' },
+  { value: 'Secure by design', label: 'Hardened forms & integrations' },
+  { value: 'Conversion tools', label: 'Calculators that engage visitors' }]
 
 },
 {
@@ -456,9 +456,9 @@ export const industries: IndustryData[] = [
   }],
 
   stats: [
-  { value: '+124%', label: 'Online bookings' },
-  { value: 'HIPAA', label: 'Compliant' },
-  { value: '4.9★', label: 'Client satisfaction' }]
+  { value: 'HIPAA-aware architecture', label: 'Built around PHI protection' },
+  { value: 'Provider finders', label: 'Specialty & availability filters' },
+  { value: 'Patient-first content', label: 'Clear, accessible health info' }]
 
 },
 {
@@ -499,20 +499,20 @@ export const industries: IndustryData[] = [
   }],
 
   stats: [
-  { value: '+275%', label: 'Consultation requests' },
-  { value: 'Top 3', label: 'Avg. SEO ranking' },
-  { value: '15+', label: 'Law firm clients' }]
+  { value: 'Practice area pages', label: 'Built to convert & rank' },
+  { value: 'Attorney profiles', label: 'Credentials that build trust' },
+  { value: 'Consultation flows', label: 'Forms that qualify leads' }]
 
 },
 {
   slug: 'manufacturing',
   icon: FactoryIcon,
-  title: 'Manufacturing Web Design',
+  title: 'Manufacturing Website Design Agency',
   tagline: 'B2B sites that win contracts',
   description:
-  'Websites for manufacturers, OEMs, and industrial suppliers that generate qualified leads.',
+  'A manufacturing website design agency for manufacturers, OEMs, and industrial suppliers that need sites built to generate qualified leads, not just look good.',
   longDescription:
-  'Manufacturing buyers are technical, deliberate, and high-value. We build sites that speak their language — with detailed product data, capability content, and clear paths to engagement.',
+  'Manufacturing buyers are technical, deliberate, and high-value. As a manufacturing website design agency, we build sites that speak their language — with detailed product data, capability content, and clear paths to engagement. We built a trilingual (Bosnian/English/German) site for Neimax, a corrugated cardboard manufacturer, handling everything from Figma design to a custom WordPress theme.',
   challenges: [
   'Detailed product catalogs with specs, drawings, and CAD files',
   'Capability content for buyers, engineers, and procurement',
@@ -542,9 +542,9 @@ export const industries: IndustryData[] = [
   }],
 
   stats: [
-  { value: '+210%', label: 'RFQ submissions' },
-  { value: '98/100', label: 'Avg. Lighthouse score' },
-  { value: '5k+', label: 'SKUs cataloged' }]
+  { value: '3', label: 'Languages (BA/EN/DE)' },
+  { value: '98/100', label: 'Lighthouse score' },
+  { value: 'Figma → code', label: 'Design process' }]
 
 },
 {
@@ -585,9 +585,9 @@ export const industries: IndustryData[] = [
   }],
 
   stats: [
-  { value: '+140%', label: 'Reservations' },
-  { value: '+88%', label: 'Online orders' },
-  { value: '60+', label: 'Locations served' }]
+  { value: 'Editorial design', label: 'Food photography that sells' },
+  { value: 'Easy menu updates', label: 'Staff can edit in seconds' },
+  { value: 'Reservation-ready', label: 'OpenTable, Resy & ordering' }]
 
 },
 {
@@ -628,9 +628,9 @@ export const industries: IndustryData[] = [
   }],
 
   stats: [
-  { value: '50k+', label: 'Listings powered' },
-  { value: '+195%', label: 'Lead capture' },
-  { value: '4.9★', label: 'Agent satisfaction' }]
+  { value: 'IDX/MLS integration', label: 'Live listings, rich detail pages' },
+  { value: 'Map-based search', label: 'Neighborhood-level discovery' },
+  { value: 'CRM-ready leads', label: 'Routes to your existing tools' }]
 
 },
 {
@@ -671,9 +671,9 @@ export const industries: IndustryData[] = [
   }],
 
   stats: [
-  { value: '+85%', label: 'Sign-up rate' },
-  { value: '95+', label: 'Lighthouse score' },
-  { value: '40+', label: 'SaaS clients' }]
+  { value: 'Product-led design', label: 'Built around demos & trials' },
+  { value: 'Docs & integrations', label: 'Developer-friendly by default' },
+  { value: 'Conversion-focused pricing', label: 'Clear tiers, fewer drop-offs' }]
 
 },
 {
@@ -714,9 +714,9 @@ export const industries: IndustryData[] = [
   }],
 
   stats: [
-  { value: '10M+', label: 'Monthly visits' },
-  { value: '0', label: 'Game-day outages' },
-  { value: '+92%', label: 'Ticket conversions' }]
+  { value: 'Real-time content', label: 'Live scores & schedules' },
+  { value: 'Spike-ready infrastructure', label: 'Built for game-day traffic' },
+  { value: 'Ticket & merch', label: 'Ticketmaster & Shopify integrations' }]
 
 }];
 

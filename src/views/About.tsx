@@ -7,10 +7,10 @@ import { TargetIcon, HeartIcon, ZapIcon, ArrowRightIcon } from 'lucide-react';
 
 export function About() {
   const stats = [
-    { value: '120+', label: 'Projects Delivered' },
-    { value: '8', label: 'Years Experience' },
-    { value: '45+', label: 'Happy Clients' },
-    { value: '12', label: 'Team Members' },
+    { value: '7+', label: 'Years Experience' },
+    { value: '8', label: 'Websites Delivered' },
+    { value: '+968%', label: 'Search Growth (Client)' },
+    { value: 'Week 1', label: 'First Customer for Client' },
   ];
 
   const values = [
@@ -31,12 +31,6 @@ export function About() {
     },
   ];
 
-  const team = [
-    { name: 'Alex Morgan', role: 'Founder & CEO', bio: 'Visionary leader with 10+ years in web development and digital strategy.' },
-    { name: 'Sarah Chen', role: 'Lead Designer', bio: 'Award-winning designer specializing in user-centered digital experiences.' },
-    { name: 'Michael Rodriguez', role: 'Technical Director', bio: 'Full-stack expert passionate about scalable, performant web solutions.' },
-    { name: 'Emily Watson', role: 'Project Manager', bio: 'Ensures seamless delivery and exceptional client communication.' },
-  ];
 
   return (
     <main className="min-h-screen">
@@ -51,15 +45,16 @@ export function About() {
               Building digital excellence since 2016
             </h1>
             <p className="text-xl text-zinc-600 leading-relaxed mb-8">
-              WBW is a premium web development agency dedicated to crafting
-              exceptional digital experiences. We partner with ambitious brands
-              to transform their online presence through innovative design and
-              cutting-edge technology.
+              WBW is a web development studio founded in Bosnia &amp; Herzegovina,
+              specialising in custom WordPress and Next.js builds for businesses
+              that need more than a template. Every project is handled personally
+              — from design to deployment to SEO.
             </p>
             <p className="text-xl text-zinc-600 leading-relaxed">
-              Our team of designers, developers, and strategists work
-              collaboratively to deliver solutions that not only look beautiful
-              but drive real business results.
+              We've helped companies across the region grow their search traffic
+              by up to 968%, land their first online customers within a week of
+              launch, and replace generic templates with websites that actually
+              convert visitors into leads.
             </p>
           </motion.div>
         </div>
@@ -117,41 +112,6 @@ export function About() {
                 </div>
                 <h3 className="text-xl font-semibold text-zinc-950 mb-3">{value.title}</h3>
                 <p className="text-zinc-600 leading-relaxed">{value.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section className="py-20 bg-zinc-50">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold tracking-tight text-zinc-950 mb-4">
-              Meet the team
-            </h2>
-            <p className="text-xl text-zinc-600 max-w-2xl mx-auto">
-              Talented professionals passionate about creating exceptional digital experiences
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-white p-6 rounded-2xl border border-zinc-200 hover:border-blue-600 hover:shadow-lg transition-all">
-                <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full mx-auto mb-4" />
-                <h3 className="text-lg font-semibold text-zinc-950 text-center mb-1">{member.name}</h3>
-                <p className="text-sm text-blue-600 font-medium text-center mb-3">{member.role}</p>
-                <p className="text-sm text-zinc-600 text-center leading-relaxed">{member.bio}</p>
               </motion.div>
             ))}
           </div>

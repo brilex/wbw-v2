@@ -1,20 +1,22 @@
 import React from 'react';
 import Link from 'next/link';
-import { GithubIcon, TwitterIcon, LinkedinIcon, MailIcon } from 'lucide-react';
+import { LinkedinIcon, MailIcon } from 'lucide-react';
 
 export function FooterBS() {
   const services = [
-    { name: 'Razvoj web stranica', path: '/bs/usluge/web-development' },
+    { name: 'Izrada web stranica', path: '/bs/usluge/web-development' },
     { name: 'UI/UX Dizajn', path: '/bs/usluge/ui-ux-design' },
     { name: 'E-commerce', path: '/bs/usluge/ecommerce-development' },
     { name: 'SEO optimizacija', path: '/bs/usluge/seo-optimization' },
+    { name: 'Izrada web stranica Sarajevo', path: '/bs/izrada-web-stranica-sarajevo' },
+    { name: 'Izrada web stranica Tuzla', path: '/bs/izrada-web-stranica-tuzla' },
   ];
 
   const company = [
     { name: 'O nama', path: '/bs/o-nama' },
     { name: 'Naš rad', path: '/bs/rad' },
     { name: 'Proces', path: '/bs/proces' },
-    { name: 'Blog', path: '/blog' },
+    { name: 'Blog', path: '/bs/blog' },
     { name: 'Cijene', path: '/bs/cijene' },
     { name: 'Recenzije', path: '/bs/recenzije' },
     { name: 'Kontakt', path: '/bs/kontakt' },
@@ -71,17 +73,9 @@ export function FooterBS() {
               <li className="text-sm text-zinc-600">+387 62 827 306</li>
             </ul>
             <div className="flex space-x-4">
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
-                className="text-zinc-600 hover:text-blue-600 transition-colors" aria-label="Twitter">
-                <TwitterIcon size={20} />
-              </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.linkedin.com/in/armin-sehic-046394b8/" target="_blank" rel="noopener noreferrer"
                 className="text-zinc-600 hover:text-blue-600 transition-colors" aria-label="LinkedIn">
                 <LinkedinIcon size={20} />
-              </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer"
-                className="text-zinc-600 hover:text-blue-600 transition-colors" aria-label="GitHub">
-                <GithubIcon size={20} />
               </a>
               <a href="mailto:info@webuildsites.net"
                 className="text-zinc-600 hover:text-blue-600 transition-colors" aria-label="Email">
