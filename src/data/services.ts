@@ -264,12 +264,12 @@ export const services: ServiceData[] = [
 {
   slug: 'seo-optimization',
   icon: SearchIcon,
-  title: 'SEO Optimization',
+  title: 'SEO Optimization & WordPress SEO Services',
   tagline: 'Get found by the right people',
   description:
-  'Improve your search rankings and organic traffic. We implement technical SEO, content optimization, and performance improvements to boost visibility.',
+  'Improve your search rankings and organic traffic. As a team that builds most sites on WordPress, our WordPress SEO services cover technical SEO, content optimization, and performance improvements built directly into the theme — not bolted on with plugins.',
   longDescription:
-  'SEO is part technical, part content, part patience. We cover all three — fixing the technical foundations, optimizing your content, and giving you a roadmap for sustainable organic growth.',
+  'SEO is part technical, part content, part patience. We cover all three — fixing the technical foundations, optimizing your content, and giving you a roadmap for sustainable organic growth. Because most of our builds run on WordPress, our WordPress SEO services go deeper than a plugin checklist: clean theme code, proper schema markup, and Core Web Vitals handled at the template level.',
   features: [
   {
     title: 'Technical SEO audit',
@@ -308,6 +308,11 @@ export const services: ServiceData[] = [
   'Schema.org'],
 
   faqs: [
+  {
+    question: 'What makes your WordPress SEO services different?',
+    answer:
+    "Most WordPress SEO work is plugin configuration on top of a template someone else built. Since we build the theme ourselves, we can fix SEO issues at the source — clean markup, proper heading structure, and fast load times — instead of patching around them with plugins."
+  },
   {
     question: 'Do you offer local SEO services?',
     answer:
