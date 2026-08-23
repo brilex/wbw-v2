@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { MailIcon, PhoneIcon, TwitterIcon, LinkedinIcon, GithubIcon } from 'lucide-react';
+import { MailIcon, PhoneIcon, LinkedinIcon } from 'lucide-react';
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -137,28 +137,12 @@ export function Contact() {
                 <h3 className="font-semibold text-zinc-950 mb-4">Follow us</h3>
                 <div className="flex space-x-4">
                   <a
-                    href="https://twitter.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-12 h-12 bg-white border border-zinc-200 rounded-xl flex items-center justify-center text-zinc-600 hover:text-blue-600 hover:border-blue-600 transition-all"
-                    aria-label="Twitter">
-                    <TwitterIcon size={20} />
-                  </a>
-                  <a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/armin-sehic-046394b8/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-12 h-12 bg-white border border-zinc-200 rounded-xl flex items-center justify-center text-zinc-600 hover:text-blue-600 hover:border-blue-600 transition-all"
                     aria-label="LinkedIn">
                     <LinkedinIcon size={20} />
-                  </a>
-                  <a
-                    href="https://github.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-12 h-12 bg-white border border-zinc-200 rounded-xl flex items-center justify-center text-zinc-600 hover:text-blue-600 hover:border-blue-600 transition-all"
-                    aria-label="GitHub">
-                    <GithubIcon size={20} />
                   </a>
                 </div>
               </div>
