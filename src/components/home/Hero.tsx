@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ArrowRightIcon } from 'lucide-react';
+import { ArrowRightIcon, PhoneIcon, MessageCircleIcon, MailIcon } from 'lucide-react';
 
 export function Hero() {
   return (
@@ -62,6 +62,35 @@ export function Hero() {
                 className="px-8 py-4 bg-white border-2 border-zinc-200 text-zinc-950 font-semibold rounded-xl hover:border-zinc-300 transition-colors inline-flex items-center justify-center">
                 View our work
               </Link>
+            </motion.div>
+
+            {/* Direct contact — plenty of people would rather message than fill a form */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
+              className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm">
+              <span className="text-zinc-500">Or reach us directly:</span>
+              <a
+                href="tel:+38762827306"
+                className="inline-flex items-center gap-2 font-semibold text-zinc-950 hover:text-blue-600 transition-colors">
+                <PhoneIcon className="w-4 h-4 text-blue-600" />
+                +387 62 827 306
+              </a>
+              <a
+                href="https://wa.me/38762827306"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 font-semibold text-zinc-950 hover:text-blue-600 transition-colors">
+                <MessageCircleIcon className="w-4 h-4 text-blue-600" />
+                WhatsApp
+              </a>
+              <a
+                href="mailto:info@webuildsites.net"
+                className="inline-flex items-center gap-2 font-semibold text-zinc-950 hover:text-blue-600 transition-colors">
+                <MailIcon className="w-4 h-4 text-blue-600" />
+                info@webuildsites.net
+              </a>
             </motion.div>
           </motion.div>
 

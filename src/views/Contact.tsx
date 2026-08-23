@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { MailIcon, PhoneIcon, LinkedinIcon } from 'lucide-react';
+import { MailIcon, PhoneIcon, LinkedinIcon, MessageCircleIcon } from 'lucide-react';
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -81,10 +81,32 @@ export function Contact() {
             <h1 className="text-5xl lg:text-6xl font-bold tracking-tight text-zinc-950 mb-6">
               Let's build together
             </h1>
-            <p className="text-xl text-zinc-600 leading-relaxed">
-              Have a project in mind? We'd love to hear about it. Get in touch
-              and let's discuss how we can help bring your vision to life.
+            <p className="text-xl text-zinc-600 leading-relaxed mb-8">
+              Have a project in mind? Call, message us on WhatsApp, or use the
+              form below — whichever is easiest for you.
             </p>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="tel:+38762827306"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-colors">
+                <PhoneIcon className="w-4 h-4" />
+                +387 62 827 306
+              </a>
+              <a
+                href="https://wa.me/38762827306"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-white border-2 border-zinc-200 text-zinc-950 font-semibold rounded-xl hover:border-blue-600 transition-colors">
+                <MessageCircleIcon className="w-4 h-4 text-blue-600" />
+                WhatsApp
+              </a>
+              <a
+                href="mailto:info@webuildsites.net"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-white border-2 border-zinc-200 text-zinc-950 font-semibold rounded-xl hover:border-blue-600 transition-colors">
+                <MailIcon className="w-4 h-4 text-blue-600" />
+                Email us
+              </a>
+            </div>
           </motion.div>
         </div>
       </section>
