@@ -6,13 +6,6 @@ import Link from 'next/link';
 import { TargetIcon, HeartIcon, ZapIcon, ArrowRightIcon } from 'lucide-react';
 
 export function AboutBS() {
-  const stats = [
-    { value: '7+', label: 'Godina iskustva' },
-    { value: '8', label: 'Isporučenih web stranica' },
-    { value: '+968%', label: 'Rast pretrage (klijent)' },
-    { value: '1. sedmica', label: 'Prva mušterija za klijenta' },
-  ];
-
   const values = [
     { icon: TargetIcon, title: 'Fokus na rezultate', description: 'Fokusiramo se na isporuku mjerljivih ishoda koji pokreću vaše poslovanje naprijed.' },
     { icon: HeartIcon, title: 'Klijent na prvom mjestu', description: 'Vaš uspjeh je naš uspjeh. Gradimo dugotrajna partnerstva zasnovana na povjerenju.' },
@@ -48,20 +41,6 @@ export function AboutBS() {
               </Link>.
             </p>
           </motion.div>
-        </div>
-      </section>
-
-      <section className="py-20 bg-zinc-50">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <motion.div key={stat.label} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }} transition={{ delay: index * 0.1 }} className="text-center">
-                <div className="text-5xl lg:text-6xl font-bold text-blue-600 mb-2">{stat.value}</div>
-                <div className="text-zinc-600 font-medium">{stat.label}</div>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 

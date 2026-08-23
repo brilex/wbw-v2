@@ -24,7 +24,7 @@ export function Hero() {
               transition={{ delay: 0.1, duration: 0.5 }}
               className="inline-block mb-6">
               <span className="px-4 py-1.5 bg-blue-50 text-blue-600 text-sm font-semibold rounded-full">
-                Premium Web Development
+                WordPress &amp; Next.js
               </span>
             </motion.div>
 
@@ -33,7 +33,7 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.5 }}
               className="text-5xl lg:text-7xl font-bold tracking-tight text-zinc-950 mb-6 leading-[1.1]">
-              We build websites that convert.
+              Web development with SEO built in from day one.
             </motion.h1>
 
             <motion.p
@@ -41,9 +41,9 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.5 }}
               className="text-xl text-zinc-600 mb-10 leading-relaxed max-w-xl">
-              Transform your digital presence with custom web solutions that
-              drive results. We craft exceptional experiences for ambitious
-              brands.
+              Most agencies build something that looks good and hope search
+              traffic follows. We're an SEO-friendly web design company —
+              WordPress and Next.js, hand-written, no templates, fixed price.
             </motion.p>
 
             <motion.div

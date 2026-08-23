@@ -58,23 +58,6 @@ export function Testimonials() {
             </p>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-12 border-t border-zinc-100">
-            {[
-              { value: '7+', label: 'Years experience' },
-              { value: '8', label: 'Websites delivered' },
-              { value: '+968%', label: 'Search growth (client)' },
-              { value: 'Week 1', label: 'First customer for client' },
-            ].map((stat) => (
-              <div key={stat.label}>
-                <div className="text-4xl font-bold text-blue-600 mb-1">{stat.value}</div>
-                <div className="text-sm text-zinc-600">{stat.label}</div>
-              </div>
-            ))}
-          </motion.div>
         </div>
       </section>
 

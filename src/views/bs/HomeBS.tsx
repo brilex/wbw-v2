@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { ArrowRightIcon, CheckIcon } from 'lucide-react';
+import { ArrowRightIcon, CheckIcon, PhoneIcon, MessageCircleIcon } from 'lucide-react';
 import { services } from '../../data/services';
 import { servicesBS } from '../../data/services-bs';
 
@@ -19,17 +19,18 @@ export function HomeBS() {
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
               <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="inline-block mb-6">
                 <span className="px-4 py-1.5 bg-blue-50 text-blue-600 text-sm font-semibold rounded-full">
-                  Premium Web Razvoj
+                  WordPress i Next.js
                 </span>
               </motion.div>
               <motion.h1 initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
                 className="text-5xl lg:text-7xl font-bold tracking-tight text-zinc-950 mb-6 leading-[1.1]">
-                Gradimo web stranice koje konvertuju.
+                Izrada web stranica koje Google zaista pronađe.
               </motion.h1>
               <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}
                 className="text-xl text-zinc-600 mb-4 leading-relaxed max-w-xl">
-                Transformišite svoju digitalnu prisutnost s prilagođenim web rješenjima koja donose rezultate.
-                Kreiramo iznimna iskustva za ambiciozna preduzeća.
+                Većina agencija napravi nešto što lijepo izgleda i nada se da će posjete doći same.
+                Kod nas web dizajn i SEO optimizacija idu zajedno od prve linije koda —
+                ručno pisano, bez šablona, fiksna cijena.
               </motion.p>
               <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.35 }}
                 className="text-sm text-zinc-500 mb-10">
@@ -49,6 +50,27 @@ export function HomeBS() {
                   className="px-8 py-4 bg-white border-2 border-zinc-200 text-zinc-950 font-semibold rounded-xl hover:border-zinc-300 transition-colors inline-flex items-center justify-center">
                   Pogledajte naš rad
                 </Link>
+              </motion.div>
+
+              {/* Direct contact — most people here would rather call or message than fill a form */}
+              <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}
+                className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm">
+                <span className="text-zinc-500">Ili nas jednostavno nazovite:</span>
+                <a href="tel:+38762827306"
+                  className="inline-flex items-center gap-2 font-semibold text-zinc-950 hover:text-blue-600 transition-colors">
+                  <PhoneIcon className="w-4 h-4 text-blue-600" />
+                  062 827 306
+                </a>
+                <a href="viber://chat?number=%2B38762827306"
+                  className="inline-flex items-center gap-2 font-semibold text-zinc-950 hover:text-blue-600 transition-colors">
+                  <MessageCircleIcon className="w-4 h-4 text-blue-600" />
+                  Viber
+                </a>
+                <a href="https://wa.me/38762827306" target="_blank" rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 font-semibold text-zinc-950 hover:text-blue-600 transition-colors">
+                  <MessageCircleIcon className="w-4 h-4 text-blue-600" />
+                  WhatsApp
+                </a>
               </motion.div>
             </motion.div>
 
@@ -88,14 +110,14 @@ export function HomeBS() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { value: '7+', label: 'Godina iskustva' },
-              { value: '8', label: 'Isporučenih web stranica' },
-              { value: '+968%', label: 'Rast pretrage (klijent)' },
-              { value: '1. sedmica', label: 'Prva mušterija za klijenta' },
-            ].map((stat) => (
-              <div key={stat.label}>
-                <div className="text-3xl font-bold text-zinc-950 mb-1">{stat.value}</div>
-                <div className="text-sm text-zinc-500">{stat.label}</div>
+              { title: 'Ručno kodirano', detail: 'Bez AI šablona i page buildera koje prerastete' },
+              { title: 'SEO od prvog dana', detail: 'Građeno da vas pronađu, ne naknadno dodano' },
+              { title: 'Fiksne cijene', detail: 'Znate cijenu prije nego krenemo' },
+              { title: 'Sve je vaše', detail: 'Domena, hosting i kod ostaju na vaše ime' },
+            ].map((point) => (
+              <div key={point.title}>
+                <div className="text-lg font-bold text-zinc-950 mb-2">{point.title}</div>
+                <div className="text-sm text-zinc-500 leading-relaxed">{point.detail}</div>
               </div>
             ))}
           </div>
