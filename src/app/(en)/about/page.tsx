@@ -5,7 +5,13 @@ export const metadata: Metadata = {
   title: 'About WBW — Web Agency, Bosnia & Herzegovina',
   description:
     'We build hand-coded websites that rank on Google and convert visitors into customers. Based in BiH, working worldwide. See our process and results.',
-  alternates: { canonical: 'https://www.webuildsites.net/about' },
+  alternates: {
+    canonical: 'https://www.webuildsites.net/about',
+    languages: {
+      en: 'https://www.webuildsites.net/about',
+      bs: 'https://www.webuildsites.net/bs/o-nama',
+    },
+  },
   openGraph: {
     title: 'About WBW — Web Agency, Bosnia & Herzegovina',
     description:

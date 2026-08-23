@@ -5,7 +5,13 @@ export const metadata: Metadata = {
   title: 'Pricing | WBW Web Agency',
   description:
     'Transparent, fixed-price packages for professional websites. Starter from $400, Growth from $700, Full Partnership from $1,200. Copywriting, performance setup, and SEO included.',
-  alternates: { canonical: 'https://www.webuildsites.net/pricing' },
+  alternates: {
+    canonical: 'https://www.webuildsites.net/pricing',
+    languages: {
+      en: 'https://www.webuildsites.net/pricing',
+      bs: 'https://www.webuildsites.net/bs/cijene',
+    },
+  },
   openGraph: {
     title: 'Pricing | WBW Web Agency',
     description:

@@ -15,7 +15,7 @@ const organizationSchema = {
   telephone: '+38762827306',
   areaServed: 'Worldwide',
   priceRange: '$$',
-  sameAs: [],
+  sameAs: ['https://www.linkedin.com/in/armin-sehic-046394b8/'],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Web Development Services',

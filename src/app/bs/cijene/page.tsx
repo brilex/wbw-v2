@@ -5,7 +5,13 @@ export const metadata: Metadata = {
   title: 'Cijene Izrade Web Stranica — Paketi od 750 KM | WBW',
   description:
     'Fiksne cijene, bez iznenađenja. Starter od 750 KM, Growth od 1.300 KM, Full Partnership od 2.200 KM. Ručno izrađene stranice, SEO uključen.',
-  alternates: { canonical: 'https://www.webuildsites.net/bs/cijene' },
+  alternates: {
+    canonical: 'https://www.webuildsites.net/bs/cijene',
+    languages: {
+      en: 'https://www.webuildsites.net/pricing',
+      bs: 'https://www.webuildsites.net/bs/cijene',
+    },
+  },
   openGraph: {
     title: 'Cijene Izrade Web Stranica — Paketi od 750 KM | WBW',
     description:

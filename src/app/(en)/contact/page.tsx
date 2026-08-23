@@ -5,7 +5,13 @@ export const metadata: Metadata = {
   title: 'Free Consultation — Start Your Web Project',
   description:
     'Tell us about your project and get a free, no-obligation consultation within 24 hours. Web development packages from $400.',
-  alternates: { canonical: 'https://www.webuildsites.net/contact' },
+  alternates: {
+    canonical: 'https://www.webuildsites.net/contact',
+    languages: {
+      en: 'https://www.webuildsites.net/contact',
+      bs: 'https://www.webuildsites.net/bs/kontakt',
+    },
+  },
   openGraph: {
     title: 'Free Consultation — Start Your Web Project | WBW',
     description:

@@ -19,7 +19,13 @@ export async function generateMetadata({
   return {
     title: industry.title,
     description: industry.description,
-    alternates: { canonical: url },
+    alternates: {
+      canonical: url,
+      languages: {
+        en: url,
+        bs: `https://www.webuildsites.net/bs/industrije/${slug}`,
+      },
+    },
     openGraph: {
       title: `${industry.title} | WBW`,
       description: industry.description,

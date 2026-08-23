@@ -19,7 +19,13 @@ export async function generateMetadata({
   return {
     title: service.title,
     description: service.description,
-    alternates: { canonical: url },
+    alternates: {
+      canonical: url,
+      languages: {
+        en: url,
+        bs: `https://www.webuildsites.net/bs/usluge/${slug}`,
+      },
+    },
     openGraph: {
       title: `${service.title} | WBW`,
       description: service.description,

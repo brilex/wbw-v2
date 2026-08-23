@@ -5,7 +5,13 @@ export const metadata: Metadata = {
   title: 'Case Studies — Real Projects, Verified Results',
   description:
     'See exactly what we built and the results it drove — with Google Search Console proof. +968% impressions, +395% clicks, first customer in week 1.',
-  alternates: { canonical: 'https://www.webuildsites.net/work' },
+  alternates: {
+    canonical: 'https://www.webuildsites.net/work',
+    languages: {
+      en: 'https://www.webuildsites.net/work',
+      bs: 'https://www.webuildsites.net/bs/rad',
+    },
+  },
   openGraph: {
     title: 'Case Studies — Real Projects, Verified Results | WBW',
     description:
