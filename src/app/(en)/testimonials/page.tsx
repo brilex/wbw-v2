@@ -2,14 +2,20 @@ import type { Metadata } from 'next';
 import { Testimonials } from '@/src/views/Testimonials';
 
 export const metadata: Metadata = {
-  title: 'Client Reviews & Results',
+  title: 'Client Results — +968% Search Growth, Verified',
   description:
-    'See what clients say about working with WBW. Real projects, real feedback — from PVC joinery in Bosnia to developer tools used worldwide.',
-  alternates: { canonical: 'https://www.webuildsites.net/testimonials' },
+    'No stock quotes. See the actual numbers: +968% organic traffic, first customer in week 1, a trilingual manufacturing site — each with the case study behind it.',
+  alternates: {
+    canonical: 'https://www.webuildsites.net/testimonials',
+    languages: {
+      en: 'https://www.webuildsites.net/testimonials',
+      bs: 'https://www.webuildsites.net/bs/recenzije',
+    },
+  },
   openGraph: {
-    title: 'Client Reviews & Results | WBW',
+    title: 'Client Results — +968% Search Growth, Verified | WBW',
     description:
-      'See what clients say about working with WBW. Real projects, real feedback — from PVC joinery in Bosnia to developer tools used worldwide.',
+      'No stock quotes. See the actual numbers: +968% organic traffic, first customer in week 1, a trilingual manufacturing site.',
     url: 'https://www.webuildsites.net/testimonials',
   },
 };

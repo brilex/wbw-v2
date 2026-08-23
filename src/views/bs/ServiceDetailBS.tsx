@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Link from 'next/link';
-import Script from 'next/script';
 import { motion } from 'framer-motion';
 import { ArrowRightIcon, ArrowLeftIcon, CheckIcon } from 'lucide-react';
 import { getServiceBySlug, services } from '../../data/services';
@@ -29,7 +28,7 @@ export function ServiceDetailBS({ slug }: Props) {
 
   return (
     <main className="min-h-screen">
-      <Script id={`faq-schema-bs-${slug}`} type="application/ld+json"
+      <script id={`faq-schema-bs-${slug}`} type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <section className="relative pt-32 pb-20 bg-white overflow-hidden">

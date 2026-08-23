@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Link from 'next/link';
-import Script from 'next/script';
 import { motion } from 'framer-motion';
 import { ArrowRightIcon, ArrowLeftIcon, CheckIcon } from 'lucide-react';
 import { getServiceBySlug, services } from '../data/services';
@@ -31,7 +30,7 @@ export function ServiceDetail({ slug }: Props) {
 
   return (
     <main className="min-h-screen">
-      <Script
+      <script
         id={`faq-schema-${slug}`}
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

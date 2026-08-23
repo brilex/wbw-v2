@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { CheckIcon, ArrowRightIcon, StarIcon } from 'lucide-react';
+import { FaqSchema } from '../components/FaqSchema';
 
 const packages = [
   {
@@ -84,6 +85,7 @@ const faqs = [
 export function Pricing() {
   return (
     <main className="min-h-screen">
+      <FaqSchema id="pricing" faqs={faqs.map((f) => ({ question: f.q, answer: f.a }))} />
       <section className="pt-32 pb-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl">

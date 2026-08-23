@@ -11,8 +11,33 @@ interface Props {
 }
 
 export function BlogPost({ post }: Props) {
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.description,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: { '@type': 'Organization', name: post.author, url: 'https://www.webuildsites.net' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'WBW',
+      logo: { '@type': 'ImageObject', url: 'https://www.webuildsites.net/icon.png' },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://www.webuildsites.net/blog/${post.slug}`,
+    },
+    keywords: post.tags.join(', '),
+  };
+
   return (
     <main className="min-h-screen">
+      <script
+        id={`article-schema-${post.slug}`}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       {/* Hero */}
       <section className="pt-32 pb-16 bg-white">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
