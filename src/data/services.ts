@@ -6,6 +6,9 @@ import {
   SettingsIcon,
   LayersIcon,
   ZapIcon,
+  PuzzleIcon,
+  LayoutGridIcon,
+  GlobeIcon,
   type LucideIcon } from
 'lucide-react';
 
@@ -457,6 +460,196 @@ export const services: ServiceData[] = [
       question: 'Do you handle deployment as well?',
       answer:
         'Yes — we set up your Vercel project, configure environment variables, and make sure CI/CD is running before we hand over.',
+    },
+  ],
+},
+{
+  slug: 'custom-plugin-development',
+  icon: PuzzleIcon,
+  title: 'Custom WordPress Plugin Development',
+  tagline: 'When no existing plugin does what you need',
+  description:
+    'Bespoke WordPress plugins built from scratch — automation pipelines, API integrations, custom widgets, and admin tools designed around how your business actually works.',
+  longDescription:
+    "Most agencies solve every problem by installing another plugin. That works until it doesn't — until the plugin almost does what you need, or breaks on update, or slows your site to a crawl. We write custom plugins in PHP against the WordPress APIs, so the functionality fits your workflow exactly, stays maintainable, and doesn't drag along features you'll never use.",
+  features: [
+    {
+      title: 'AI and API integrations',
+      description:
+        'We built a plugin that pulls RSS content, rewrites it through an AI model, and publishes on a schedule — handling rate limits, retries, and output cleanup automatically.',
+    },
+    {
+      title: 'Custom admin interfaces',
+      description:
+        'Settings pages, editable prompts, and controls your team can actually use — so behaviour can change without touching code.',
+    },
+    {
+      title: 'Bespoke widgets and blocks',
+      description:
+        'Live data widgets, Gutenberg blocks, and shortcodes built for your exact use case rather than bent out of a generic plugin.',
+    },
+    {
+      title: 'Scheduled automation',
+      description:
+        'WP-Cron jobs that run reliably in the background — content pipelines, data syncs, and scheduled imports.',
+    },
+  ],
+  deliverables: [
+    'Custom plugin, versioned and documented',
+    'Admin settings interface',
+    'API integration and error handling',
+    'Scheduled task (cron) configuration',
+    'Installation and handover documentation',
+    'Post-launch support window',
+  ],
+  technologies: ['PHP', 'WordPress Plugin API', 'WP-Cron', 'REST APIs', 'MySQL', 'JavaScript'],
+  faqs: [
+    {
+      question: 'Why build a custom plugin instead of using an existing one?',
+      answer:
+        "When an off-the-shelf plugin covers your need, we'll tell you to use it — that's cheaper for you. Custom development makes sense when nothing does the job, when you'd need three plugins fighting each other, or when an existing one carries so much unused weight it hurts performance.",
+    },
+    {
+      question: 'Can you integrate AI into a WordPress site?',
+      answer:
+        'Yes. We built a plugin that rewrites syndicated articles through an AI model into original, structured content — including handling API rate limits, model routing, and cleaning up the output before publishing. See the CryptoLeb case study for the full breakdown.',
+    },
+    {
+      question: 'Will the plugin survive WordPress updates?',
+      answer:
+        'We build against documented WordPress APIs rather than hacking around internals, which is what keeps a plugin working across core updates. We also hand over the source so you are never locked to us.',
+    },
+    {
+      question: 'Do we own the code?',
+      answer:
+        'Yes. You get the full source, documented, and it is yours to keep, modify, or hand to another developer.',
+    },
+  ],
+},
+{
+  slug: 'directory-marketplace-development',
+  icon: LayoutGridIcon,
+  title: 'Business Directory & Marketplace Development',
+  tagline: 'Platforms built to scale past launch day',
+  description:
+    'Directory and marketplace platforms with listing management, category and location search, reviews, and an architecture that stays fast as listings grow into the thousands.',
+  longDescription:
+    "A directory is not a brochure site with a list on it. It lives or dies on how fast people find what they're looking for and how complete the listings feel — and both get harder as the platform grows. We build directory platforms with the data structure and search architecture planned upfront, so adding thousands of listings doesn't mean a rebuild.",
+  features: [
+    {
+      title: 'Structured listing management',
+      description:
+        'Category taxonomies, listing tiers, and profile fields modelled around your market from the start — not bolted on later.',
+    },
+    {
+      title: 'Search and filtering that scales',
+      description:
+        'Fast filtering by category, location, and attributes that stays responsive as the listing count grows.',
+    },
+    {
+      title: 'Geolocation and proximity search',
+      description:
+        'Location-aware results so visitors find what is genuinely near them, not just what was added most recently.',
+    },
+    {
+      title: 'Reviews and community features',
+      description:
+        'User feedback and discussion built in — the trust signals that make people use a directory instead of just searching Google.',
+    },
+  ],
+  deliverables: [
+    'Custom directory platform',
+    'Listing submission and management flow',
+    'Category and location search',
+    'Business profile pages',
+    'Review and rating system',
+    'Free and premium listing tiers',
+    'SEO-ready listing URLs and metadata',
+  ],
+  technologies: ['WordPress', 'Custom PHP', 'MySQL', 'Geolocation APIs', 'Next.js'],
+  faqs: [
+    {
+      question: 'Have you actually built a directory before?',
+      answer:
+        'Two. firme.ba is a nationwide business directory for Bosnia & Herzegovina with free and premium listing tiers, and United First is a Canada-wide directory spanning 25+ categories with geolocation search. Both case studies are on this site.',
+    },
+    {
+      question: 'How do you handle a directory that starts out empty?',
+      answer:
+        'Structure and seeding matter more than features at launch. We plan the category model around a realistic first hundred listings, make submission frictionless, and build the SEO structure so individual listings can rank on their own.',
+    },
+    {
+      question: 'Can it support paid listings?',
+      answer:
+        'Yes — tiered listings are a common model, and we build the free/premium distinction into the data model from the start rather than retrofitting it.',
+    },
+    {
+      question: 'Will it stay fast with thousands of listings?',
+      answer:
+        'That is the main architectural question, and we plan for it upfront — indexed queries, sensible pagination, and caching. A directory that gets slow at scale usually was not designed as a directory.',
+    },
+  ],
+},
+{
+  slug: 'multilingual-websites',
+  icon: GlobeIcon,
+  title: 'Multilingual & International Websites',
+  tagline: 'One site, several markets, no compromises',
+  description:
+    'Multilingual websites built for businesses selling across borders — proper language switching, correct hreflang signals, and content structured so each market ranks on its own.',
+  longDescription:
+    'Running a site in several languages is mostly an SEO and content-architecture problem, not a translation problem. Get it wrong and your language versions compete with each other in search instead of each ranking in its own market. We build multilingual sites with the URL structure, hreflang signals, and editorial workflow planned from the start.',
+  features: [
+    {
+      title: 'Correct hreflang and canonicals',
+      description:
+        'Search engines told explicitly which page serves which language and market, so versions reinforce each other instead of splitting rankings.',
+    },
+    {
+      title: 'Clean URL structure per language',
+      description:
+        'Predictable, indexable URLs for every language — not query parameters or JavaScript-only switching that crawlers cannot follow.',
+    },
+    {
+      title: 'Manageable editorial workflow',
+      description:
+        'Your team edits each language without fear of breaking the others, with a clear view of what is translated and what is not.',
+    },
+    {
+      title: 'Market-specific content, not just translation',
+      description:
+        'Keyword research per language, because the phrase your customers search in German is rarely a direct translation of the English one.',
+    },
+  ],
+  deliverables: [
+    'Multilingual site architecture',
+    'Language switcher and routing',
+    'hreflang and canonical implementation',
+    'Per-language SEO metadata',
+    'Translation workflow setup',
+    'Per-market keyword research',
+  ],
+  technologies: ['WordPress', 'WPML', 'Next.js', 'PHP', 'Schema.org'],
+  faqs: [
+    {
+      question: 'Have you built a multilingual site before?',
+      answer:
+        'Yes — Neimax, a packaging manufacturer exporting to European partners, runs in Bosnian, English, and German on a custom WordPress theme with seamless language switching. We also built CryptoLeb for a specific regional market. Both case studies are on this site.',
+    },
+    {
+      question: 'Will the language versions compete with each other in Google?',
+      answer:
+        'Not if hreflang is implemented correctly — that is the signal telling Google these are language variants of the same page rather than duplicates. Missing or wrong hreflang is the single most common reason multilingual sites underperform.',
+    },
+    {
+      question: 'Do you provide the translations?',
+      answer:
+        'We build the structure and can work with your translator or translation service. For market-specific pages we also do keyword research per language, since a literal translation often misses what people actually search for.',
+    },
+    {
+      question: 'Can we add a language later?',
+      answer:
+        'Yes, if the site is built for it from the start — which is exactly why the architecture decision matters early. Retrofitting multilingual support onto a single-language site is far more work than planning for it upfront.',
     },
   ],
 },

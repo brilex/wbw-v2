@@ -393,6 +393,190 @@ export const servicesBS: ServiceBSContent[] = [
       },
     ],
   },
+  {
+    slug: 'custom-plugin-development',
+    title: 'Razvoj prilagođenih WordPress pluginova',
+    tagline: 'Kada nijedan postojeći plugin ne radi ono što vam treba',
+    description:
+      'Prilagođeni WordPress pluginovi izrađeni od nule — automatizacija, API integracije, custom widgeti i admin alati napravljeni prema tome kako vaš biznis zaista radi.',
+    longDescription:
+      'Većina agencija svaki problem rješava instaliranjem još jednog plugina. To radi dok ne prestane — dok plugin skoro radi ono što treba, ili se pokvari nakon ažuriranja, ili uspori sajt. Mi pišemo custom pluginove u PHP-u koristeći WordPress API-je, tako da funkcionalnost odgovara tačno vašem procesu, ostaje održiva i ne vuče za sobom gomilu funkcija koje nikad nećete koristiti.',
+    features: [
+      {
+        title: 'AI i API integracije',
+        description:
+          'Izradili smo plugin koji povlači RSS sadržaj, prepisuje ga kroz AI model i objavljuje po rasporedu — uz automatsko rukovanje rate limitima, ponovnim pokušajima i čišćenjem izlaza.',
+      },
+      {
+        title: 'Prilagođena admin sučelja',
+        description:
+          'Stranice postavki, editabilni promptovi i kontrole koje vaš tim zaista može koristiti — da se ponašanje mijenja bez diranja koda.',
+      },
+      {
+        title: 'Namjenski widgeti i blokovi',
+        description:
+          'Widgeti sa živim podacima, Gutenberg blokovi i shortcodeovi izrađeni za vaš tačan slučaj upotrebe, a ne iskrivljeni iz generičkog plugina.',
+      },
+      {
+        title: 'Zakazana automatizacija',
+        description:
+          'WP-Cron zadaci koji pouzdano rade u pozadini — sadržajni pipeline-ovi, sinhronizacija podataka i zakazani uvozi.',
+      },
+    ],
+    deliverables: [
+      'Prilagođeni plugin, verzionisan i dokumentovan',
+      'Admin sučelje s postavkama',
+      'API integracija i rukovanje greškama',
+      'Konfiguracija zakazanih zadataka (cron)',
+      'Dokumentacija za instalaciju i primopredaju',
+      'Period podrške nakon lansiranja',
+    ],
+    faqs: [
+      {
+        question: 'Zašto praviti custom plugin umjesto koristiti postojeći?',
+        answer:
+          'Kada postojeći plugin pokriva vašu potrebu, reći ćemo vam da ga koristite — to je jeftinije za vas. Custom razvoj ima smisla kada ništa ne radi posao, kada bi vam trebala tri plugina koja se međusobno sukobljavaju, ili kada postojeći nosi toliko neiskorištenog tereta da šteti performansama.',
+      },
+      {
+        question: 'Možete li integrisati AI u WordPress sajt?',
+        answer:
+          'Da. Izradili smo plugin koji prepisuje preuzete članke kroz AI model u originalan, strukturiran sadržaj — uključujući rukovanje API rate limitima, rutiranje modela i čišćenje izlaza prije objave. Pogledajte CryptoLeb studiju slučaja za detalje.',
+      },
+      {
+        question: 'Hoće li plugin preživjeti WordPress ažuriranja?',
+        answer:
+          'Gradimo koristeći dokumentovane WordPress API-je umjesto zaobilaženja internih mehanizama, što je ono što drži plugin funkcionalnim kroz ažuriranja jezgra. Također predajemo izvorni kod, pa niste vezani za nas.',
+      },
+      {
+        question: 'Da li mi posjedujemo kod?',
+        answer:
+          'Da. Dobijate kompletan izvorni kod, dokumentovan, i vaš je da ga zadržite, mijenjate ili predate drugom developeru.',
+      },
+    ],
+  },
+  {
+    slug: 'directory-marketplace-development',
+    title: 'Izrada poslovnih direktorija i marketplace platformi',
+    tagline: 'Platforme izgrađene da rastu i nakon lansiranja',
+    description:
+      'Direktorij i marketplace platforme s upravljanjem oglasima, pretragom po kategoriji i lokaciji, recenzijama i arhitekturom koja ostaje brza dok broj oglasa raste u hiljade.',
+    longDescription:
+      'Direktorij nije prezentacijski sajt s listom na njemu. Živi ili umire na tome koliko brzo ljudi pronađu ono što traže i koliko potpuno oglasi djeluju — a oboje postaje teže kako platforma raste. Gradimo direktorij platforme s unaprijed planiranom strukturom podataka i arhitekturom pretrage, tako da dodavanje hiljada oglasa ne znači ponovnu izgradnju.',
+    features: [
+      {
+        title: 'Strukturirano upravljanje oglasima',
+        description:
+          'Taksonomije kategorija, nivoi oglasa i polja profila modelirani prema vašem tržištu od početka — a ne naknadno dodani.',
+      },
+      {
+        title: 'Pretraga i filtriranje koji skaliraju',
+        description:
+          'Brzo filtriranje po kategoriji, lokaciji i atributima koje ostaje responzivno kako broj oglasa raste.',
+      },
+      {
+        title: 'Geolokacija i pretraga po blizini',
+        description:
+          'Rezultati svjesni lokacije, tako da posjetioci pronađu ono što im je zaista blizu, a ne samo ono što je zadnje dodano.',
+      },
+      {
+        title: 'Recenzije i community funkcije',
+        description:
+          'Ugrađene povratne informacije korisnika — signali povjerenja zbog kojih ljudi koriste direktorij umjesto da samo guglaju.',
+      },
+    ],
+    deliverables: [
+      'Prilagođena direktorij platforma',
+      'Tok prijave i upravljanja oglasima',
+      'Pretraga po kategoriji i lokaciji',
+      'Stranice poslovnih profila',
+      'Sistem recenzija i ocjena',
+      'Besplatni i premium nivoi oglasa',
+      'SEO-spremni URL-ovi i metapodaci oglasa',
+    ],
+    faqs: [
+      {
+        question: 'Jeste li zaista već gradili direktorij?',
+        answer:
+          'Dva. firme.ba je poslovni direktorij za cijelu Bosnu i Hercegovinu s besplatnim i premium nivoima oglasa, a United First je direktorij za cijelu Kanadu s preko 25 kategorija i geolokacijskom pretragom. Obje studije slučaja su na ovom sajtu.',
+      },
+      {
+        question: 'Kako riješiti direktorij koji kreće prazan?',
+        answer:
+          'Struktura i početno popunjavanje su na lansiranju važniji od funkcija. Planiramo model kategorija oko realnih prvih stotinu oglasa, činimo prijavu jednostavnom i gradimo SEO strukturu tako da pojedinačni oglasi mogu rangirati sami.',
+      },
+      {
+        question: 'Može li podržati plaćene oglase?',
+        answer:
+          'Da — nivoi oglasa su čest model, i razliku besplatno/premium ugrađujemo u model podataka od početka umjesto da je naknadno dodajemo.',
+      },
+      {
+        question: 'Hoće li ostati brz s hiljadama oglasa?',
+        answer:
+          'To je glavno arhitektonsko pitanje i planiramo ga unaprijed — indeksirani upiti, razumna paginacija i keširanje. Direktorij koji uspori na skali obično nije ni bio dizajniran kao direktorij.',
+      },
+    ],
+  },
+  {
+    slug: 'multilingual-websites',
+    title: 'Višejezični i međunarodni web sajtovi',
+    tagline: 'Jedan sajt, više tržišta, bez kompromisa',
+    description:
+      'Višejezični sajtovi za firme koje prodaju preko granica — ispravno prebacivanje jezika, tačni hreflang signali i sadržaj strukturiran tako da svako tržište rangira samostalno.',
+    longDescription:
+      'Vođenje sajta na više jezika je uglavnom SEO i sadržajno-arhitektonski problem, a ne prevodilački. Ako se uradi pogrešno, vaše jezičke verzije se međusobno takmiče u pretrazi umjesto da svaka rangira na svom tržištu. Gradimo višejezične sajtove s unaprijed planiranom URL strukturom, hreflang signalima i uredničkim procesom.',
+    features: [
+      {
+        title: 'Ispravan hreflang i kanonski tagovi',
+        description:
+          'Pretraživačima se eksplicitno kaže koja stranica služi kojem jeziku i tržištu, pa se verzije međusobno jačaju umjesto da dijele pozicije.',
+      },
+      {
+        title: 'Čista URL struktura po jeziku',
+        description:
+          'Predvidivi, indeksibilni URL-ovi za svaki jezik — ne query parametri ili prebacivanje koje radi samo kroz JavaScript, a crawleri ga ne mogu pratiti.',
+      },
+      {
+        title: 'Uredivi urednički proces',
+        description:
+          'Vaš tim uređuje svaki jezik bez straha da će pokvariti ostale, uz jasan pregled šta je prevedeno, a šta nije.',
+      },
+      {
+        title: 'Sadržaj po tržištu, ne samo prijevod',
+        description:
+          'Istraživanje ključnih riječi po jeziku, jer fraza koju vaši kupci traže na njemačkom rijetko je direktan prijevod one engleske.',
+      },
+    ],
+    deliverables: [
+      'Arhitektura višejezičnog sajta',
+      'Prebacivanje jezika i rutiranje',
+      'Implementacija hreflang i kanonskih tagova',
+      'SEO metapodaci po jeziku',
+      'Postavljanje prevodilačkog procesa',
+      'Istraživanje ključnih riječi po tržištu',
+    ],
+    faqs: [
+      {
+        question: 'Jeste li već gradili višejezični sajt?',
+        answer:
+          'Da — Neimax, proizvođač ambalaže koji izvozi evropskim partnerima, radi na bosanskom, engleskom i njemačkom na custom WordPress temi s besprijekornim prebacivanjem jezika. Također smo izradili CryptoLeb za specifično regionalno tržište. Obje studije slučaja su na ovom sajtu.',
+      },
+      {
+        question: 'Hoće li se jezičke verzije takmičiti na Googleu?',
+        answer:
+          'Neće ako je hreflang ispravno implementiran — to je signal koji govori Googleu da su ovo jezičke varijante iste stranice, a ne duplikati. Nedostajući ili pogrešan hreflang je najčešći razlog zašto višejezični sajtovi podbace.',
+      },
+      {
+        question: 'Radite li i prijevode?',
+        answer:
+          'Gradimo strukturu i možemo raditi s vašim prevodiocem ili prevodilačkom agencijom. Za stranice specifične za tržište radimo i istraživanje ključnih riječi po jeziku, jer doslovan prijevod često promaši ono što ljudi zaista traže.',
+      },
+      {
+        question: 'Možemo li dodati jezik kasnije?',
+        answer:
+          'Da, ako je sajt od početka građen za to — što je upravo razlog zašto je ta arhitektonska odluka važna rano. Naknadno dodavanje višejezičnosti na jednojezični sajt je znatno više posla nego planiranje unaprijed.',
+      },
+    ],
+  },
 ];
 
 export function getServiceBSBySlug(slug: string): ServiceBSContent | undefined {
