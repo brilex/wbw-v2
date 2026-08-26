@@ -8,6 +8,17 @@ import { ArrowRightIcon, CheckIcon, PhoneIcon, MessageCircleIcon } from 'lucide-
 import { services } from '../../data/services';
 import { servicesBS } from '../../data/services-bs';
 
+// Same six as the English homepage — lead with what sets us apart, not just
+// the services every agency lists.
+const FEATURED_SLUGS = [
+  'web-development',
+  'seo-optimization',
+  'wordpress-development',
+  'custom-plugin-development',
+  'directory-marketplace-development',
+  'ecommerce-development',
+];
+
 export function HomeBS() {
   return (
     <main>
@@ -132,11 +143,14 @@ export function HomeBS() {
               Šta radimo
             </h2>
             <p className="text-xl text-zinc-600 max-w-2xl">
-              Sveobuhvatna digitalna rješenja prilagođena vašim poslovnim ciljevima.
+              Od prezentacijskih sajtova do custom pluginova i direktorij platformi —
+              sve radimo sami, ništa ne prosljeđujemo dalje.
             </p>
           </motion.div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.slice(0, 6).map((service, index) => {
+            {FEATURED_SLUGS.map((slug) => services.find((s) => s.slug === slug))
+              .filter((s): s is (typeof services)[number] => Boolean(s))
+              .map((service, index) => {
               const bsService = servicesBS.find((s) => s.slug === service.slug);
               const Icon = service.icon;
               return (
