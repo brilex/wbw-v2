@@ -21,7 +21,7 @@ export function NavbarBS() {
   const trailingLinks = [
     { name: 'Rad', path: '/bs/rad' },
     { name: 'Proces', path: '/bs/proces' },
-    { name: 'Blog', path: '/blog' },
+    { name: 'Blog', path: 'bs/blog' },
     { name: 'Cijene', path: '/bs/cijene' },
     { name: 'O nama', path: '/bs/o-nama' },
     { name: 'Kontakt', path: '/bs/kontakt' },
