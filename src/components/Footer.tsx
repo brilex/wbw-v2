@@ -76,21 +76,7 @@ export function Footer() {
               ))}
             </ul>
 
-            {/* Alternative.tools Badge */}
-            <a
-              href="https://alternative.tools/item/we-build-websites?utm_source=badge&utm_medium=referral&utm_campaign=featured-badge"
-              target="_blank"
-              rel="noopener dofollow"
-              className="inline-block mt-2 transition-opacity hover:opacity-90"
-            >
-              <img
-                src="https://alternative.tools/badge.svg?theme=light&width=200&height=54"
-                alt="Featured on Alternative.tools"
-                width="200"
-                height="54"
-                loading="lazy"
-              />
-            </a>
+         
           </div>
 
           {/* Contact */}
@@ -118,6 +104,21 @@ export function Footer() {
                 <MailIcon size={20} />
               </a>
             </div>
+               {/* Alternative.tools Badge */}
+            <a
+              href="https://alternative.tools/item/we-build-websites?utm_source=badge&utm_medium=referral&utm_campaign=featured-badge"
+              target="_blank"
+              rel="noopener dofollow"
+              className="inline-block mt-5 transition-opacity hover:opacity-90"
+            >
+              <img
+                src="https://alternative.tools/badge.svg?theme=light&width=200&height=54"
+                alt="Featured on Alternative.tools"
+                width="200"
+                height="54"
+                loading="lazy"
+              />
+            </a>
           </div>
         </div>
 
