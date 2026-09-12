@@ -64,7 +64,7 @@ export function Footer() {
             <h3 className="text-sm font-semibold text-zinc-950 mb-4">
               Company
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3 mb-6">
               {company.map((item) => (
                 <li key={item.name}>
                   <Link
@@ -75,6 +75,22 @@ export function Footer() {
                 </li>
               ))}
             </ul>
+
+            {/* Alternative.tools Badge */}
+            <a
+              href="https://alternative.tools/item/we-build-websites?utm_source=badge&utm_medium=referral&utm_campaign=featured-badge"
+              target="_blank"
+              rel="noopener dofollow"
+              className="inline-block mt-2 transition-opacity hover:opacity-90"
+            >
+              <img
+                src="https://alternative.tools/badge.svg?theme=light&width=200&height=54"
+                alt="Featured on Alternative.tools"
+                width="200"
+                height="54"
+                loading="lazy"
+              />
+            </a>
           </div>
 
           {/* Contact */}
