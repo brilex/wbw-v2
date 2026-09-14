@@ -15,12 +15,12 @@ export function Hero() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left content */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{  y: 20 }}
+            animate={{  y: 0 }}
             transition={{ duration: 0.6 }}>
             <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 10 }}
+              animate={{ y: 0 }}
               transition={{ delay: 0.1, duration: 0.5 }}
               className="inline-block mb-6">
               <span className="px-4 py-1.5 bg-blue-50 text-blue-600 text-sm font-semibold rounded-full">
@@ -163,86 +163,9 @@ function HeroSVG() {
         </div>
       </motion.div>
 
-      {/* Animated network SVG */}
-      <svg viewBox="0 0 460 460" className="absolute inset-0 w-full h-full" aria-hidden="true">
-        <defs>
-          <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#2563eb" stopOpacity="0.1" />
-            <stop offset="50%" stopColor="#2563eb" stopOpacity="0.6" />
-            <stop offset="100%" stopColor="#2563eb" stopOpacity="0.1" />
-          </linearGradient>
-          <radialGradient id="nodeGlow">
-            <stop offset="0%" stopColor="#2563eb" stopOpacity="0.4" />
-            <stop offset="100%" stopColor="#2563eb" stopOpacity="0" />
-          </radialGradient>
-        </defs>
+      
 
-        {connections.map((conn, i) => (
-          <motion.line
-            key={`line-${i}`}
-            x1={conn.from.cx} y1={conn.from.cy}
-            x2={conn.to.cx} y2={conn.to.cy}
-            stroke="url(#lineGradient)"
-            strokeWidth="1.5"
-            initial={{ pathLength: 0, opacity: 0 }}
-            animate={{ pathLength: 1, opacity: 1 }}
-            transition={{ duration: 1.2, delay: conn.delay, ease: 'easeOut' }}
-          />
-        ))}
-
-        {connections.slice(0, 6).map((conn, i) => (
-          <motion.circle
-            key={`pulse-${i}`}
-            r="3"
-            fill="#2563eb"
-            initial={{ cx: conn.from.cx, cy: conn.from.cy, opacity: 0 }}
-            animate={{
-              cx: [conn.from.cx, conn.to.cx],
-              cy: [conn.from.cy, conn.to.cy],
-              opacity: [0, 1, 0],
-            }}
-            transition={{ duration: 2.5, delay: conn.delay + 1.5 + i * 0.4, repeat: Infinity, repeatDelay: 1.5, ease: 'easeInOut' }}
-          />
-        ))}
-
-        {nodes.map((node) => (
-          <g key={node.id}>
-            <motion.circle cx={node.cx} cy={node.cy} r={node.r * 3} fill="url(#nodeGlow)"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: [0.3, 0.7, 0.3] }}
-              transition={{ duration: 3, delay: node.delay, repeat: Infinity, ease: 'easeInOut' }}
-            />
-            <motion.circle cx={node.cx} cy={node.cy} r={node.r} fill="none" stroke="#2563eb" strokeWidth="1.5"
-              initial={{ scale: 1, opacity: 0 }}
-              animate={{ scale: [1, 2.5], opacity: [0.6, 0] }}
-              transition={{ duration: 2.5, delay: node.delay + 0.5, repeat: Infinity, ease: 'easeOut' }}
-              style={{ transformOrigin: `${node.cx}px ${node.cy}px` }}
-            />
-            <motion.circle cx={node.cx} cy={node.cy} r={node.r} fill="#2563eb"
-              initial={{ scale: 0, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.5, delay: node.delay, ease: 'backOut' }}
-              style={{ transformOrigin: `${node.cx}px ${node.cy}px` }}
-            />
-            <circle cx={node.cx - node.r * 0.3} cy={node.cy - node.r * 0.3} r={node.r * 0.3} fill="white" opacity="0.5" />
-          </g>
-        ))}
-      </svg>
-
-      {/* Floating geometric accents */}
-      <motion.div
-        animate={{ y: [0, 12, 0], rotate: [0, 8, 0] }}
-        transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }}
-        className="absolute bottom-8 left-4 w-16 h-16 rounded-2xl bg-white shadow-xl border border-zinc-100 flex items-center justify-center">
-        <div className="w-8 h-8 rounded-lg bg-blue-600" />
-      </motion.div>
-
-      <motion.div
-        animate={{ y: [0, -10, 0], rotate: [0, -6, 0] }}
-        transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-        className="absolute top-32 left-0 px-3 py-1.5 rounded-full bg-white shadow-lg border border-zinc-100 text-xs font-semibold text-blue-600">
-        ⚡ 99 PageSpeed
-      </motion.div>
+     
     </div>
   );
 }
