@@ -29,16 +29,16 @@ export function Hero() {
             </motion.div>
 
             <motion.h1
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{  y: 10 }}
+              animate={{ y: 0 }}
               transition={{ delay: 0.2, duration: 0.5 }}
               className="text-5xl lg:text-7xl font-bold tracking-tight text-zinc-950 mb-6 leading-[1.1]">
               Web development with SEO built in from day one.
             </motion.h1>
 
             <motion.p
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 10 }}
+              animate={{  y: 0 }}
               transition={{ delay: 0.3, duration: 0.5 }}
               className="text-xl text-zinc-600 mb-10 leading-relaxed max-w-xl">
               Most agencies build something that looks good and hope search
@@ -47,8 +47,8 @@ export function Hero() {
             </motion.p>
 
             <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{  y: 10 }}
+              animate={{  y: 0 }}
               transition={{ delay: 0.4, duration: 0.5 }}
               className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -66,8 +66,8 @@ export function Hero() {
 
             {/* Direct contact — plenty of people would rather message than fill a form */}
             <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 10 }}
+              animate={{  y: 0 }}
               transition={{ delay: 0.5, duration: 0.5 }}
               className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm">
               <span className="text-zinc-500">Or reach us directly:</span>
@@ -95,13 +95,13 @@ export function Hero() {
           </motion.div>
 
           {/* Right visual - Animated SVG */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
+          {/* <motion.div
+            initial={{ scale: 0.95 }}
+            animate={{ scale: 1 }}
             transition={{ delay: 0.3, duration: 0.7 }}
             className="relative hidden lg:block">
             <HeroSVG />
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>
