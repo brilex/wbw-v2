@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import React from 'react';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
-import { ArrowRightIcon, ArrowLeftIcon, CheckIcon } from 'lucide-react';
-import { getServiceBySlug, services } from '../data/services';
+import React from "react";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { ArrowRightIcon, ArrowLeftIcon, CheckIcon } from "lucide-react";
+import { getServiceBySlug, services } from "../data/services";
 
 interface Props {
   slug: string;
@@ -16,13 +16,13 @@ export function ServiceDetail({ slug }: Props) {
   const Icon = service.icon;
 
   const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
     mainEntity: service.faqs.map((faq) => ({
-      '@type': 'Question',
+      "@type": "Question",
       name: faq.question,
       acceptedAnswer: {
-        '@type': 'Answer',
+        "@type": "Answer",
         text: faq.answer,
       },
     })),
@@ -42,7 +42,8 @@ export function ServiceDetail({ slug }: Props) {
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
           <Link
             href="/services"
-            className="inline-flex items-center text-sm font-medium text-zinc-600 hover:text-blue-600 transition-colors mb-8">
+            className="inline-flex items-center text-sm font-medium text-zinc-600 hover:text-blue-600 transition-colors mb-8"
+          >
             <ArrowLeftIcon className="w-4 h-4 mr-2" />
             All services
           </Link>
@@ -50,7 +51,8 @@ export function ServiceDetail({ slug }: Props) {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="max-w-3xl">
+            className="max-w-3xl"
+          >
             <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mb-6">
               <Icon className="w-8 h-8 text-white" />
             </div>
@@ -64,16 +66,46 @@ export function ServiceDetail({ slug }: Props) {
               {service.longDescription}
             </p>
 
+
+            {slug === "wordpress-development" && (
+              <p className="text-lg text-zinc-600 leading-relaxed mt-4">
+                Curious what a redesign actually costs?{" "}
+                <Link
+                  href="/blog/wordpress-website-redesign-services"
+                  className="text-blue-600 underline font-medium hover:text-blue-800"
+                >
+                  Read our full guide on WordPress website redesign pricing &
+                  process
+                </Link>
+                .
+              </p>
+            )}
+
+            {slug === 'seo-optimization' && (
+              <p className="text-lg text-zinc-600 leading-relaxed mt-4">
+                See a real example of what this looks like in practice —{' '}
+                <Link
+                  href="/work/hamada-co"
+                  className="text-blue-600 underline font-medium hover:text-blue-800">
+                  the Hamada & Co. case study
+                </Link>{' '}
+                shows a +968% jump in search impressions after we rebuilt their SEO foundations from scratch.
+              </p>
+            )}
+
+            
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <Link
                 href="/contact"
-                className="group px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-all hover:shadow-lg hover:shadow-blue-600/20 inline-flex items-center justify-center">
+                className="group px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-all hover:shadow-lg hover:shadow-blue-600/20 inline-flex items-center justify-center"
+              >
                 Start a project
                 <ArrowRightIcon className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
                 href="/work"
-                className="px-8 py-4 bg-white border-2 border-zinc-200 text-zinc-950 font-semibold rounded-xl hover:border-zinc-300 transition-colors inline-flex items-center justify-center">
+                className="px-8 py-4 bg-white border-2 border-zinc-200 text-zinc-950 font-semibold rounded-xl hover:border-zinc-300 transition-colors inline-flex items-center justify-center"
+              >
                 See our work
               </Link>
             </div>
@@ -88,7 +120,8 @@ export function ServiceDetail({ slug }: Props) {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="max-w-2xl mb-16">
+            className="max-w-2xl mb-16"
+          >
             <h2 className="text-4xl lg:text-5xl font-bold tracking-tight text-zinc-950 mb-4">
               What's included
             </h2>
@@ -105,7 +138,8 @@ export function ServiceDetail({ slug }: Props) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-white p-8 rounded-2xl border border-zinc-200 hover:border-blue-600 hover:shadow-lg transition-all">
+                className="bg-white p-8 rounded-2xl border border-zinc-200 hover:border-blue-600 hover:shadow-lg transition-all"
+              >
                 <h3 className="text-xl font-semibold text-zinc-950 mb-3">
                   {feature.title}
                 </h3>
@@ -126,7 +160,8 @@ export function ServiceDetail({ slug }: Props) {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}>
+              viewport={{ once: true }}
+            >
               <h2 className="text-3xl font-bold tracking-tight text-zinc-950 mb-6">
                 Deliverables
               </h2>
@@ -150,7 +185,8 @@ export function ServiceDetail({ slug }: Props) {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: 0.1 }}>
+              transition={{ delay: 0.1 }}
+            >
               <h2 className="text-3xl font-bold tracking-tight text-zinc-950 mb-6">
                 Technologies
               </h2>
@@ -161,7 +197,8 @@ export function ServiceDetail({ slug }: Props) {
                 {service.technologies.map((tech) => (
                   <span
                     key={tech}
-                    className="px-4 py-2 bg-zinc-100 text-zinc-800 font-medium rounded-full text-sm">
+                    className="px-4 py-2 bg-zinc-100 text-zinc-800 font-medium rounded-full text-sm"
+                  >
                     {tech}
                   </span>
                 ))}
@@ -178,7 +215,8 @@ export function ServiceDetail({ slug }: Props) {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl lg:text-5xl font-bold tracking-tight text-zinc-950 mb-12 text-center">
+            className="text-4xl lg:text-5xl font-bold tracking-tight text-zinc-950 mb-12 text-center"
+          >
             Frequently asked
           </motion.h2>
 
@@ -190,7 +228,8 @@ export function ServiceDetail({ slug }: Props) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className="bg-white p-8 rounded-2xl border border-zinc-200">
+                className="bg-white p-8 rounded-2xl border border-zinc-200"
+              >
                 <h3 className="text-lg font-semibold text-zinc-950 mb-3">
                   {faq.question}
                 </h3>
@@ -208,13 +247,15 @@ export function ServiceDetail({ slug }: Props) {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="flex items-end justify-between mb-12">
+            className="flex items-end justify-between mb-12"
+          >
             <h2 className="text-4xl lg:text-5xl font-bold tracking-tight text-zinc-950">
               Related services
             </h2>
             <Link
               href="/services"
-              className="hidden md:inline-flex items-center text-blue-600 font-semibold hover:gap-2 transition-all">
+              className="hidden md:inline-flex items-center text-blue-600 font-semibold hover:gap-2 transition-all"
+            >
               View all
               <ArrowRightIcon className="ml-1 w-5 h-5" />
             </Link>
@@ -229,10 +270,12 @@ export function ServiceDetail({ slug }: Props) {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}>
+                  transition={{ delay: index * 0.1 }}
+                >
                   <Link
                     href={`/services/${s.slug}`}
-                    className="group block p-8 bg-white border border-zinc-200 rounded-2xl hover:border-blue-600 hover:shadow-lg transition-all h-full">
+                    className="group block p-8 bg-white border border-zinc-200 rounded-2xl hover:border-blue-600 hover:shadow-lg transition-all h-full"
+                  >
                     <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                       <RelatedIcon className="w-6 h-6 text-white" />
                     </div>
@@ -256,7 +299,8 @@ export function ServiceDetail({ slug }: Props) {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}>
+            viewport={{ once: true }}
+          >
             <h2 className="text-4xl lg:text-5xl font-bold tracking-tight text-white mb-6">
               Ready to get started?
             </h2>
@@ -265,7 +309,8 @@ export function ServiceDetail({ slug }: Props) {
             </p>
             <Link
               href="/contact"
-              className="group inline-flex items-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-xl hover:bg-blue-50 transition-all hover:shadow-xl">
+              className="group inline-flex items-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-xl hover:bg-blue-50 transition-all hover:shadow-xl"
+            >
               Start a project
               <ArrowRightIcon className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
