@@ -124,6 +124,27 @@ export function CaseStudies() {
       href: "/work/multilab",
       image: "/multilab.webp",
     },
+     {
+      title: "CryptoLeb",
+      client: "Crypto News Platform",
+      category: "WordPress + Bricks · Custom AI Plugin",
+      description:
+        "A crypto news platform for a Lebanese audience, powered by a custom-built WordPress plugin that rewrites RSS content into original, locally-contextualized articles automatically via the OpenRouter API.",
+      results: [
+        { metric: "Rewriter version", value: "v1.2.0" },
+        { metric: "Article length", value: "500-600 words" },
+        { metric: "Publishing", value: "Hourly cron" },
+      ],
+      color: "from-cyan-500 to-cyan-700",
+      tags: [
+        "WordPress",
+        "Bricks Builder",
+        "Custom PHP Plugin",
+        "OpenRouter API",
+      ],
+      href: "/work/cryptoleb",
+      image: "/cryptoleb.webp",
+    },
     {
       title: "Super Edge Contracting",
       client: "General Contractor",
@@ -220,27 +241,7 @@ export function CaseStudies() {
       href: "/work/crypto-news-canada",
       image: "/cryptocanada.webp",
     },
-    {
-      title: "CryptoLeb",
-      client: "Crypto News Platform",
-      category: "WordPress + Bricks · Custom AI Plugin",
-      description:
-        "A crypto news platform for a Lebanese audience, powered by a custom-built WordPress plugin that rewrites RSS content into original, locally-contextualized articles automatically via the OpenRouter API.",
-      results: [
-        { metric: "Rewriter version", value: "v1.2.0" },
-        { metric: "Article length", value: "500-600 words" },
-        { metric: "Publishing", value: "Hourly cron" },
-      ],
-      color: "from-cyan-500 to-cyan-700",
-      tags: [
-        "WordPress",
-        "Bricks Builder",
-        "Custom PHP Plugin",
-        "OpenRouter API",
-      ],
-      href: "/work/cryptoleb",
-      image: "/cryptoleb.webp",
-    },
+   
   ];
 
   return (
