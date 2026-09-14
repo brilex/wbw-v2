@@ -1,10 +1,16 @@
-'use client';
+"use client";
 
-import React from 'react';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
-import { ArrowLeftIcon, CalendarIcon, UserIcon, TagIcon, ArrowRightIcon } from 'lucide-react';
-import type { Post } from '@/src/lib/blog';
+import React from "react";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import {
+  ArrowLeftIcon,
+  CalendarIcon,
+  UserIcon,
+  TagIcon,
+  ArrowRightIcon,
+} from "lucide-react";
+import type { Post } from "@/src/lib/blog";
 
 interface Props {
   post: Post;
@@ -12,50 +18,80 @@ interface Props {
 
 export function BlogPost({ post }: Props) {
   const articleSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
     headline: post.title,
     description: post.description,
     datePublished: post.date,
     dateModified: post.date,
-    author: { '@type': 'Organization', name: post.author, url: 'https://www.webuildsites.net' },
+    author: {
+      "@type": "Organization",
+      name: post.author,
+      url: "https://www.webuildsites.net",
+    },
     publisher: {
-      '@type': 'Organization',
-      name: 'WBW',
-      logo: { '@type': 'ImageObject', url: 'https://www.webuildsites.net/icon.png' },
+      "@type": "Organization",
+      name: "WBW",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.webuildsites.net/icon.png",
+      },
     },
     mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': `https://www.webuildsites.net/blog/${post.slug}`,
+      "@type": "WebPage",
+      "@id": `https://www.webuildsites.net/blog/${post.slug}`,
     },
-    keywords: post.tags.join(', '),
+    keywords: post.tags.join(", "),
   };
-
+  const faqSchema =
+    post.faqs.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: post.faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: { "@type": "Answer", text: faq.answer },
+          })),
+        }
+      : null;
   return (
     <main className="min-h-screen">
+    <script
+      id={`article-schema-${post.slug}`}
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+    />
+    {faqSchema && (
       <script
-        id={`article-schema-${post.slug}`}
+        id={`faq-schema-${post.slug}`}
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+    )}
       {/* Hero */}
       <section className="pt-32 pb-16 bg-white">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <Link
             href="/blog"
-            className="inline-flex items-center text-sm font-medium text-zinc-600 hover:text-blue-600 transition-colors mb-8">
+            className="inline-flex items-center text-sm font-medium text-zinc-600 hover:text-blue-600 transition-colors mb-8"
+          >
             <ArrowLeftIcon className="w-4 h-4 mr-2" />
             All posts
           </Link>
 
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+          >
             {post.tags.length > 0 && (
               <div className="flex items-center gap-2 mb-4 flex-wrap">
                 <TagIcon className="w-3 h-3 text-blue-600" />
                 {post.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="text-xs font-semibold text-blue-600 bg-blue-50 px-2 py-1 rounded-full">
+                    className="text-xs font-semibold text-blue-600 bg-blue-50 px-2 py-1 rounded-full"
+                  >
                     {tag}
                   </span>
                 ))}
@@ -66,7 +102,9 @@ export function BlogPost({ post }: Props) {
               {post.title}
             </h1>
 
-            <p className="text-xl text-zinc-600 leading-relaxed mb-8">{post.description}</p>
+            <p className="text-xl text-zinc-600 leading-relaxed mb-8">
+              {post.description}
+            </p>
 
             <div className="flex items-center gap-6 text-sm text-zinc-500 pb-8 border-b border-zinc-100">
               <span className="flex items-center gap-2">
@@ -75,10 +113,10 @@ export function BlogPost({ post }: Props) {
               </span>
               <span className="flex items-center gap-2">
                 <CalendarIcon className="w-4 h-4" />
-                {new Date(post.date).toLocaleDateString('en-GB', {
-                  day: 'numeric',
-                  month: 'long',
-                  year: 'numeric',
+                {new Date(post.date).toLocaleDateString("en-GB", {
+                  day: "numeric",
+                  month: "long",
+                  year: "numeric",
                 })}
               </span>
             </div>
@@ -120,7 +158,8 @@ export function BlogPost({ post }: Props) {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}>
+            viewport={{ once: true }}
+          >
             <h2 className="text-3xl lg:text-4xl font-bold tracking-tight text-white mb-4">
               Ready to improve your website?
             </h2>
@@ -129,7 +168,8 @@ export function BlogPost({ post }: Props) {
             </p>
             <Link
               href="/contact"
-              className="group inline-flex items-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-xl hover:bg-blue-50 transition-all hover:shadow-xl">
+              className="group inline-flex items-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-xl hover:bg-blue-50 transition-all hover:shadow-xl"
+            >
               Start a project
               <ArrowRightIcon className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
